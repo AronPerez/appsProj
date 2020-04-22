@@ -1,8 +1,8 @@
 package APP;
-import APP.Element;
-import java.util.List;
+import java.util.*;
 
 public class ElementGroup {
+
     ArrayList<Element> Elements = new ArrayList<Element>();
 
     public void addElement(Element E){
