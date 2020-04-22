@@ -1,16 +1,11 @@
 package APP;
-
+import APP.Element;
 import java.util.List;
 
 public class ElementGroup {
-    int ListSize = 0;
-    Element[] Elements;
+    ArrayList<Element> Elements = new ArrayList<Element>();
 
-    public ElementGroup(int numElements) {
-        ListSize = numElements;
-        Elements = new Element[ListSize];
+    public void addElement(Element E){
+        this.Elements.add(E);
     }
-
-
-
 }
