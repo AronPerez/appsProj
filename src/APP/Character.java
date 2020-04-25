@@ -14,5 +14,4 @@ public class Character {
     String Sect;
     String Concept;
 
-
 }

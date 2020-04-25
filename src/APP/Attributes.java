@@ -16,5 +16,4 @@ public class Attributes {
 //    this.Mental.addElement();
 //    this.Mental.addElement();
 
-
 }
