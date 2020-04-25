@@ -1,17 +1,11 @@
 package APP;
 
-public class Character {
-    Attributes Attributes;
-    Abilities Abilities;
+public class Character{
+    Attributes Attributes = new Attributes();
+    Abilities Abilities = new Abilities();
+    String Name, Player, Chronicle, Nature, Demeanor,Essence,Affiliation,Sect,Concept;
 
-    String Name;
-    String Player;
-    String Chronicle;
-    String Nature;
-    String Demeanor;
-    String Essence;
-    String Affiliation;
-    String Sect;
-    String Concept;
-
+    public Character() {
+        
+    }
 }

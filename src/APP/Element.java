@@ -1,11 +1,9 @@
 package APP;
 
 public class Element {
-    String Name;
     int Dots;
 
-    public Element(String name, int dots) {
-        Name = name;
+    public Element(int dots) {
         Dots = dots;
     }
 
