@@ -355,7 +355,7 @@
                                              <content>
                                                 <ScrollPane fitToWidth="true">
                                                    <content>
-                                                      <TextArea prefWidth="930.0" wrapText="true" />
+                                                      <TextArea fx:id="bioText" prefWidth="930.0" wrapText="true" />
                                                    </content>
                                                    <padding>
                                                       <Insets left="8.0" right="8.0" />
@@ -370,7 +370,7 @@
                                              <content>
                                                 <ScrollPane fitToWidth="true">
                                                    <content>
-                                                      <TextArea prefWidth="930.0" wrapText="true" />
+                                                      <TextArea fx:id="awakeningText" prefWidth="930.0" wrapText="true" />
                                                    </content>
                                                 </ScrollPane>
                                              </content>
@@ -382,7 +382,7 @@
                                              <content>
                                                 <ScrollPane fitToWidth="true">
                                                    <content>
-                                                      <TextArea prefHeight="160.0" prefWidth="884.0" wrapText="true" />
+                                                      <TextArea fx:id="fociText" prefHeight="160.0" prefWidth="884.0" wrapText="true" />
                                                    </content>
                                                 </ScrollPane>
                                              </content>
