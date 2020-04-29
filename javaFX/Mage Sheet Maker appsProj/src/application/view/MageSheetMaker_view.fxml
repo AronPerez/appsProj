@@ -21,6 +21,7 @@
                               <MenuItem mnemonicParsing="false" text="Save" />
                               <MenuItem mnemonicParsing="false" text="Load File" />
                               <MenuItem mnemonicParsing="false" text="Delete Character" />
+                              <MenuItem mnemonicParsing="false" text="Add Character Exp" />
                         </items>
                       </Menu>
                       <Menu mnemonicParsing="false" text="Help">
@@ -57,7 +58,7 @@
                                                 <Insets bottom="8.0" left="8.0" right="8.0" />
                                              </padding>
                                              <children>
-                                                <GridPane prefHeight="398.0" prefWidth="904.0">
+                                                <GridPane prefHeight="505.0" prefWidth="904.0">
                                                   <columnConstraints>
                                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -106,195 +107,78 @@
                                                       <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1" />
                                                       <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                                                       <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                                      <CheckBox fx:id="CB_Cluster_Ba_3" disable="true" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                      <ProgressBar fx:id="statElemBar_T2_1" prefHeight="36.0" prefWidth="138.0" progress="0.01" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                          <GridPane.margin>
-                                                            <Insets top="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Ba_1" disable="true" layoutX="167.0" layoutY="143.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T2_2" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                          <GridPane.margin>
-                                                            <Insets bottom="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Ba_2" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                                      <CheckBox fx:id="CB_Cluster_Ba_5" disable="true" layoutX="167.0" layoutY="143.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T2_4" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                                          <GridPane.margin>
-                                                            <Insets left="45.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Ba_4" disable="true" layoutX="212.0" layoutY="143.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T2_3" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                          <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bb_4" disable="true" layoutX="167.0" layoutY="143.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T2_7" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
                                                          <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bb_2" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                                      <CheckBox fx:id="CB_Cluster_Bb_3" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T2_6" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                                          <GridPane.margin>
-                                                            <Insets top="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bb_1" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T2_5" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                                          <GridPane.margin>
-                                                            <Insets bottom="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bb_5" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T2_8" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
                                                          <GridPane.margin>
-                                                            <Insets left="45.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bc_2" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                                      <CheckBox fx:id="CB_Cluster_Bc_3" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T2_9" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
                                                          <GridPane.margin>
-                                                            <Insets top="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bc_1" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bc_5" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bc_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bd_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                                                      <CheckBox fx:id="CB_Cluster_Bd_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bd_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bd_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bd_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Be_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                                                      <CheckBox fx:id="CB_Cluster_Be_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Be_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Be_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Be_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bf_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                                                      <CheckBox fx:id="CB_Cluster_Bf_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bf_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bf_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bf_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bg_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                                                      <CheckBox fx:id="CB_Cluster_Bg_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bg_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bg_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bg_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bh_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                                                      <CheckBox fx:id="CB_Cluster_Bh_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bh_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bh_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bh_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bi_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-                                                      <CheckBox fx:id="CB_Cluster_Bi_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bi_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bi_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bi_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
+                                                      </ProgressBar>
+                                                      <Label fx:id="charStatElemLabel_T2_1" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_2" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_3" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_6" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_5" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_4" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_7" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_8" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_9" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                      <Button fx:id="barIncreUp_T2_1" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreD_T2_2" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreD_T2_3" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreUp_T2_4" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreUp_T2_5" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreUp_T2_6" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreUp_T2_7" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreUp_T2_8" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreUp_T2_9" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreD_T2_1" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreUp_T2_2" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barInUp_T2_3" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreD_T2_4" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreD_T2_5" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreD_T2_6" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreD_T2_7" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreD_T2_8" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="barIncreD_T2_9" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                                                    </children>
                                                 </GridPane>
                                                 <TextArea fx:id="help_MathDisplay2" editable="false" focusTraversable="false" prefHeight="154.0" prefWidth="904.0" wrapText="true">
@@ -310,11 +194,11 @@
                                                       <Font name="System Bold" size="24.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField fx:id="ExpDisplay2" editable="false" prefHeight="51.0" prefWidth="504.0">
+                                                <Label fx:id="ExpDisplay2" text="00">
                                                    <VBox.margin>
-                                                      <Insets top="10.0" />
+                                                      <Insets left="45.0" />
                                                    </VBox.margin>
-                                                </TextField>
+                                                </Label>
                                                 <Button mnemonicParsing="false" text="Spend Exp">
                                                    <VBox.margin>
                                                       <Insets top="10.0" />
