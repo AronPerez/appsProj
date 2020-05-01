@@ -1,4 +1,4 @@
-package APP;
+package APP.Model;
 
 public class Element {
     int Dots;

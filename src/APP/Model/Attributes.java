@@ -1,4 +1,4 @@
-package APP;
+package APP.Model;
 
 public class Attributes{
 
@@ -18,4 +18,8 @@ public class Attributes{
             Wits = new Element(1);
 
     }
+
+//    public String toString() {
+//
+//    }
 }

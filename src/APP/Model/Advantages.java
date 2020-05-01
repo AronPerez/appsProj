@@ -1,4 +1,4 @@
-package APP;
+package APP.Model;
 
 public class Advantages {
 
@@ -6,7 +6,6 @@ public class Advantages {
     String Background;
 
     public Advantages() {
-
         Arete = new Element(0);
         Health = new Element(0);
         Willpower = new Element(0);

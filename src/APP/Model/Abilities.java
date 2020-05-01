@@ -1,11 +1,11 @@
-package APP;
+package APP.Model;
 
 public class Abilities {
 
     Element Alertness, Art, Athletics, Awareness, Brawl, Empathy, Expression, Intimidation,
             Leadership, Streetwise, Subterfuge, Crafts, Drive, Etiquette, Firearms,
             MartialArts, Meditation, Melee, Research, Stealth, Survival, Technology,
-            Aacademics, Computer, Cosmology, Enigma, Esoterica, Investigation, Law,
+            Academics, Computer, Cosmology, Enigma, Esoterica, Investigation, Law,
             Medicine, Occult, Politics, Science;
 
     public Abilities() {
@@ -20,7 +20,7 @@ public class Abilities {
         Stealth = new Element(0);
         Survival = new Element(0);
         Technology = new Element(0);
-        Aacademics = new Element(0);
+        Academics = new Element(0);
         Computer = new Element(0);
         Cosmology = new Element(0);
         Enigma = new Element(0);

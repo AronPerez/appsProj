@@ -1,10 +1,10 @@
-package APP;
+package APP.Model;
 
 public class Character {
-    Attributes Attributes;
-    Spheres Spheres;
-    Advantages Advantages;
-    Abilities Abilities;
+    APP.Model.Attributes Attributes;
+    APP.Model.Spheres Spheres;
+    APP.Model.Advantages Advantages;
+    APP.Model.Abilities Abilities;
     String Name, Player, Chronicle, Nature, Demeanor,Essence,
             Affiliation,Sect,Concept;
 
@@ -14,7 +14,6 @@ public class Character {
         Attributes = new Attributes();
         Abilities = new Abilities();
     }
-
 
 
 }
