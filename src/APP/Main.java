@@ -14,7 +14,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         try {
             Parent root = FXMLLoader.load(getClass().getResource("View/MageSheetMaker_view.fxml"));
-            Scene scene = new Scene(root,400,400);
+            Scene scene = new Scene(root,800,800);
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch(Exception e) {

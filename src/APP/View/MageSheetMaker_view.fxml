@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="990.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="1374.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <SplitPane dividerPositions="0.06781376518218624" orientation="VERTICAL" prefHeight="990.0" prefWidth="924.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -21,6 +41,9 @@
                               <MenuItem mnemonicParsing="false" text="Save" />
                               <MenuItem mnemonicParsing="false" text="Load File" />
                               <MenuItem mnemonicParsing="false" text="Delete Character" />
+                              <MenuItem mnemonicParsing="false" text="Add Character Exp" />
+                              <MenuItem mnemonicParsing="false" text="Apply Willpower Damage" />
+                              <MenuItem mnemonicParsing="false" text="Purchase Willpower" />
                         </items>
                       </Menu>
                       <Menu mnemonicParsing="false" text="Help">
@@ -41,8 +64,749 @@
                         <content>
                           <AnchorPane>
                                  <children>
-                                    <ScrollPane prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <ScrollPane layoutY="15.0" prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+                                       <content>
+                                          <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" />
+                                             </padding>
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="99.0" prefWidth="874.0" text="Mage The Ascension 20th Aniversary Edition">
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <font>
+                                                      <Font name="Lucida Calligraphy Italic" size="33.0" />
+                                                   </font>
+                                                </Label>
+                                                <Separator prefHeight="3.0" prefWidth="874.0" />
+                                                <GridPane prefHeight="332.0" prefWidth="874.0">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Label text="Character Name:" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="10.0" top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Player Name:" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="10.0" top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Chronicle:" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="10.0" top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Nature:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="10.0" top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Demeanor:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="10.0" top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Avatar Essence:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="10.0" top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Affiliation:" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="10.0" top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Sect" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="10.0" top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Concept:" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="10.0" top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <TextField fx:id="charNameTF" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets left="5.0" right="5.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="playerNameTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets left="5.0" right="5.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="chronicleTF" layoutX="10.0" layoutY="151.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets left="5.0" right="5.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="ConceptTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets left="5.0" right="5.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="NatureTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets left="5.0" right="5.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="DemeanorTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets left="5.0" right="5.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <ChoiceBox fx:id="avatarCB" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <ChoiceBox fx:id="affiliationCB" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
+                                                      <ChoiceBox fx:id="sectCB" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                   </children>
+                                                </GridPane>
+                                                <Separator prefWidth="200.0">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </Separator>
+                                                <GridPane prefHeight="319.0" prefWidth="874.0">
+                                                   <children>
+                                                      <Label text="Physical" GridPane.columnSpan="2">
+                                                         <font>
+                                                            <Font name="System Bold" size="30.0" />
+                                                         </font>
+                                                         <GridPane.margin>
+                                                            <Insets left="100.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label alignment="CENTER" text="Social" GridPane.columnIndex="2" GridPane.columnSpan="2">
+                                                         <font>
+                                                            <Font name="System Bold" size="30.0" />
+                                                         </font>
+                                                         <GridPane.margin>
+                                                            <Insets left="100.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label alignment="CENTER" prefHeight="68.0" prefWidth="104.0" text="Mental" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.columnSpan="2">
+                                                         <font>
+                                                            <Font name="System Bold" size="30.0" />
+                                                         </font>
+                                                         <GridPane.margin>
+                                                            <Insets left="100.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Strength" GridPane.rowIndex="1" />
+                                                      <Label text="Dexterity" GridPane.rowIndex="2" />
+                                                      <Label text="Stamina" GridPane.rowIndex="3" />
+                                                      <Label text="Charisma" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="Manipulation" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <Label text="Appearance" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                      <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                                      <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                                      <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                                      <ProgressBar fx:id="statElemBar_T1_1" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_2" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T2_41" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_3" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_7" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_6" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_5" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_8" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_9" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <Label fx:id="charStatElemLabel_T1_1" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></Label>
+                                                      <Label fx:id="charStatElemLabel_T1_2" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></Label>
+                                                      <Label fx:id="charStatElemLabel_T1_3" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></Label>
+                                                      <Label fx:id="charStatElemLabel_T1_6" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></Label>
+                                                      <Label fx:id="charStatElemLabel_T1_5" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></Label>
+                                                      <Label fx:id="charStatElemLabel_T1_4" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></Label>
+                                                      <Label fx:id="charStatElemLabel_T1_7" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></Label>
+                                                      <Label fx:id="charStatElemLabel_T1_8" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></Label>
+                                                      <Label fx:id="charStatElemLabel_T1_9" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin></Label>
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="145.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="114.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="113.0" minHeight="10.0" prefHeight="97.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <Separator prefWidth="200.0">
+                                                   <VBox.margin>
+                                                      <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </Separator>
+                                                <Label text="Backgrounds">
+                                                   <font>
+                                                      <Font name="System Bold" size="33.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="350.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <GridPane prefHeight="457.0" prefWidth="916.0">
+                                                   <children>
+                                                      <TextField fx:id="backGroundTF_T1_001" editable="false" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="80.0" right="40.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <Label text="1st" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="20.0" top="15.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <TextField fx:id="backGroundTF_T1_011" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="80.0" right="40.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="backGroundTF_T1_021" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="80.0" right="40.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="backGroundTF_T1_031" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="80.0" right="40.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="backGroundTF_T1_041" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="80.0" right="40.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="backGroundTF_T1_051" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="80.0" right="40.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="backGroundTF_T1_061" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="80.0" right="40.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <TextField fx:id="backGroundTF_T1_07" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="80.0" right="40.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </TextField>
+                                                      <Label layoutX="30.0" layoutY="25.0" text="2nd" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="20.0" top="15.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label layoutX="30.0" layoutY="25.0" text="3rd" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="20.0" top="15.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label layoutX="30.0" layoutY="25.0" text="4th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="20.0" top="15.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label layoutX="30.0" layoutY="25.0" text="5th" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="20.0" top="15.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label layoutX="30.0" layoutY="25.0" text="6th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="20.0" top="15.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label layoutX="30.0" layoutY="25.0" text="7th" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="20.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label layoutX="30.0" layoutY="25.0" text="8th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets left="20.0" top="10.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <ProgressBar fx:id="backGroundElemBar_T1_001" prefHeight="36.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" left="15.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="backGroundElemBar_T1_0011" layoutX="10.0" layoutY="50.0" prefHeight="36.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" left="15.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="backGroundElemBar_T1_0021" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" left="15.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="backGroundElemBar_T1_0031" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" left="15.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="backGroundElemBar_T1_0041" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" left="15.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="backGroundElemBar_T1_0051" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" left="15.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="backGroundElemBar_T1_0061" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" left="15.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="backGroundElemBar_T1_0071" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" left="15.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <Label fx:id="charBackgroundLabel_T1_01" text="0/5" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charBackgroundLabel_T1_011" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charBackgroundLabel_T1_021" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charBackgroundLabel_T1_031" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charBackgroundLabel_T1_041" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charBackgroundLabel_T1_051" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charBackgroundLabel_T1_061" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charBackgroundLabel_T1_071" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <Separator prefWidth="200.0" />
+                                                <GridPane prefHeight="505.0" prefWidth="904.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" text="Spheres of Magic" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="System Bold" size="36.0" />
+                                                         </font>
+                                                         <GridPane.margin>
+                                                            <Insets />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Time" GridPane.rowIndex="1" />
+                                                      <Label text="Spirit" GridPane.rowIndex="2" />
+                                                      <Label text="Prime" GridPane.rowIndex="3" />
+                                                      <Label text="Mind" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="Matter" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                      <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                                      <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                                      <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                                      <ProgressBar fx:id="statElemBar_T1_s01" prefHeight="36.0" prefWidth="138.0" progress="0.01" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_s02" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_s04" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_s03" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_s07" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_s06" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_s05" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_s08" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="statElemBar_T1_s09" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <Label fx:id="charStatElemLabel_T1_s01" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charStatElemLabel_T1_s02" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charStatElemLabel_T1_s03" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charStatElemLabel_T1_s06" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charStatElemLabel_T1_s05" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charStatElemLabel_T1_s04" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charStatElemLabel_T1_s07" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charStatElemLabel_T1_s08" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charStatElemLabel_T1_s09" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets bottom="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="70.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="181.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="94.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="168.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="172.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="219.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <Separator prefWidth="200.0" />
+                                                <GridPane prefHeight="146.0" prefWidth="916.0">
+                                                   <children>
+                                                      <ProgressBar fx:id="statElemBar_T1_Arete" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets top="20.0" />
+                                                         </GridPane.margin>
+                                                      </ProgressBar>
+                                                      <Label text="Arete" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                         <font>
+                                                            <Font name="System Bold" size="33.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label fx:id="charStatElemLabel_T4_Arete" text="1/10" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets top="20.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="522.0" minWidth="10.0" prefWidth="458.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="461.0" minWidth="10.0" prefWidth="458.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <Separator prefWidth="200.0" />
+                                                <GridPane prefHeight="457.0" prefWidth="874.0">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="217.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="359.0" />
+                                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="290.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints maxHeight="331.0" minHeight="10.0" prefHeight="329.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Label text="Willpower" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Quintessence/Paradox" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Health" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label fx:id="charExpDisplay" text="00" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets top="15.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Character Exp:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets top="5.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <TilePane hgap="5.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="200.0" tileAlignment="TOP_CENTER" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                                         <children>
+                                                            <RadioButton fx:id="permWill_00" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_00" mnemonicParsing="false" />
+                                                            <RadioButton fx:id="permWill_01" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_01" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <RadioButton fx:id="permWill_02" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_02" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <RadioButton fx:id="permWill_03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_03" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <RadioButton fx:id="permWill_04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_04" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <RadioButton fx:id="permWill_05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_05" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <RadioButton fx:id="permWill_06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_06" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <RadioButton fx:id="permWill_07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_07" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <RadioButton fx:id="permWill_08" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_08" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <RadioButton fx:id="permWill_09" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="tempWill_09" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
+                                                         </children>
+                                                      </TilePane>
+                                                      <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="2">
+                                                         <children>
+                                                            <Label text="Quint" />
+                                                            <Separator prefWidth="200.0" />
+                                                            <TilePane alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" tileAlignment="TOP_CENTER" vgap="5.0">
+                                                               <VBox.margin>
+                                                                  <Insets left="100.0" right="100.0" />
+                                                               </VBox.margin>
+                                                               <children>
+                                                                  <RadioButton fx:id="quintParaTracker_0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_01" layoutX="31.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_02" layoutX="52.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_08" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_09" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_010" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_011" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_012" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_013" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_014" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_015" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_016" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_017" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_018" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
+                                                                  <RadioButton fx:id="quintParaTracker_019" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
+                                                               </children>
+                                                            </TilePane>
+                                                            <Separator prefWidth="200.0" />
+                                                            <Label text="Paradox" />
+                                                         </children>
+                                                      </VBox>
+                                                      <TilePane nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="200.0" tileAlignment="TOP_LEFT" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <children>
+                                                            <CheckBox fx:id="agro01" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="lethal01" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="bash01" layoutX="52.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="argo02" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="lethal02" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="bash02" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="agro03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="lethal03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="bash03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="agro04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="lethal04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="bash04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="agro05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="lethal05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="bash05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="agro06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="lethal06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="bash06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="agro07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="lethal07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                            <CheckBox fx:id="bash07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                                                         </children>
+                                                         <GridPane.margin>
+                                                            <Insets right="150.0" top="65.0" />
+                                                         </GridPane.margin>
+                                                      </TilePane>
+                                                      <Label text="Agro/Lethal/Bash" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <GridPane.margin>
+                                                            <Insets top="30.0" />
+                                                         </GridPane.margin>
+                                                      </Label>
+                                                      <Label text="Damage Types:" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <GridPane.margin>
+                                                            <Insets left="120.0" top="65.0" />
+                                                         </GridPane.margin>
+                                                         <children>
+                                                            <Label text="Bruised -0" />
+                                                            <Label text="Hurt -1" />
+                                                            <Label text="Injured -1" />
+                                                            <Label text="Wounded -2" />
+                                                            <Label text="Mauled -2" />
+                                                            <Label text="Crippled -5" />
+                                                            <Label text="Incapacitated" />
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                          </VBox>
+                                       </content>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding></ScrollPane>
                                  </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
                               </AnchorPane>
                         </content>
                       </Tab>
@@ -52,12 +816,12 @@
                                  <children>
                                     <ScrollPane fitToWidth="true" prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <content>
-                                          <VBox prefHeight="838.0" prefWidth="920.0">
+                                          <VBox>
                                              <padding>
                                                 <Insets bottom="8.0" left="8.0" right="8.0" />
                                              </padding>
                                              <children>
-                                                <GridPane prefHeight="398.0" prefWidth="904.0">
+                                                <GridPane prefHeight="505.0" prefWidth="904.0">
                                                   <columnConstraints>
                                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -106,195 +870,78 @@
                                                       <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1" />
                                                       <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                                                       <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                                      <CheckBox fx:id="CB_Cluster_Ba_3" disable="true" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                      <ProgressBar fx:id="attr_str_bar" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                          <GridPane.margin>
-                                                            <Insets top="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Ba_1" disable="true" layoutX="167.0" layoutY="143.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="attr_dex_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                          <GridPane.margin>
-                                                            <Insets bottom="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Ba_2" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                                      <CheckBox fx:id="CB_Cluster_Ba_5" disable="true" layoutX="167.0" layoutY="143.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="attr_char_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                                          <GridPane.margin>
-                                                            <Insets left="45.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Ba_4" disable="true" layoutX="212.0" layoutY="143.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="attr_str_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                          <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bb_4" disable="true" layoutX="167.0" layoutY="143.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="attr_perc_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.rowIndex="1">
                                                          <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bb_2" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                                      <CheckBox fx:id="CB_Cluster_Bb_3" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="attr_app_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                                          <GridPane.margin>
-                                                            <Insets top="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bb_1" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="attr_man_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                                          <GridPane.margin>
-                                                            <Insets bottom="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bb_5" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="attr_int_bar" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.rowIndex="2">
                                                          <GridPane.margin>
-                                                            <Insets left="45.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bc_2" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                                      <CheckBox fx:id="CB_Cluster_Bc_3" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                      </ProgressBar>
+                                                      <ProgressBar fx:id="attr_wit_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.rowIndex="3">
                                                          <GridPane.margin>
-                                                            <Insets top="70.0" />
+                                                            <Insets bottom="20.0" />
                                                          </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bc_1" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bc_5" disable="true" layoutX="167.0" layoutY="108.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bc_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bd_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                                                      <CheckBox fx:id="CB_Cluster_Bd_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bd_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bd_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bd_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Be_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                                                      <CheckBox fx:id="CB_Cluster_Be_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Be_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Be_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Be_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bf_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                                                      <CheckBox fx:id="CB_Cluster_Bf_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bf_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bf_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bf_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bg_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                                                      <CheckBox fx:id="CB_Cluster_Bg_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bg_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bg_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bg_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bh_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                                                      <CheckBox fx:id="CB_Cluster_Bh_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bh_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bh_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bh_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bi_2" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-                                                      <CheckBox fx:id="CB_Cluster_Bi_5" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bi_1" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bi_3" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets top="70.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
-                                                      <CheckBox fx:id="CB_Cluster_Bi_4" disable="true" layoutX="167.0" layoutY="242.0" mnemonicParsing="false" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="70.0" left="45.0" />
-                                                         </GridPane.margin>
-                                                      </CheckBox>
+                                                      </ProgressBar>
+                                                      <Label fx:id="charStatElemLabel_T2_1" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_2" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_3" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_6" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_5" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_4" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_7" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_8" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                      <Label fx:id="charStatElemLabel_T2_9" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                      <Button fx:id="attr_str_up" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_dex_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_stam_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_char_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_man_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_app_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_perc_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_int_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_wits_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_str_down" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_dex_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_stam_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_char_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_man_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_app_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_perc_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_int_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_wits_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                                                    </children>
                                                 </GridPane>
                                                 <TextArea fx:id="help_MathDisplay2" editable="false" focusTraversable="false" prefHeight="154.0" prefWidth="904.0" wrapText="true">
@@ -310,20 +957,28 @@
                                                       <Font name="System Bold" size="24.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField fx:id="ExpDisplay2" editable="false" prefHeight="51.0" prefWidth="504.0">
+                                                <Label fx:id="char_ecp_disp1" text="00">
                                                    <VBox.margin>
-                                                      <Insets top="10.0" />
+                                                      <Insets left="45.0" />
                                                    </VBox.margin>
-                                                </TextField>
+                                                </Label>
                                                 <Button mnemonicParsing="false" text="Spend Exp">
                                                    <VBox.margin>
                                                       <Insets top="10.0" />
+                                                   </VBox.margin>
+                                                </Button>
+                                                <Button cancelButton="true" disable="true" mnemonicParsing="false" text="Cancel" visible="false">
+                                                   <VBox.margin>
+                                                      <Insets top="15.0" />
                                                    </VBox.margin>
                                                 </Button>
                                              </children>
                                           </VBox>
                                        </content></ScrollPane>
                                  </children>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
                               </AnchorPane>
                         </content>
                       </Tab>
@@ -340,7 +995,454 @@
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <ScrollPane prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <SplitPane dividerPositions="0.7696160267111853" orientation="VERTICAL" prefHeight="1200.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <ScrollPane prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <content>
+                                                      <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT">
+                                                         <children>
+                                                            <GridPane prefHeight="505.0" prefWidth="904.0">
+                                                               <children>
+                                                                  <Label alignment="CENTER" text="Spheres of Magic" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="36.0" />
+                                                                     </font>
+                                                                     <GridPane.margin>
+                                                                        <Insets />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label text="Time" GridPane.rowIndex="1" />
+                                                                  <Label text="Spirit" GridPane.rowIndex="2" />
+                                                                  <Label text="Prime" GridPane.rowIndex="3" />
+                                                                  <Label text="Mind" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                                  <Label text="Matter" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                                  <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                                  <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                                                  <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                                                  <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                                                  <ProgressBar fx:id="sphr_time_bar" prefHeight="36.0" prefWidth="138.0" progress="0.01" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="sphr_sprint_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="sphr_mind_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="sphr_prime_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="sphr_forces_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="sphr_life_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="sphr_matter_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="sphr_ent_bar" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="sphr_corr_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <Label fx:id="charStatElemLabel_T4_01" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                                  <Label fx:id="charStatElemLabel_T4_02" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                                  <Label fx:id="charStatElemLabel_T4_03" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                                  <Label fx:id="charStatElemLabel_T4_06" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                                  <Label fx:id="charStatElemLabel_T2_51" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                                  <Label fx:id="charStatElemLabel_T4_04" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                                  <Label fx:id="charStatElemLabel_T4_07" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                                  <Label fx:id="charStatElemLabel_T4_08" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                                  <Label fx:id="charStatElemLabel_T4_09" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                                  <Button fx:id="sphr_time_up" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_sprint_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_prime_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_mind_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_matter_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_life_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_forces_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_ent_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_corr_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_time_down" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_sprint_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_prime_up" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_mind_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_matter_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_life_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_forces_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_ent_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_corr_down" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                               </children>
+                                                               <columnConstraints>
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="70.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="181.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="94.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="168.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="172.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="219.0" />
+                                                               </columnConstraints>
+                                                               <rowConstraints>
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                               </rowConstraints>
+                                                            </GridPane>
+                                                            <Separator prefWidth="200.0">
+                                                               <VBox.margin>
+                                                                  <Insets top="10.0" />
+                                                               </VBox.margin>
+                                                            </Separator>
+                                                            <GridPane prefHeight="146.0" prefWidth="916.0">
+                                                              <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="522.0" minWidth="10.0" prefWidth="458.0" />
+                                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="461.0" minWidth="10.0" prefWidth="458.0" />
+                                                              </columnConstraints>
+                                                              <rowConstraints>
+                                                                <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+                                                              </rowConstraints>
+                                                               <children>
+                                                                  <ProgressBar fx:id="char_aree_bar" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets top="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <Label text="Arete" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="33.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label fx:id="charStatElemLabel_T4_010" text="1/10" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets top="20.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Button fx:id="char_arete_up" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="100.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="char_arete_down" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                               </children>
+                                                               <VBox.margin>
+                                                                  <Insets top="10.0" />
+                                                               </VBox.margin>
+                                                            </GridPane>
+                                                            <Separator prefWidth="200.0">
+                                                               <VBox.margin>
+                                                                  <Insets top="10.0" />
+                                                               </VBox.margin>
+                                                            </Separator>
+                                                            <Label text="Backgrounds">
+                                                               <font>
+                                                                  <Font name="System Bold" size="33.0" />
+                                                               </font>
+                                                               <VBox.margin>
+                                                                  <Insets top="10.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                                            <GridPane prefHeight="457.0" prefWidth="916.0">
+                                                              <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                              </columnConstraints>
+                                                              <rowConstraints>
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                              </rowConstraints>
+                                                               <children>
+                                                                  <TextField fx:id="backGroundTF_00" editable="false" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="80.0" right="40.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </TextField>
+                                                                  <Label text="1st" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="20.0" top="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <TextField fx:id="backGroundTF_01" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="80.0" right="40.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </TextField>
+                                                                  <TextField fx:id="backGroundTF_02" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="80.0" right="40.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </TextField>
+                                                                  <TextField fx:id="backGroundTF_03" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="80.0" right="40.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </TextField>
+                                                                  <TextField fx:id="backGroundTF_04" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="80.0" right="40.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </TextField>
+                                                                  <TextField fx:id="backGroundTF_05" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="80.0" right="40.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </TextField>
+                                                                  <TextField fx:id="backGroundTF_06" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="80.0" right="40.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </TextField>
+                                                                  <TextField fx:id="backGroundTF_07" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="80.0" right="40.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </TextField>
+                                                                  <Label layoutX="30.0" layoutY="25.0" text="2nd" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="20.0" top="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label layoutX="30.0" layoutY="25.0" text="3rd" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="20.0" top="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label layoutX="30.0" layoutY="25.0" text="4th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="20.0" top="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label layoutX="30.0" layoutY="25.0" text="5th" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="20.0" top="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label layoutX="30.0" layoutY="25.0" text="6th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="20.0" top="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label layoutX="30.0" layoutY="25.0" text="7th" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="20.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label layoutX="30.0" layoutY="25.0" text="8th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="20.0" top="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <ProgressBar fx:id="backGroundElemBar_T4_00" prefHeight="36.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="backGroundElemBar_T4_001" layoutX="10.0" layoutY="50.0" prefHeight="36.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="backGroundElemBar_T4_002" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="backGroundElemBar_T4_003" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="backGroundElemBar_T4_004" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="backGroundElemBar_T4_005" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="backGroundElemBar_T4_006" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <ProgressBar fx:id="backGroundElemBar_T4_007" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="15.0" />
+                                                                     </GridPane.margin>
+                                                                  </ProgressBar>
+                                                                  <Button fx:id="barIncreUp_T4_011" disable="true" mnemonicParsing="false" prefHeight="48.0" prefWidth="54.0" text="+" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="55.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreD_T4_011" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreUp_T4_012" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="55.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreD_T4_012" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreUp_T4_013" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="55.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreD_T4_013" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreUp_T4_014" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="55.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreD_T4_014" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreUp_T4_015" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="55.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreD_T4_015" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreUp_T4_016" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="55.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreD_T4_016" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreUp_T4_017" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="55.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreD_T4_017" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreUp_T4_018" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="55.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Button fx:id="barIncreD_T4_018" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Button>
+                                                                  <Label fx:id="charBackgroundLabel_T4_0" text="0/5" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label fx:id="charBackgroundLabel_T4_01" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label fx:id="charBackgroundLabel_T4_02" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label fx:id="charBackgroundLabel_T4_03" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label fx:id="charBackgroundLabel_T4_04" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label fx:id="charBackgroundLabel_T4_05" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label fx:id="charBackgroundLabel_T4_06" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label fx:id="charBackgroundLabel_T4_07" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                                                     <GridPane.margin>
+                                                                        <Insets bottom="5.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                               </children>
+                                                            </GridPane>
+                                                         </children>
+                                                      </VBox>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                          <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                                             <content>
+                                              <AnchorPane>
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="175.0" text="Character Exp:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="215.0" />
+                                                      <Label fx:id="char_ecp_disp0" layoutX="14.0" layoutY="235.0" text="00" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="235.0" />
+                                                      <Button fx:id="spendExpB_T4" layoutX="186.0" layoutY="245.0" mnemonicParsing="false" text="Spend Exp" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="186.0" />
+                                                      <Button fx:id="cancelSpendB_T4" cancelButton="true" disable="true" layoutX="358.0" layoutY="245.0" mnemonicParsing="false" text="Cancel" visible="false" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="186.0" />
+                                                      <TextArea fx:id="promptDisplayTA_T4" editable="false" prefHeight="200.0" prefWidth="922.0" wrapText="true" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="0.0">
+                                                         <padding>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </padding>
+                                                      </TextArea>
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </ScrollPane>
+                                      </items>
+                                    </SplitPane>
                                  </children>
                               </AnchorPane>
                           </content>
@@ -351,7 +1453,7 @@
                                  <children>
                                     <Accordion prefHeight="851.0" prefWidth="930.0">
                                       <panes>
-                                        <TitledPane animated="false" prefHeight="250.0" prefWidth="930.0" text="Background/ Bio">
+                                        <TitledPane animated="false" prefHeight="250.0" prefWidth="930.0" text="Character Bio">
                                              <content>
                                                 <ScrollPane fitToWidth="true">
                                                    <content>
@@ -383,6 +1485,18 @@
                                                 <ScrollPane fitToWidth="true">
                                                    <content>
                                                       <TextArea fx:id="fociText" prefHeight="160.0" prefWidth="884.0" wrapText="true" />
+                                                   </content>
+                                                </ScrollPane>
+                                             </content>
+                                             <padding>
+                                                <Insets top="25.0" />
+                                             </padding>
+                                          </TitledPane>
+                                          <TitledPane animated="false" layoutX="18.0" layoutY="69.0" prefWidth="930.0" text="Backgrounds">
+                                             <content>
+                                                <ScrollPane fitToWidth="true">
+                                                   <content>
+                                                      <TextArea fx:id="backgroundsText" prefWidth="930.0" wrapText="true" />
                                                    </content>
                                                 </ScrollPane>
                                              </content>

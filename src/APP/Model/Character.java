@@ -8,6 +8,7 @@ public class Character {
     String Name, Player, Chronicle, Nature, Demeanor,Essence,
             Affiliation,Sect,Concept;
 
+
     public Character() {
         Spheres = new Spheres();
         Advantages = new Advantages();
