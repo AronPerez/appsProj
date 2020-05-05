@@ -11,4 +11,7 @@ public class Advantages {
         Willpower = new Element(0);
 
     }
+    public String toString(){
+        return null;
+    }
 }
