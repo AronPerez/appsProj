@@ -1,13 +1,14 @@
 package APP.Controller;
 
-import APP.Model.*;
+import APP.Model.Character;
 import javafx.event.*;
 import javafx.fxml.FXML;
+import java.awt.event.MouseEvent;
 import java.io.IOException;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Controller {
+
+    Character CharSheet = new Character();
 
 //    @FXML
 //    Button attr_str_up;
@@ -26,12 +27,15 @@ public class Controller {
 
     @FXML
     void handleButton(ActionEvent event) throws IOException {
-        Pattern pattern = Pattern.compile("id=[a-z_]+");
-        String buttonInfo = event.getSource().toString();
-        Matcher matcher = pattern.matcher(buttonInfo);
+        // getting FXID of button
+        var buttonInfo = event.getSource().toString().replaceAll(",","");
+        var ID = buttonInfo.substring(buttonInfo.indexOf("id=")+3).split(" ")[0];
 
-//        int indexOfID = buttonInfo.indexOf("id=");
-//        String ID = buttonInfo.substring(indexOfID+3).split(" ")[0].r;
-        System.out.print("sajdajksdajks");
+        var eClass = ID.split("_")[0];
+        var eType = ID.split("_")[1];
+        var eAction = ID.split("_")[2];
+
     }
+
+
 }

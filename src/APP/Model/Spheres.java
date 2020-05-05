@@ -18,4 +18,8 @@ public class Spheres {
         Time = new Element(0);
 
     }
+
+    public String toString(){
+        return null;
+    }
 }
