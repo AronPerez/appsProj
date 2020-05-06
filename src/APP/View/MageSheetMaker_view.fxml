@@ -2272,7 +2272,7 @@
                                                                 <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
                                                               </rowConstraints>
                                                                <children>
-                                                                  <ProgressBar fx:id="char_aree_bar" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                                  <ProgressBar fx:id="advn_arete_bar" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                                                      <GridPane.margin>
                                                                         <Insets top="20.0" />
                                                                      </GridPane.margin>
@@ -2287,12 +2287,12 @@
                                                                         <Insets top="20.0" />
                                                                      </GridPane.margin>
                                                                   </Label>
-                                                                  <Button fx:id="barIncreUp_T4_010" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                  <Button fx:id="advn_arete_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                                      <GridPane.margin>
                                                                         <Insets left="100.0" />
                                                                      </GridPane.margin>
                                                                   </Button>
-                                                                  <Button fx:id="barIncreD_T4_010" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="advn_arete_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                                </children>
                                                                <VBox.margin>
                                                                   <Insets top="10.0" />
