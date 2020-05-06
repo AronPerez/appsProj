@@ -3,12 +3,11 @@ package APP.Controller;
 import APP.Model.Character;
 import javafx.event.*;
 import javafx.fxml.FXML;
-import java.awt.event.MouseEvent;
 import java.io.IOException;
 
 public class Controller {
 
-    Character CharSheet = new Character();
+    public Character CharSheet = new Character();
 
 //    @FXML
 //    Button attr_str_up;
@@ -29,12 +28,34 @@ public class Controller {
     void handleButton(ActionEvent event) throws IOException {
         // getting FXID of button
         var buttonInfo = event.getSource().toString().replaceAll(",","");
-        var ID = buttonInfo.substring(buttonInfo.indexOf("id=")+3).split(" ")[0];
+        var ID = buttonInfo.substring(buttonInfo.indexOf("id=")+3).split(" ")[0].split("_");
 
-        var eClass = ID.split("_")[0];
-        var eType = ID.split("_")[1];
-        var eAction = ID.split("_")[2];
+        // element identification variables (pulled from FXID of button)
+        // attr
+        String eClass = ID[0];
+        // str
+        String eType = ID[1];
+        // up
+        String eAction = ID[2];
 
+        switch(eClass) {
+            case "attr":
+                this.CharSheet.Attributes.ProcessDots(eType, eAction);
+                break;
+            case "sphr":
+                this.CharSheet.Spheres.ProcessDots(eType, eAction);
+                break;
+            case "abil":
+                this.CharSheet.Abilities.ProcessDots(eType, eAction);
+                break;
+            case "advn":
+                this.CharSheet.Advantages.ProcessDots(eType, eAction);
+                break;
+            default:
+                System.out.print("\nDEFAULTED\n");
+        }
+
+//        System.out.println(eClass +", "+ eType +", "+ eAction);
     }
 
 

@@ -1,7 +1,7 @@
 package APP.Model;
 
 public class Element {
-    int Dots;
+    public int Dots;
 
     public Element(int dots) {
         Dots = dots;
@@ -13,6 +13,10 @@ public class Element {
 
     public void addDot() {
         this.Dots++;
+    }
+
+    public void removeDot() {
+        this.Dots--;
     }
 
     public void setDots(int num) {
