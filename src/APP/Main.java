@@ -11,8 +11,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("View/MageSheetMaker_view.fxml"));
-            Scene scene = new Scene(root,800,800);
+            Parent root = FXMLLoader.load(getClass().getResource("view/MageSheetMaker_view.fxml"));
+            Scene scene = new Scene(root,400,400);
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch(Exception e) {
