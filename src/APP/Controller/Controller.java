@@ -12,8 +12,8 @@ public class Controller {
 
     public Character CharSheet = new Character();
 
-    public ProgressBar attr_str_bar ,attr_dex_bar, attr_stam_bar;
-//            attr_stam_bar,attr_char_bar,attr_app_bar,
+    public ProgressBar attr_str_bar ,attr_dex_bar, attr_stam_bar, attr_char_bar;
+//            attr_stam_bar,attr_app_bar,
 //            attr_perc_bar,attr_int_bar,attr_wit_bar, sphr_time_bar, sphr_mind_bar, sphr_prime_bar,
 //            sphr_forces_bar, sphr_life_bar, sphr_corr_bar, sphr_ent_bar,abil_alrt_bar,abil_art_bar,abil_ath_bar,
 //            abil_awar_bar,abil_bra_bar, abil_emp_bar,abil_expr_bar,abil_inti_bar,abil_lead_bar,abil_stre_bar,
@@ -32,14 +32,18 @@ public class Controller {
             case "dex":
                 attr_dex_bar.setProgress((double)(Value)/5);
                 break;
+            case "char":
+            case "chara":
+                attr_char_bar.setProgress((double)(Value)/5);
+                break;
 
         }
     }
 
     @FXML
     void handleButton(ActionEvent event) throws IOException {
-
         int tempDots = 0;
+
         // determining which button is pressed
         // i.e. - attr_str_up
         var buttonInfo = event.getSource().toString().replaceAll(",", "");
