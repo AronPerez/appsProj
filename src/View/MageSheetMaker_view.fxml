@@ -1369,14 +1369,14 @@
                                                             <Insets bottom="20.0" />
                                                          </GridPane.margin>
                                                       </ProgressBar>
-                                                      <Label fx:id="charStatElemLabel_T2_1" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                      <Label fx:id="charStatElemLabel_T2_2" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                                                      <Label fx:id="charStatElemLabel_T2_3" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                      <Label fx:id="charStatElemLabel_T2_6" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                      <Label fx:id="charStatElemLabel_T2_5" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                                                      <Label fx:id="charStatElemLabel_T2_4" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                      <Label fx:id="charStatElemLabel_T2_7" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                      <Label fx:id="charStatElemLabel_T2_8" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                      <Label fx:id="str" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <Label fx:id="dex" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                      <Label fx:id="stam" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                      <Label fx:id="app" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                                                      <Label fx:id="man" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                                                      <Label fx:id="chara" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <Label fx:id="perc" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                                                      <Label fx:id="inti" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
                                                       <Label fx:id="charStatElemLabel_T2_9" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
                                                       <Button fx:id="attr_str_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                       <Button fx:id="attr_dex_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />

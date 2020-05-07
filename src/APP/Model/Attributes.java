@@ -25,77 +25,76 @@ public class Attributes{
     }
 
     public int ProcessDots(String eType, String eAction) {
-
+            System.out.println("ASDASDASD");
             switch(eType) {
                 case "str":
-                    if (eAction.contains("up")) {
+                    if (eAction.contains("up") && Strength < 4) {
                         Strength++;
                     }
-                    else if (eAction.contains("down")) {
+                   if(eAction.contains("down")&& Strength > 1) {
                         Strength--;
                     }
                     return Strength;
                 case "dex":
-                    if (eAction.contains("up")) {
+                    if (eAction.contains("up") && Dexterity < 4) {
                         Dexterity++;
-                    }
-                    else if (eAction.contains("down")) {
+                    } else if (eAction.contains("down") && Dexterity > 1) {
                         Dexterity--;
                     }
                     return Dexterity;
                 case "stam":
-                    if (eAction.contains("up")) {
+                    if (eAction.contains("up") && Stamina < 4) {
                         Stamina++;
                     }
-                    else if (eAction.contains("down")) {
+                    else if (eAction.contains("down") && Stamina > 1) {
                         Stamina--;
                     }
                     return Stamina;
                 case "char":
-                    if (eAction.contains("up")) {
+                    if (eAction.contains("up") && Charisma < 4) {
                         Charisma++;
                     }
-                    else if (eAction.contains("down")) {
+                    else if (eAction.contains("down") && Charisma > 1) {
                         Charisma--;
                     }
                    return Charisma;
                 case "man":
-                    if (eAction.contains("up")) {
+                    if (eAction.contains("up") && Manipulation < 4) {
                         Manipulation++;
                     }
-                    else if (eAction.contains("down")) {
+                    else if (eAction.contains("down") && Manipulation > 1) {
                         Manipulation--;
                     }
                    return Manipulation;
                 case "app":
-                    if (eAction.contains("up")) {
+                    if (eAction.contains("up") && Appearances < 4) {
                         Appearances++;
                     }
-                    else if (eAction.contains("down")) {
+                    else if (eAction.contains("down") && Appearances > 1) {
                         Appearances--;
                     }
                    return Appearances;
                 case "perc":
-                    if (eAction.contains("up")) {
+                    if (eAction.contains("up") && Perception < 4) {
                         Perception++;
                     }
-                    else if (eAction.contains("down")) {
+                    else if (eAction.contains("down") && Perception > 1) {
                         Perception--;
                     }
                    return Perception;
                 case "int":
-                    if (eAction.contains("up")) {
+                    if (eAction.contains("up") && Intelligence < 4) {
                         Intelligence++;
                     }
-                    else if (eAction.contains("down")) {
+                    else if (eAction.contains("down") && Intelligence > 1) {
                         Intelligence--;
                     }
                    return Intelligence;
                 case "wits":
-                    if (eAction.contains("up")) {
+                    if (eAction.contains("up") && Wits < 4) {
                         Wits++;
                     }
-                    else if (eAction.contains("down")) {
+                    else if (eAction.contains("down") && Wits > 1) {
                         Wits--;
                     }
                    return Wits;
