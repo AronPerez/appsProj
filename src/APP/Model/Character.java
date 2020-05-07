@@ -11,7 +11,8 @@ public class Character {
     public Advantages Advantages;
 
     public String Name, Player, Chronicle, Nature, Demeanor,
-            Essence,Affiliation,Sect,Concept,currentXP, maxXP;
+            Essence,Affiliation,Sect,Concept;
+    public int currentXP , maxXP;
 
     public Character() {
         Spheres = new Spheres();
@@ -19,7 +20,8 @@ public class Character {
         Attributes = new Attributes();
         Abilities = new Abilities();
         Name = null;
-
+        currentXP = 0;
+        maxXP = 6;
     }
 
     public String toString(){
