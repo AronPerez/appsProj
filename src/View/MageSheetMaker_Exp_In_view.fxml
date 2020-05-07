@@ -10,6 +10,6 @@
       <Button layoutX="331.0" layoutY="88.0" mnemonicParsing="false" text="Apply" />
       <Button cancelButton="true" layoutX="431.0" layoutY="88.0" mnemonicParsing="false" text="Cancel" />
       <Label layoutX="14.0" layoutY="31.0" text="Character Exp to be applied:" />
-      <TextField fx:id="ExpInField" layoutX="331.0" layoutY="23.0" prefWidth="200.0" />
+      <TextField fx:id="ExpInField" layoutX="331.0" layoutY="23.0" onAction="#handleEXP" prefWidth="200.0" />
    </children>
 </AnchorPane>

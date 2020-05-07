@@ -19,25 +19,23 @@ public class Advantages{
         System.out.println("PROCESSING "+ eType + " , " + eAction);
         switch(eType) {
             case "arete":
-                if (eAction.contains("up")) {
+                if (eAction.contains("up") && Arete < 4) {
                     Arete++;
-
-
-                } else if (eAction.contains("down")) {
+                } else if (eAction.contains("down") && Arete > 0) {
                     Arete--;
                 }
                return Arete;
             case "health":
-                if (eAction.contains("up")) {
+                if (eAction.contains("up") && Health < 4) {
                     Health++;
-                } else if (eAction.contains("down")) {
+                } else if (eAction.contains("down") && Health > 0) {
                     Health--;
                 }
                return Health;
             case "will":
-                if (eAction.contains("up")) {
+                if (eAction.contains("up") && Willpower < 4) {
                     Willpower++;
-                } else if (eAction.contains("down")) {
+                } else if (eAction.contains("down") && Willpower > 0) {
                     Willpower--;
                 }
                return Willpower;

@@ -18,7 +18,7 @@ public class ControllerPopup {
 
     void handleButton(ActionEvent event) throws IOException {
 
-        String input = ExpInField.getText();
+        System.out.print("\nfgdhfghfg\n");
     }
 
 }
