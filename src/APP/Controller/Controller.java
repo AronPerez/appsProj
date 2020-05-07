@@ -13,13 +13,11 @@ public class Controller {
 
     public Character CharSheet = new Character();
 
-<<<<<<< HEAD
     @FXML
     private TextField ExpInField;
     @FXML
     private Button endGame, goGame;
 
-=======
     public ProgressBar attr_str_bar ,attr_dex_bar, attr_stam_bar;
 //            attr_stam_bar,attr_char_bar,attr_app_bar,
 //            attr_perc_bar,attr_int_bar,attr_wit_bar, sphr_time_bar, sphr_mind_bar, sphr_prime_bar,
@@ -43,8 +41,6 @@ public class Controller {
 
         }
     }
->>>>>>> 7ac3994be4cde5cecab9e9d436d7a0fb75edf90e
-
     @FXML
     void handleButton(ActionEvent event) throws IOException {
 
