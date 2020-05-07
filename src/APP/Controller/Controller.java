@@ -5,15 +5,30 @@ import javafx.event.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
-
+import APP.Main.*;
 import java.awt.event.TextEvent;
 import java.io.IOException;
 
 public class Controller {
 
+
     public Character CharSheet = new Character();
 
-    public ProgressBar attr_str_bar ,attr_dex_bar, attr_stam_bar, attr_char_bar, abil_sci_bar,
+    @FXML
+    public TextField ExpInField;
+
+    @FXML
+    void handleApply(ActionEvent event){
+        var EXP = ExpInField.getText();
+        System.out.print(EXP);
+    }
+    @FXML
+    void handleCancel(ActionEvent event){
+        System.out.print("CANCEL\n");
+        return;
+    }
+    @FXML
+    private ProgressBar attr_str_bar ,attr_dex_bar, attr_stam_bar, attr_char_bar, abil_sci_bar,
             attr_app_bar, attr_perc_bar,attr_int_bar,attr_wit_bar, sphr_time_bar, sphr_mind_bar, sphr_prime_bar;
             //sphr_forces_bar sphr_life_bar, sphr_corr_bar, sphr_ent_bar
 //            abil_alrt_bar,abil_art_bar,abil_ath_bar,
@@ -22,12 +37,10 @@ public class Controller {
 //            abil_mel_bar, abil_rese_bar,abil_stea_bar,abil_surv_bar,abil_tech_bar,abil_aca_bar,abil_comp_bar,
 //            abil_cosm_bar, abil_enig_bar,abil_esot_bar,abil_inv_bar,abil_law_bar,abil_occ_bar,abil_pol_bar;
 
-    void handleExp(TextEvent event) {
-        System.out.print("\nghdhgftghty\n");
-    }
+
 
     void updateBar(int Value, String eType) {
-        double barVal = (double)(Value)/5;
+        double barVal = (double)(Value++)/5;
         switch(eType) {
             case "str":
                 attr_str_bar.setProgress(barVal);
@@ -181,8 +194,6 @@ public class Controller {
         String eType = ID[1];
         // i.e. - up
         String eAction = ID[2];
-
-        // CharSheet.maxXP = INPUT
 
         // changing character current XP
         if (eAction == "up" && CharSheet.currentXP > 0) {
