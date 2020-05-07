@@ -5,11 +5,17 @@ import javafx.event.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class Controller {
 
     public Character CharSheet = new Character();
+
+    @FXML
+    private TextField ExpInField;
+    @FXML
+    private Button endGame, goGame;
 
 
     @FXML
@@ -18,6 +24,9 @@ public class Controller {
         // i.e. - attr_str_up
         var buttonInfo = event.getSource().toString().replaceAll(",", "");
         var ID = buttonInfo.substring(buttonInfo.indexOf("id=")+3).split(" ")[0].split("_");
+
+        String input = ExpInField.getText();
+
 
         // turning button info to variables
         // i.e. - attr
