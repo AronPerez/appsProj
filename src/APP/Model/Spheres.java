@@ -1,87 +1,86 @@
 package APP.Model;
 
-public class Spheres {
+public class Spheres{
 
-    public Element Correspondence, Entropy, Forces, Life, Matter, Mind, Prime,
+    public int Correspondence, Entropy, Forces, Life, Matter, Mind, Prime,
             Spirit, Time;
 
     public Spheres() {
 
-        Correspondence = new Element(0);
-        Entropy = new Element(0);
-        Forces = new Element(0);
-        Life = new Element(0);
-        Matter = new Element(0);
-        Mind = new Element(0);
-        Prime = new Element(0);
-        Spirit = new Element(0);
-        Time = new Element(0);
-
+        Correspondence = 0;;
+        Entropy = 0;;
+        Forces = 0;;
+        Life = 0;;
+        Matter = 0;;
+        Mind = 0;;
+        Prime = 0;;
+        Spirit = 0;;
+        Time = 0;;
     }
 
     public String toString(){
-        return null;
+        return "SPHERES";
     }
 
     public void ProcessDots(String eType, String eAction) {
 
         switch(eType) {
             case "corr":
-                if (eAction == "up") {
-                    Correspondence.addDot();
-                } else if (eAction == "down") {
-                    Correspondence.removeDot();
+                if (eAction.contains("up")) {
+                    Correspondence++;
+                } else if (eAction.contains("down")) {
+                    Correspondence--;
                 }
             case "ent":
-                if (eAction == "up") {
-                    Entropy.addDot();
-                } else if (eAction == "down") {
-                    Entropy.removeDot();
+                if (eAction.contains("up")) {
+                    Entropy++;
+                } else if (eAction.contains("down")) {
+                    Entropy--;
                 }
             case "forces":
-                if (eAction == "up") {
-                    Forces.addDot();
-                } else if (eAction == "down") {
-                    Forces.removeDot();
+                if (eAction.contains("up")) {
+                    Forces++;
+                } else if (eAction.contains("down")) {
+                    Forces--;
                 }
             case "life":
-                if (eAction == "up") {
-                    Life.addDot();
-                } else if (eAction == "down") {
-                    Life.removeDot();
+                if (eAction.contains("up")) {
+                    Life++;
+                } else if (eAction.contains("down")) {
+                    Life--;
                 }
             case "matter":
-                if (eAction == "up") {
-                    Matter.addDot();
-                } else if (eAction == "down") {
-                    Matter.removeDot();
+                if (eAction.contains("up")) {
+                    Matter++;
+                } else if (eAction.contains("down")) {
+                    Matter--;
                 }
             case "mind":
-                if (eAction == "up") {
-                    Mind.addDot();
-                } else if (eAction == "down") {
-                    Mind.removeDot();
+                if (eAction.contains("up")) {
+                    Mind++;
+                } else if (eAction.contains("down")) {
+                    Mind--;
                 }
             case "prime":
-                if (eAction == "up") {
-                    Prime.addDot();
-                } else if (eAction == "down") {
-                    Prime.removeDot();
+                if (eAction.contains("up")) {
+                    Prime++;
+                } else if (eAction.contains("down")) {
+                    Prime--;
                 }
             case "spirit":
-                if (eAction == "up") {
-                    Spirit.addDot();
-                } else if (eAction == "down") {
-                    Spirit.removeDot();
+                if (eAction.contains("up")) {
+                    Spirit++;
+                } else if (eAction.contains("down")) {
+                    Spirit--;
                 }
             case "time":
-                if (eAction == "up") {
-                    Time.addDot();
-                } else if (eAction == "down") {
-                    Time.removeDot();
+                if (eAction.contains("up")) {
+                    Time++;
+                } else if (eAction.contains("down")) {
+                    Time--;
                 }
             default:
-                System.out.print("\nDEFAULTED\n");
+                System.out.print("\nBUTTON DEFAULTED\n");
 
         }
     }

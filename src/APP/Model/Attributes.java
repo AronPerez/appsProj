@@ -2,94 +2,97 @@ package APP.Model;
 
 public class Attributes{
 
-        public Element Strength, Dexterity, Stamina,Charisma,Manipulation,
+        public int Strength, Dexterity, Stamina,Charisma,Manipulation,
                 Appearances,Perception,Intelligence,Wits;
-        public void Attributes() {
 
-            Strength = new Element(1);
-            Dexterity = new Element(1);
-            Stamina = new Element(1);
-            Charisma = new Element(1);
-            Manipulation = new Element(1);
-            Appearances = new Element(1);
-            Perception = new Element(1);
-            Intelligence = new Element(1);
-            Wits = new Element(1);
+        public Attributes() {
+
+            Strength = 1;
+            Dexterity = 1;
+            Stamina = 1;
+            Charisma = 1;
+            Manipulation = 1;
+            Appearances = 1;
+            Perception = 1;
+            Intelligence = 1;
+            Wits = 1;
 
     }
 
 
     public String toString(){
-        return null;
+        return "ATTRIBUTES";
     }
 
     public void ProcessDots(String eType, String eAction) {
+        System.out.print("ASDASDSA");
             switch(eType) {
                 case "str":
-                    if (eAction == "up") {
-                        Strength.addDot();
+                    if (eAction.contains("up")) {
+
+                        Strength++;
                     }
-                    else if (eAction == "down") {
-                        Strength.removeDot();
+                    else if (eAction.contains("down")) {
+                        Strength--;
                     }
                 case "dex":
-                    if (eAction == "up") {
-                        Dexterity.addDot();
+                    if (eAction.contains("up")) {
+                        Dexterity++;
                     }
-                    else if (eAction == "down") {
-                        Dexterity.removeDot();
+                    else if (eAction.contains("down")) {
+                        Dexterity--;
                     }
                 case "stam":
-                    if (eAction == "up") {
-                        Stamina.addDot();
+                    if (eAction.contains("up")) {
+                        Stamina++;
                     }
-                    else if (eAction == "down") {
-                        Stamina.removeDot();
+                    else if (eAction.contains("down")) {
+                        Stamina--;
                     }
                 case "char":
-                    if (eAction == "up") {
-                        Charisma.addDot();
+                    if (eAction.contains("up")) {
+                        Charisma++;
                     }
-                    else if (eAction == "down") {
-                        Charisma.removeDot();
+                    else if (eAction.contains("down")) {
+                        Charisma--;
                     }
                 case "man":
-                    if (eAction == "up") {
-                        Manipulation.addDot();
+                    if (eAction.contains("up")) {
+                        Manipulation++;
                     }
-                    else if (eAction == "down") {
-                        Manipulation.removeDot();
+                    else if (eAction.contains("down")) {
+                        Manipulation--;
                     }
                 case "app":
-                    if (eAction == "up") {
-                        Appearances.addDot();
+                    if (eAction.contains("up")) {
+                        Appearances++;
                     }
-                    else if (eAction == "down") {
-                        Appearances.removeDot();
+                    else if (eAction.contains("down")) {
+                        Appearances--;
                     }
                 case "perc":
-                    if (eAction == "up") {
-                        Perception.addDot();
+                    if (eAction.contains("up")) {
+                        Perception++;
                     }
-                    else if (eAction == "down") {
-                        Perception.removeDot();
+                    else if (eAction.contains("down")) {
+                        Perception--;
                     }
                 case "int":
-                    if (eAction == "up") {
-                        Intelligence.addDot();
+                    if (eAction.contains("up")) {
+                        Intelligence++;
                     }
-                    else if (eAction == "down") {
-                        Intelligence.removeDot();
+                    else if (eAction.contains("down")) {
+                        Intelligence--;
                     }
                 case "wits":
-                    if (eAction == "up") {
-                        Wits.addDot();
+                    if (eAction.contains("up")) {
+                        Wits++;
                     }
-                    else if (eAction == "down") {
-                        Wits.removeDot();
+                    else if (eAction.contains("down")) {
+                        Wits--;
                     }
                 default:
-                    System.out.print("\nDEFAULTED\n");
+                    System.out.print("\nBUTTON DEFAULTED\n");
 
             }
 

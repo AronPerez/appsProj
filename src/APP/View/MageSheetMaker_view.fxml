@@ -138,39 +138,39 @@
                                                             <Insets left="10.0" top="5.0" />
                                                          </GridPane.margin>
                                                       </Label>
-                                                      <TextField fx:id="charNameTF" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Name" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="playerNameTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Player" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="chronicleTF" layoutX="10.0" layoutY="151.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Chronicle" layoutX="10.0" layoutY="151.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="ConceptTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Concept" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="NatureTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Nature" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="DemeanorTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Demeanor" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <ChoiceBox fx:id="avatarCB" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <ChoiceBox fx:id="affiliationCB" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
-                                                      <ChoiceBox fx:id="sectCB" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <ChoiceBox fx:id="Essence" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <ChoiceBox fx:id="Affiliation" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
+                                                      <ChoiceBox fx:id="Sect" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                    </children>
                                                 </GridPane>
                                                 <Separator prefWidth="200.0">

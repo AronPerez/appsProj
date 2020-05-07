@@ -1,8 +1,8 @@
 package APP.Model;
 
-public class Abilities {
+public class Abilities{
 
-    Element Alertness, Art, Athletics, Awareness, Brawl, Empathy, Expression, Intimidation,
+    public int Alertness, Art, Athletics, Awareness, Brawl, Empathy, Expression, Intimidation,
             Leadership, Streetwise, Subterfuge, Crafts, Drive, Etiquette, Firearms,
             MartialArts, Meditation, Melee, Research, Stealth, Survival, Technology,
             Academics, Computer, Cosmology, Enigma, Esoterica, Investigation, Law,
@@ -10,39 +10,39 @@ public class Abilities {
 
     public Abilities() {
 
-        Drive = new Element(0);
-        Etiquette = new Element(0);
-        Firearms = new Element(0);
-        MartialArts = new Element(0);
-        Meditation = new Element(0);
-        Melee = new Element(0);
-        Research = new Element(0);
-        Stealth = new Element(0);
-        Survival = new Element(0);
-        Technology = new Element(0);
-        Academics = new Element(0);
-        Computer = new Element(0);
-        Cosmology = new Element(0);
-        Enigma = new Element(0);
-        Esoterica = new Element(0);
-        Investigation = new Element(0);
-        Law = new Element(0);
-        Medicine = new Element(0);
-        Occult = new Element(0);
-        Politics = new Element(0);
-        Science = new Element(0);
-        Crafts = new Element(0);
-        Alertness = new Element(0);
-        Art = new Element(0);
-        Athletics = new Element(0);
-        Awareness = new Element(0);
-        Brawl = new Element(0);
-        Empathy = new Element(0);
-        Expression = new Element(0);
-        Intimidation = new Element(0);
-        Leadership = new Element(0);
-        Streetwise = new Element(0);
-        Subterfuge = new Element(0);
+        Drive =  0;
+        Etiquette =  0;
+        Firearms =  0;
+        MartialArts =  0;
+        Meditation =  0;
+        Melee =  0;
+        Research =  0;
+        Stealth =  0;
+        Survival =  0;
+        Technology =  0;
+        Academics =  0;
+        Computer =  0;
+        Cosmology =  0;
+        Enigma =  0;
+        Esoterica =  0;
+        Investigation =  0;
+        Law =  0;
+        Medicine =  0;
+        Occult =  0;
+        Politics =  0;
+        Science =  0;
+        Crafts =  0;
+        Alertness =  0;
+        Art =  0;
+        Athletics =  0;
+        Awareness =  0;
+        Brawl =  0;
+        Empathy =  0;
+        Expression =  0;
+        Intimidation =  0;
+        Leadership =  0;
+        Streetwise =  0;
+        Subterfuge =  0;
 
     }
     public String toString(){
@@ -52,205 +52,205 @@ public class Abilities {
     public void ProcessDots(String eType, String eAction) {
         switch (eType) {
             case "driv":
-                if (eAction == "up") {
-                    Drive.addDot();
-                } else if (eAction == "down") {
-                    Drive.removeDot();
+                if (eAction.contains("up")) {
+                    Drive++;
+                } else if (eAction.contains("down")) {
+                    Drive--;
                 }
             case "etiq":
-                if (eAction == "up") {
-                    Etiquette.addDot();
-                } else if (eAction == "down") {
-                    Etiquette.removeDot();
+                if (eAction.contains("up")) {
+                    Etiquette++;
+                } else if (eAction.contains("down")) {
+                    Etiquette--;
                 }
             case "fire":
-                if (eAction == "up") {
-                    Firearms.addDot();
-                } else if (eAction == "down") {
-                    Firearms.removeDot();
+                if (eAction.contains("up")) {
+                    Firearms++;
+                } else if (eAction.contains("down")) {
+                    Firearms--;
                 }
             case "mart":
-                if (eAction == "up") {
-                    MartialArts.addDot();
-                } else if (eAction == "down") {
-                    MartialArts.removeDot();
+                if (eAction.contains("up")) {
+                    MartialArts++;
+                } else if (eAction.contains("down")) {
+                    MartialArts--;
                 }
             case "med":
-                if (eAction == "up") {
-                    Meditation.addDot();
-                } else if (eAction == "down") {
-                    Meditation.removeDot();
+                if (eAction.contains("up")) {
+                    Meditation++;
+                } else if (eAction.contains("down")) {
+                    Meditation--;
                 }
             case "mel":
-                if (eAction == "up") {
-                    Melee.addDot();
-                } else if (eAction == "down") {
-                    Melee.removeDot();
+                if (eAction.contains("up")) {
+                    Melee++;
+                } else if (eAction.contains("down")) {
+                    Melee--;
                 }
             case "rese":
-                if (eAction == "up") {
-                    Research.addDot();
-                } else if (eAction == "down") {
-                    Research.removeDot();
+                if (eAction.contains("up")) {
+                    Research++;
+                } else if (eAction.contains("down")) {
+                    Research--;
                 }
             case "stea":
-                if (eAction == "up") {
-                    Stealth.addDot();
-                } else if (eAction == "down") {
-                    Stealth.removeDot();
+                if (eAction.contains("up")) {
+                    Stealth++;
+                } else if (eAction.contains("down")) {
+                    Stealth--;
                 }
             case "surv":
-                if (eAction == "up") {
-                    Survival.addDot();
-                } else if (eAction == "down") {
-                    Survival.removeDot();
+                if (eAction.contains("up")) {
+                    Survival++;
+                } else if (eAction.contains("down")) {
+                    Survival--;
                 }
             case "tech":
-                if (eAction == "up") {
-                    Technology.addDot();
-                } else if (eAction == "down") {
-                    Technology.removeDot();
+                if (eAction.contains("up")) {
+                    Technology++;
+                } else if (eAction.contains("down")) {
+                    Technology--;
                 }
             case "aca":
-                if (eAction == "up") {
-                    Academics.addDot();
-                } else if (eAction == "down") {
-                    Academics.removeDot();
+                if (eAction.contains("up")) {
+                    Academics++;
+                } else if (eAction.contains("down")) {
+                    Academics--;
                 }
             case "comp":
-                if (eAction == "up") {
-                    Computer.addDot();
-                } else if (eAction == "down") {
-                    Computer.removeDot();
+                if (eAction.contains("up")) {
+                    Computer++;
+                } else if (eAction.contains("down")) {
+                    Computer--;
                 }
             case "cosm":
-                if (eAction == "up") {
-                    Cosmology.addDot();
-                } else if (eAction == "down") {
-                    Cosmology.removeDot();
+                if (eAction.contains("up")) {
+                    Cosmology++;
+                } else if (eAction.contains("down")) {
+                    Cosmology--;
                 }
             case "enig":
-                if (eAction == "up") {
-                    Enigma.addDot();
-                } else if (eAction == "down") {
-                    Enigma.removeDot();
+                if (eAction.contains("up")) {
+                    Enigma++;
+                } else if (eAction.contains("down")) {
+                    Enigma--;
                 }
             case "esot":
-                if (eAction == "up") {
-                    Esoterica.addDot();
-                } else if (eAction == "down") {
-                    Esoterica.removeDot();
+                if (eAction.contains("up")) {
+                    Esoterica++;
+                } else if (eAction.contains("down")) {
+                    Esoterica--;
                 }
             case "inv":
-                if (eAction == "up") {
-                    Investigation.addDot();
-                } else if (eAction == "down") {
-                    Investigation.removeDot();
+                if (eAction.contains("up")) {
+                    Investigation++;
+                } else if (eAction.contains("down")) {
+                    Investigation--;
                 }
             case "law":
-                if (eAction == "up") {
-                    Law.addDot();
-                } else if (eAction == "down") {
-                    Law.removeDot();
+                if (eAction.contains("up")) {
+                    Law++;
+                } else if (eAction.contains("down")) {
+                    Law--;
                 }
             case "medi":
-                if (eAction == "up") {
-                    Medicine.addDot();
-                } else if (eAction == "down") {
-                    Medicine.removeDot();
+                if (eAction.contains("up")) {
+                    Medicine++;
+                } else if (eAction.contains("down")) {
+                    Medicine--;
                 }
             case "occ":
-                if (eAction == "up") {
-                    Occult.addDot();
-                } else if (eAction == "down") {
-                    Occult.removeDot();
+                if (eAction.contains("up")) {
+                    Occult++;
+                } else if (eAction.contains("down")) {
+                    Occult--;
                 }
             case "pol":
-                if (eAction == "up") {
-                    Politics.addDot();
-                } else if (eAction == "down") {
-                    Politics.removeDot();
+                if (eAction.contains("up")) {
+                    Politics++;
+                } else if (eAction.contains("down")) {
+                    Politics--;
                 }
             case "sci":
-                if (eAction == "up") {
-                    Science.addDot();
-                } else if (eAction == "down") {
-                    Science.removeDot();
+                if (eAction.contains("up")) {
+                    Science++;
+                } else if (eAction.contains("down")) {
+                    Science--;
                 }
             case "craft":
-                if (eAction == "up") {
-                    Crafts.addDot();
-                } else if (eAction == "down") {
-                    Crafts.removeDot();
+                if (eAction.contains("up")) {
+                    Crafts++;
+                } else if (eAction.contains("down")) {
+                    Crafts--;
                 }
             case "alrt":
-                if (eAction == "up") {
-                    Alertness.addDot();
-                } else if (eAction == "down") {
-                    Alertness.removeDot();
+                if (eAction.contains("up")) {
+                    Alertness++;
+                } else if (eAction.contains("down")) {
+                    Alertness--;
                 }
             case "art":
-                if (eAction == "up") {
-                    Art.addDot();
-                } else if (eAction == "down") {
-                    Art.removeDot();
+                if (eAction.contains("up")) {
+                    Art++;
+                } else if (eAction.contains("down")) {
+                    Art--;
                 }
             case "ath":
-                if (eAction == "up") {
-                    Athletics.addDot();
-                } else if (eAction == "down") {
-                    Athletics.removeDot();
+                if (eAction.contains("up")) {
+                    Athletics++;
+                } else if (eAction.contains("down")) {
+                    Athletics--;
                 }
             case "awar":
-                if (eAction == "up") {
-                    Awareness.addDot();
-                } else if (eAction == "down") {
-                    Awareness.removeDot();
+                if (eAction.contains("up")) {
+                    Awareness++;
+                } else if (eAction.contains("down")) {
+                    Awareness--;
                 }
             case "bra":
-                if (eAction == "up") {
-                    Brawl.addDot();
-                } else if (eAction == "down") {
-                    Brawl.removeDot();
+                if (eAction.contains("up")) {
+                    Brawl++;
+                } else if (eAction.contains("down")) {
+                    Brawl--;
                 }
             case "emp":
-                if (eAction == "up") {
-                    Empathy.addDot();
-                } else if (eAction == "down") {
-                    Empathy.removeDot();
+                if (eAction.contains("up")) {
+                    Empathy++;
+                } else if (eAction.contains("down")) {
+                    Empathy--;
                 }
             case "expr":
-                if (eAction == "up") {
-                    Expression.addDot();
-                } else if (eAction == "down") {
-                    Expression.removeDot();
+                if (eAction.contains("up")) {
+                    Expression++;
+                } else if (eAction.contains("down")) {
+                    Expression--;
                 }
             case "inti":
-                if (eAction == "up") {
-                    Intimidation.addDot();
-                } else if (eAction == "down") {
-                    Intimidation.removeDot();
+                if (eAction.contains("up")) {
+                    Intimidation++;
+                } else if (eAction.contains("down")) {
+                    Intimidation--;
                 }
             case "lead":
-                if (eAction == "up") {
-                    Leadership.addDot();
-                } else if (eAction == "down") {
-                    Leadership.removeDot();
+                if (eAction.contains("up")) {
+                    Leadership++;
+                } else if (eAction.contains("down")) {
+                    Leadership--;
                 }
             case "stre":
-                if (eAction == "up") {
-                    Streetwise.addDot();
-                } else if (eAction == "down") {
-                    Streetwise.removeDot();
+                if (eAction.contains("up")) {
+                    Streetwise++;
+                } else if (eAction.contains("down")) {
+                    Streetwise--;
                 }
             case "subt":
-                if (eAction == "up") {
-                    Subterfuge.addDot();
-                } else if (eAction == "down") {
-                    Subterfuge.removeDot();
+                if (eAction.contains("up")) {
+                    Subterfuge++;
+                } else if (eAction.contains("down")) {
+                    Subterfuge--;
                 }
             default:
-                System.out.print("\nDEFAULTED\n");
+                System.out.print("\nBUTTON DEFAULTED\n");
         }
     }
 }

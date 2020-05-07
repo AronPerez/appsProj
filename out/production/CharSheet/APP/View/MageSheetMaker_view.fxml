@@ -138,39 +138,39 @@
                                                             <Insets left="10.0" top="5.0" />
                                                          </GridPane.margin>
                                                       </Label>
-                                                      <TextField fx:id="charNameTF" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Name" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="playerNameTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Player" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="chronicleTF" layoutX="10.0" layoutY="151.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Chronicle" layoutX="10.0" layoutY="151.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="ConceptTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Concept" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="NatureTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Nature" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="DemeanorTF" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                      <TextField fx:id="Demeanor" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <ChoiceBox fx:id="avatarCB" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <ChoiceBox fx:id="affiliationCB" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
-                                                      <ChoiceBox fx:id="sectCB" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <ChoiceBox fx:id="Essence" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <ChoiceBox fx:id="Affiliation" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
+                                                      <ChoiceBox fx:id="Sect" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                    </children>
                                                 </GridPane>
                                                 <Separator prefWidth="200.0">
@@ -1378,24 +1378,24 @@
                                                       <Label fx:id="charStatElemLabel_T2_7" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
                                                       <Label fx:id="charStatElemLabel_T2_8" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
                                                       <Label fx:id="charStatElemLabel_T2_9" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                      <Button fx:id="attr_str_up" disable="true" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_dex_down" disable="true" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_stam_down" disable="true" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_char_up" disable="true" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_man_up" disable="true" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_app_up" disable="true" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_perc_up" disable="true" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_int_up" disable="true" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_wits_up" disable="true" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_str_down" disable="true" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_dex_up" disable="true" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_stam_up" disable="true" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_char_down" disable="true" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_man_down" disable="true" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_app_down" disable="true" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_perc_down" disable="true" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_int_down" disable="true" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_wits_down" disable="true" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_str_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_dex_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_stam_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_char_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_man_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_app_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_perc_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_int_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_wits_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_str_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_dex_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_stam_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_char_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_man_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_app_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_perc_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_int_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_wits_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                                                    </children>
                                                 </GridPane>
                                                 <TextArea fx:id="help_MathDisplay2" editable="false" focusTraversable="false" prefHeight="154.0" prefWidth="904.0" wrapText="true">
@@ -1577,79 +1577,79 @@
                                                                   </Text>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_alrt_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_alrt_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <ProgressBar prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                                                  <ProgressBar prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                                                  <ProgressBar fx:id="abil_alrt_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" />
+                                                                  <ProgressBar fx:id="abil_art_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                                  <ProgressBar fx:id="abil_ath_bar" prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                                  <ProgressBar fx:id="abil_awar_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                                  <ProgressBar fx:id="abil_bra_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                                                  <ProgressBar fx:id="abil_emp_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                                                  <ProgressBar fx:id="abil_expr_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                                                  <ProgressBar fx:id="abil_inti_bar" prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                                                  <ProgressBar fx:id="abil_lead_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                                                  <ProgressBar fx:id="abil_stre_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                                                  <ProgressBar fx:id="abil_subt_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_art_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_art_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_ath_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_ath_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_awar_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_awar_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_bra_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_bra_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_emp_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_emp_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_expr_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_expr_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_inti_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_inti_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_lead_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_lead_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_stre_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_stre_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_subt_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_subt_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                </children>
@@ -1787,79 +1787,79 @@
                                                                   </Text>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_craf_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_craf_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
-                                                                  <ProgressBar prefHeight="75.0" prefWidth="123.0" progress="0.0" GridPane.columnIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <ProgressBar prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                                                  <ProgressBar prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                                                  <ProgressBar fx:id="abil_craf_bar" prefHeight="75.0" prefWidth="123.0" progress="0.0" GridPane.columnIndex="2" />
+                                                                  <ProgressBar fx:id="abil_driv_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                                  <ProgressBar fx:id="abil_etiq_bar" prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                                  <ProgressBar fx:id="abil_fire_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                                  <ProgressBar fx:id="abil_mart_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                                                  <ProgressBar fx:id="abil_med_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                                                  <ProgressBar fx:id="abil_mel_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                                                  <ProgressBar fx:id="abil_rese_bar" prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                                                  <ProgressBar fx:id="abil_stea_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                                                  <ProgressBar fx:id="abil_surv_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                                                  <ProgressBar fx:id="abil_tech_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_driv_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_driv_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_etiq_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_etiq_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_fire_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_fire_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_mart_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_mart_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_med_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_med_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_mel_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_mel_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_rese_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_rese_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_stea_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_stea_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_surv_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_surv_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_tech_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_tech_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                </children>
@@ -1997,79 +1997,79 @@
                                                                   </Text>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_aca_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_aca_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <ProgressBar prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                                                  <ProgressBar prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                                                                  <ProgressBar fx:id="abil_aca_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" />
+                                                                  <ProgressBar fx:id="abil_comp_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                                  <ProgressBar fx:id="abil_cosm_bar" prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                                  <ProgressBar fx:id="abil_enig_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                                  <ProgressBar fx:id="abil_esot_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                                                  <ProgressBar fx:id="abil_inv_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                                                  <ProgressBar fx:id="abil_law_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                                                  <ProgressBar fx:id="abil_med_bar" prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                                                  <ProgressBar fx:id="abil_occ_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                                                  <ProgressBar fx:id="abil_pol_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                                                  <ProgressBar fx:id="abil_sci_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_comp_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_comp_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_cosm_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_cosm_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_enig_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_enig_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_esot_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_esot_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_inv_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_inv_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_law_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_law_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_med_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_med_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_occ_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_occ_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_pol_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_pol_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
                                                                      <children>
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_sci_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_sci_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                </children>
@@ -2169,47 +2169,47 @@
                                                                   <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1" />
                                                                   <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                                                                   <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                                                  <ProgressBar fx:id="statElemBar_T4_01" prefHeight="36.0" prefWidth="138.0" progress="0.01" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <ProgressBar fx:id="sphr_time_bar" prefHeight="36.0" prefWidth="138.0" progress="0.01" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                      <GridPane.margin>
                                                                         <Insets bottom="20.0" />
                                                                      </GridPane.margin>
                                                                   </ProgressBar>
-                                                                  <ProgressBar fx:id="statElemBar_T4_02" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <ProgressBar fx:id="sphr_sprint_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                                      <GridPane.margin>
                                                                         <Insets bottom="20.0" />
                                                                      </GridPane.margin>
                                                                   </ProgressBar>
-                                                                  <ProgressBar fx:id="statElemBar_T4_04" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                                  <ProgressBar fx:id="sphr_mind_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                                                      <GridPane.margin>
                                                                         <Insets bottom="20.0" />
                                                                      </GridPane.margin>
                                                                   </ProgressBar>
-                                                                  <ProgressBar fx:id="statElemBar_T4_03" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <ProgressBar fx:id="sphr_prime_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                                      <GridPane.margin>
                                                                         <Insets bottom="20.0" />
                                                                      </GridPane.margin>
                                                                   </ProgressBar>
-                                                                  <ProgressBar fx:id="statElemBar_T4_07" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                                                  <ProgressBar fx:id="sphr_forces_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
                                                                      <GridPane.margin>
                                                                         <Insets bottom="20.0" />
                                                                      </GridPane.margin>
                                                                   </ProgressBar>
-                                                                  <ProgressBar fx:id="statElemBar_T4_06" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                                                  <ProgressBar fx:id="sphr_life_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                                                                      <GridPane.margin>
                                                                         <Insets bottom="20.0" />
                                                                      </GridPane.margin>
                                                                   </ProgressBar>
-                                                                  <ProgressBar fx:id="statElemBar_T4_05" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                                  <ProgressBar fx:id="sphr_matter_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                                                      <GridPane.margin>
                                                                         <Insets bottom="20.0" />
                                                                      </GridPane.margin>
                                                                   </ProgressBar>
-                                                                  <ProgressBar fx:id="statElemBar_T4_08" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                                                  <ProgressBar fx:id="sphr_ent_bar" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
                                                                      <GridPane.margin>
                                                                         <Insets bottom="20.0" />
                                                                      </GridPane.margin>
                                                                   </ProgressBar>
-                                                                  <ProgressBar fx:id="statElemBar_T4_09" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                                                  <ProgressBar fx:id="sphr_corr_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
                                                                      <GridPane.margin>
                                                                         <Insets bottom="20.0" />
                                                                      </GridPane.margin>
@@ -2223,24 +2223,24 @@
                                                                   <Label fx:id="charStatElemLabel_T4_07" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
                                                                   <Label fx:id="charStatElemLabel_T4_08" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
                                                                   <Label fx:id="charStatElemLabel_T4_09" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                                  <Button fx:id="barIncreUp_T4_01" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreD_T4_02" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreD_T4_03" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreUp_T4_04" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreUp_T4_05" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreUp_T4_06" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreUp_T4_07" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreUp_T4_08" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreUp_T4_09" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreD_T4_01" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreUp_T4_02" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barInUp_T4_03" disable="true" mnemonicParsing="false" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreD_T4_04" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreD_T4_05" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreD_T4_06" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreD_T4_07" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreD_T4_08" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="barIncreD_T4_09" disable="true" mnemonicParsing="false" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_time_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_sprint_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_prime_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_mind_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_matter_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_life_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_forces_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_ent_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_corr_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_time_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_sprint_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_prime_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_mind_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_matter_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_life_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_forces_bar" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_ent_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_corr_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                                                                </children>
                                                                <columnConstraints>
                                                                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="70.0" />
@@ -2272,7 +2272,7 @@
                                                                 <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
                                                               </rowConstraints>
                                                                <children>
-                                                                  <ProgressBar fx:id="statElemBar_T4_10" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                                  <ProgressBar fx:id="advn_arete_bar" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                                                      <GridPane.margin>
                                                                         <Insets top="20.0" />
                                                                      </GridPane.margin>
@@ -2287,12 +2287,12 @@
                                                                         <Insets top="20.0" />
                                                                      </GridPane.margin>
                                                                   </Label>
-                                                                  <Button fx:id="barIncreUp_T4_010" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                  <Button fx:id="advn_arete_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                                      <GridPane.margin>
                                                                         <Insets left="100.0" />
                                                                      </GridPane.margin>
                                                                   </Button>
-                                                                  <Button fx:id="barIncreD_T4_010" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="advn_arete_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                                </children>
                                                                <VBox.margin>
                                                                   <Insets top="10.0" />

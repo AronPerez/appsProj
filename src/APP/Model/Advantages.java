@@ -1,43 +1,43 @@
 package APP.Model;
 
-public class Advantages {
+public class Advantages{
 
-    Element Health, Willpower, Arete;
+    public int Health, Willpower, Arete;
     String Background;
 
     public Advantages() {
-        Arete = new Element(0);
-        Health = new Element(0);
-        Willpower = new Element(0);
-        Background = null;
+        Arete = 0;;
+        Health = 0;;
+        Willpower = 0;
 
     }
     public String toString(){
-        return null;
+        return "ADVANTAGES";
     }
 
     public void ProcessDots(String eType, String eAction) {
+        System.out.println("PROCESSING "+ eType + " , " + eAction);
         switch(eType) {
             case "arete":
-                if (eAction == "up") {
-                    Arete.addDot();
-                } else if (eAction == "down") {
-                    Arete.removeDot();
+                if (eAction.contains("up")) {
+                    Arete++;
+                } else if (eAction.contains("down")) {
+                    Arete--;
                 }
             case "health":
-                if (eAction == "up") {
-                    Health.addDot();
-                } else if (eAction == "down") {
-                    Health.removeDot();
+                if (eAction.contains("up")) {
+                    Health++;
+                } else if (eAction.contains("down")) {
+                    Health--;
                 }
             case "will":
-                if (eAction == "up") {
-                    Willpower.addDot();
-                } else if (eAction == "down") {
-                    Willpower.removeDot();
+                if (eAction.contains("up")) {
+                    Willpower++;
+                } else if (eAction.contains("down")) {
+                    Willpower--;
                 }
             default:
-                System.out.print("\nDEFAULTED\n");
+                System.out.print("\nBUTTON DEFAULTED\n");
         }
     }
 }
