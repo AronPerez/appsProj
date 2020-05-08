@@ -18,12 +18,12 @@ public class Controller {
 
     @FXML
     public Text
-            sphr_time_bar, sphr_mind_bar, sphr_prime_bar, sphr_forces_bar,
-            sphr_life_bar, sphr_corr_bar,sphr_spirit_bar,sphr_matter_bar;
-    @FXML
-    public Text
             attr_app_bar,attr_dex_bar,attr_stam_bar, attr_char_bar,attr_perc_bar,
             attr_str_bar,attr_int_bar,attr_wits_bar,attr_man_bar;
+    @FXML
+    public Text
+            attr_app1_bar,attr_dex1_bar,attr_stam1_bar, attr_char1_bar,attr_perc1_bar,
+            attr_str1_bar,attr_int1_bar,attr_wits1_bar,attr_man1_bar;
 
     @FXML
     public Text
@@ -32,7 +32,7 @@ public class Controller {
             abil_subt_bar, abil_craft_bar,abil_driv_bar,abil_etiq_bar,abil_fire_bar,abil_mart_bar,
             abil_med_bar, abil_mel_bar, abil_rese_bar,abil_stea_bar,abil_surv_bar,abil_tech_bar,abil_aca_bar,abil_comp_bar,
             abil_cosm_bar, abil_enig_bar,abil_esot_bar,abil_inv_bar,abil_law_bar,abil_occ_bar,abil_pol_bar,abil_medi_bar;
-
+    @FXML
     public Text
             abil_alrt1_bar,abil_art1_bar,abil_ath1_bar, abil_sci1_bar,
             abil_awar1_bar,abil_bra1_bar, abil_emp1_bar,abil_expr1_bar,abil_inti1_bar,abil_lead1_bar,abil_stre1_bar,
@@ -40,35 +40,49 @@ public class Controller {
             abil_med1_bar, abil_mel1_bar, abil_rese1_bar,abil_stea1_bar,abil_surv1_bar,abil_tech1_bar,abil_aca1_bar,abil_comp1_bar,
             abil_cosm1_bar, abil_enig1_bar,abil_esot1_bar,abil_inv1_bar,abil_law1_bar,abil_occ1_bar,abil_pol1_bar,abil_medi1_bar;
 
+    @FXML
+    public Text
+            sphr_time_bar, sphr_mind_bar, sphr_prime_bar, sphr_forces_bar,
+            sphr_life_bar, sphr_corr_bar,sphr_spirit_bar,sphr_matter_bar;
+
     void updateProgress(int Value, String eType) {
         var barVal = Value + "/5";
         switch(eType) {
             case "str":
                 attr_str_bar.setText(barVal);
+                attr_str1_bar.setText(barVal);
                 break;
             case "dex":
                 attr_dex_bar.setText(barVal);
+                attr_dex1_bar.setText(barVal);
                 break;
             case "stam":
                 attr_stam_bar.setText(barVal);
+                attr_stam1_bar.setText(barVal);
                 break;
             case "char":
                 attr_char_bar.setText(barVal);
+                attr_char1_bar.setText(barVal);
                 break;
             case "man":
                 attr_man_bar.setText(barVal);
+                attr_char1_bar.setText(barVal);
                 break;
             case "app":
                 attr_app_bar.setText(barVal);
+                attr_app1_bar.setText(barVal);
                 break;
             case "perc":
                 attr_perc_bar.setText(barVal);
+                attr_perc1_bar.setText(barVal);
                 break;
             case "int":
                 attr_int_bar.setText(barVal);
+                attr_int1_bar.setText(barVal);
                 break;
             case "wits":
                 attr_wits_bar.setText(barVal);
+                attr_wits1_bar.setText(barVal);
                 break;
             case "art":
                 abil_art_bar.setText(barVal);

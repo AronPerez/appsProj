@@ -4,13 +4,11 @@
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.SplitPane?>
@@ -23,7 +21,6 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -118,26 +115,6 @@
                                                             <Insets left="10.0" top="5.0" />
                                                          </GridPane.margin>
                                                       </Label>
-                                                      <Label text="Avatar Essence:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="10.0" top="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label text="Affiliation:" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="10.0" top="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label text="Sect" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="10.0" top="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label text="Concept:" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="10.0" top="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
                                                       <TextField fx:id="Name" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
@@ -153,11 +130,6 @@
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <TextField fx:id="Concept" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets left="5.0" right="5.0" />
-                                                         </GridPane.margin>
-                                                      </TextField>
                                                       <TextField fx:id="Nature" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
@@ -168,9 +140,6 @@
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                       </TextField>
-                                                      <ChoiceBox fx:id="Essence" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <ChoiceBox fx:id="Affiliation" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
-                                                      <ChoiceBox fx:id="Sect" prefWidth="150.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                    </children>
                                                 </GridPane>
                                                 <Separator prefWidth="200.0">
@@ -182,7 +151,7 @@
                                                    <children>
                                                       <Label text="Physical" GridPane.columnSpan="2">
                                                          <font>
-                                                            <Font name="System Bold" size="30.0" />
+                                                            <Font name="System Italic" size="25.0" />
                                                          </font>
                                                          <GridPane.margin>
                                                             <Insets left="100.0" />
@@ -190,7 +159,7 @@
                                                       </Label>
                                                       <Label alignment="CENTER" text="Social" GridPane.columnIndex="2" GridPane.columnSpan="2">
                                                          <font>
-                                                            <Font name="System Bold" size="30.0" />
+                                                            <Font name="System Italic" size="25.0" />
                                                          </font>
                                                          <GridPane.margin>
                                                             <Insets left="100.0" />
@@ -198,102 +167,93 @@
                                                       </Label>
                                                       <Label alignment="CENTER" prefHeight="68.0" prefWidth="104.0" text="Mental" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.columnSpan="2">
                                                          <font>
-                                                            <Font name="System Bold" size="30.0" />
+                                                            <Font name="System Italic" size="25.0" />
                                                          </font>
                                                          <GridPane.margin>
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
                                                       </Label>
-                                                      <Label text="Strength" GridPane.rowIndex="1" />
-                                                      <Label text="Dexterity" GridPane.rowIndex="2" />
-                                                      <Label text="Stamina" GridPane.rowIndex="3" />
-                                                      <Label text="Charisma" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                      <Label text="Manipulation" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                      <Label text="Appearance" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                      <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                                      <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                                                      <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                                      <ProgressBar fx:id="statElemBar_T1_1" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_2" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T2_41" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_3" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_7" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_6" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_5" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_8" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_9" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <Label fx:id="charStatElemLabel_T1_1" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin></Label>
-                                                      <Label fx:id="charStatElemLabel_T1_2" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin></Label>
-                                                      <Label fx:id="charStatElemLabel_T1_3" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin></Label>
-                                                      <Label fx:id="charStatElemLabel_T1_6" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin></Label>
-                                                      <Label fx:id="charStatElemLabel_T1_5" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin></Label>
-                                                      <Label fx:id="charStatElemLabel_T1_4" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin></Label>
-                                                      <Label fx:id="charStatElemLabel_T1_7" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin></Label>
-                                                      <Label fx:id="charStatElemLabel_T1_8" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin></Label>
-                                                      <Label fx:id="charStatElemLabel_T1_9" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin></Label>
+                                                      <Label text="Strength" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Dexterity" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Stamina" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Charisma" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Manipulation" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Appearance" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Text fx:id="attr_str1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_dex1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_stam1_bar" layoutX="234.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_char1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_perc1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_app1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_int1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_wits1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_man1_bar1" layoutX="531.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
                                                    </children>
                                                    <columnConstraints>
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -319,20 +279,20 @@
                                                    <children>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Talents" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="5.0">
                                                          <font>
-                                                            <Font size="25.0" />
+                                                            <Font name="System Italic" size="25.0" />
                                                          </font>
                                                       </Text>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Knowledges" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="5.0">
                                                          <font>
-                                                            <Font size="25.0" />
+                                                            <Font name="System Italic" size="25.0" />
                                                          </font>
                                                       </Text>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Skills" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="5.0">
                                                          <font>
-                                                            <Font size="25.0" />
+                                                            <Font name="System Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <SplitPane dividerPositions="0.33333333333333, 0.6666666666666666" layoutY="41.0" prefHeight="959.0" prefWidth="922.0" AnchorPane.topAnchor="41.0">
+                                                      <SplitPane dividerPositions="0.33369565217391306, 0.6652173913043479" layoutY="41.0" prefHeight="959.0" prefWidth="922.0" AnchorPane.topAnchor="41.0">
                                                          <items>
                                                             <GridPane prefHeight="820.0" prefWidth="304.0">
                                                                <children>
@@ -735,194 +695,11 @@
                                                    </children>
                                                 </AnchorPane>
                                                 <Separator prefWidth="200.0" />
-                                                <Label text="Backgrounds">
-                                                   <font>
-                                                      <Font name="System Bold" size="33.0" />
-                                                   </font>
-                                                   <VBox.margin>
-                                                      <Insets left="350.0" />
-                                                   </VBox.margin>
-                                                </Label>
-                                                <GridPane prefHeight="457.0" prefWidth="916.0">
-                                                   <children>
-                                                      <TextField fx:id="backGroundTF_T1_001" editable="false" GridPane.halignment="CENTER" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="80.0" right="40.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </TextField>
-                                                      <Label text="1st" GridPane.halignment="LEFT" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="20.0" top="15.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <TextField fx:id="backGroundTF_T1_011" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="80.0" right="40.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </TextField>
-                                                      <TextField fx:id="backGroundTF_T1_021" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="80.0" right="40.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </TextField>
-                                                      <TextField fx:id="backGroundTF_T1_031" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="80.0" right="40.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </TextField>
-                                                      <TextField fx:id="backGroundTF_T1_041" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="80.0" right="40.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </TextField>
-                                                      <TextField fx:id="backGroundTF_T1_051" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="80.0" right="40.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </TextField>
-                                                      <TextField fx:id="backGroundTF_T1_061" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="80.0" right="40.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </TextField>
-                                                      <TextField fx:id="backGroundTF_T1_07" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="80.0" right="40.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </TextField>
-                                                      <Label layoutX="30.0" layoutY="25.0" text="2nd" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="20.0" top="15.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label layoutX="30.0" layoutY="25.0" text="3rd" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="20.0" top="15.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label layoutX="30.0" layoutY="25.0" text="4th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="20.0" top="15.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label layoutX="30.0" layoutY="25.0" text="5th" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="20.0" top="15.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label layoutX="30.0" layoutY="25.0" text="6th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="20.0" top="15.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label layoutX="30.0" layoutY="25.0" text="7th" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="20.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label layoutX="30.0" layoutY="25.0" text="8th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets left="20.0" top="10.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <ProgressBar fx:id="backGroundElemBar_T1_001" prefHeight="36.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" left="15.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="backGroundElemBar_T1_0011" layoutX="10.0" layoutY="50.0" prefHeight="36.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" left="15.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="backGroundElemBar_T1_0021" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" left="15.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="backGroundElemBar_T1_0031" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" left="15.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="backGroundElemBar_T1_0041" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" left="15.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="backGroundElemBar_T1_0051" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" left="15.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="backGroundElemBar_T1_0061" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" left="15.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="backGroundElemBar_T1_0071" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" left="15.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <Label fx:id="charBackgroundLabel_T1_01" text="0/5" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charBackgroundLabel_T1_011" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charBackgroundLabel_T1_021" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charBackgroundLabel_T1_031" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charBackgroundLabel_T1_041" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charBackgroundLabel_T1_051" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charBackgroundLabel_T1_061" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charBackgroundLabel_T1_071" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                   </children>
-                                                   <columnConstraints>
-                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                   </columnConstraints>
-                                                   <rowConstraints>
-                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                   </rowConstraints>
-                                                </GridPane>
-                                                <Separator prefWidth="200.0" />
                                                 <GridPane prefHeight="505.0" prefWidth="904.0">
                                                    <children>
                                                       <Label alignment="CENTER" text="Spheres of Magic" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                                                          <font>
-                                                            <Font name="System Bold" size="36.0" />
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                          <GridPane.margin>
                                                             <Insets />
@@ -1053,7 +830,7 @@
                                                       </ProgressBar>
                                                       <Label text="Arete" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
                                                          <font>
-                                                            <Font name="System Bold" size="33.0" />
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Label>
                                                       <Label fx:id="charStatElemLabel_T4_Arete" text="1/10" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
@@ -1072,152 +849,6 @@
                                                    </rowConstraints>
                                                 </GridPane>
                                                 <Separator prefWidth="200.0" />
-                                                <GridPane prefHeight="457.0" prefWidth="874.0">
-                                                   <columnConstraints>
-                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="217.0" />
-                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="359.0" />
-                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="290.0" />
-                                                   </columnConstraints>
-                                                   <rowConstraints>
-                                                      <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
-                                                      <RowConstraints maxHeight="331.0" minHeight="10.0" prefHeight="329.0" vgrow="SOMETIMES" />
-                                                      <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
-                                                   </rowConstraints>
-                                                   <children>
-                                                      <Label text="Willpower" GridPane.halignment="CENTER" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets top="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label text="Quintessence/Paradox" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets top="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label text="Health" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets top="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charExpDisplay" text="00" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets top="15.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label text="Character Exp:" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets top="5.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <TilePane hgap="5.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="200.0" tileAlignment="TOP_CENTER" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER">
-                                                         <children>
-                                                            <RadioButton fx:id="permWill_00" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_00" mnemonicParsing="false" />
-                                                            <RadioButton fx:id="permWill_01" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_01" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <RadioButton fx:id="permWill_02" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_02" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <RadioButton fx:id="permWill_03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_03" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <RadioButton fx:id="permWill_04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_04" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <RadioButton fx:id="permWill_05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_05" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <RadioButton fx:id="permWill_06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_06" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <RadioButton fx:id="permWill_07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_07" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <RadioButton fx:id="permWill_08" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_08" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <RadioButton fx:id="permWill_09" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="tempWill_09" layoutX="57.0" layoutY="10.0" mnemonicParsing="false" />
-                                                         </children>
-                                                      </TilePane>
-                                                      <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.rowSpan="2">
-                                                         <children>
-                                                            <Label text="Quint" />
-                                                            <Separator prefWidth="200.0" />
-                                                            <TilePane alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" tileAlignment="TOP_CENTER" vgap="5.0">
-                                                               <VBox.margin>
-                                                                  <Insets left="100.0" right="100.0" />
-                                                               </VBox.margin>
-                                                               <children>
-                                                                  <RadioButton fx:id="quintParaTracker_0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_01" layoutX="31.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_02" layoutX="52.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_08" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_09" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_010" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_011" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_012" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_013" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_014" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_015" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_016" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_017" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_018" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
-                                                                  <RadioButton fx:id="quintParaTracker_019" layoutX="19.0" layoutY="10.0" mnemonicParsing="false" />
-                                                               </children>
-                                                            </TilePane>
-                                                            <Separator prefWidth="200.0" />
-                                                            <Label text="Paradox" />
-                                                         </children>
-                                                      </VBox>
-                                                      <TilePane nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="200.0" tileAlignment="TOP_LEFT" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <children>
-                                                            <CheckBox fx:id="agro01" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="lethal01" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="bash01" layoutX="52.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="argo02" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="lethal02" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="bash02" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="agro03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="lethal03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="bash03" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="agro04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="lethal04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="bash04" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="agro05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="lethal05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="bash05" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="agro06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="lethal06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="bash06" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="agro07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="lethal07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                            <CheckBox fx:id="bash07" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
-                                                         </children>
-                                                         <GridPane.margin>
-                                                            <Insets right="150.0" top="65.0" />
-                                                         </GridPane.margin>
-                                                      </TilePane>
-                                                      <Label text="Agro/Lethal/Bash" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets top="30.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label text="Damage Types:" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets left="120.0" top="65.0" />
-                                                         </GridPane.margin>
-                                                         <children>
-                                                            <Label text="Bruised -0" />
-                                                            <Label text="Hurt -1" />
-                                                            <Label text="Injured -1" />
-                                                            <Label text="Wounded -2" />
-                                                            <Label text="Mauled -2" />
-                                                            <Label text="Crippled -5" />
-                                                            <Label text="Incapacitated" />
-                                                         </children>
-                                                      </VBox>
-                                                   </children>
-                                                </GridPane>
                                              </children>
                                           </VBox>
                                        </content>
@@ -1263,7 +894,7 @@
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
                                                          <font>
-                                                            <Font name="System Bold" size="30.0" />
+                                                            <Font name="System Italic" size="25.0" />
                                                          </font>
                                                       </Label>
                                                       <Label alignment="CENTER" text="Social" GridPane.columnIndex="2" GridPane.columnSpan="2">
@@ -1271,7 +902,7 @@
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
                                                          <font>
-                                                            <Font name="System Bold" size="30.0" />
+                                                            <Font name="System Italic" size="25.0" />
                                                          </font>
                                                       </Label>
                                                       <Label alignment="CENTER" prefHeight="68.0" prefWidth="104.0" text="Mental" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.columnSpan="2">
@@ -1279,18 +910,45 @@
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
                                                          <font>
-                                                            <Font name="System Bold" size="30.0" />
+                                                            <Font name="System Italic" size="25.0" />
                                                          </font>
                                                       </Label>
-                                                      <Label text="Strength" GridPane.rowIndex="1" />
-                                                      <Label text="Dexterity" GridPane.rowIndex="2" />
-                                                      <Label text="Stamina" GridPane.rowIndex="3" />
-                                                      <Label text="Charisma" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                      <Label text="Manipulation" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                      <Label text="Appearance" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                      <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                                      <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                                                      <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                                      <Label text="Strength" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Dexterity" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Stamina" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Charisma" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Manipulation" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Appearance" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font></Label>
                                                       <Text fx:id="attr_str_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
@@ -1361,29 +1019,21 @@
                                                       <Insets top="10.0" />
                                                    </VBox.margin>
                                                 </TextArea>
-                                                <Label text="Character Exp:">
-                                                   <VBox.margin>
-                                                      <Insets top="10.0" />
-                                                   </VBox.margin>
-                                                   <font>
-                                                      <Font name="System Bold" size="24.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label fx:id="ExpDisplay2" text="00">
-                                                   <VBox.margin>
-                                                      <Insets left="45.0" />
-                                                   </VBox.margin>
-                                                </Label>
-                                                <Button mnemonicParsing="false" text="Spend Exp">
-                                                   <VBox.margin>
-                                                      <Insets top="10.0" />
-                                                   </VBox.margin>
-                                                </Button>
                                                 <Button fx:id="cancelB_T2" cancelButton="true" disable="true" mnemonicParsing="false" text="Cancel" visible="false">
                                                    <VBox.margin>
                                                       <Insets top="15.0" />
                                                    </VBox.margin>
                                                 </Button>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Character EXP: ">
+                                                   <font>
+                                                      <Font size="21.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00">
+                                                   <font>
+                                                      <Font size="21.0" />
+                                                   </font>
+                                                </Text>
                                              </children>
                                           </VBox>
                                        </content></ScrollPane>
@@ -2026,17 +1676,12 @@
                                           </ScrollPane>
                                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                              <children>
-                                                <Button layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="165.0" text="Spend EXP" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="158.0">
-                                                   <font>
-                                                      <Font size="15.0" />
-                                                   </font>
-                                                </Button>
-                                                <Text layoutX="154.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" AnchorPane.bottomAnchor="215.7294921875" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="37.3388671875">
+                                                <Text layoutX="13.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Character EXP: " AnchorPane.bottomAnchor="215.7294921875" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="37.3388671875">
                                                    <font>
                                                       <Font size="21.0" />
                                                    </font>
                                                 </Text>
-                                                <Text layoutX="13.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Character EXP: " AnchorPane.bottomAnchor="215.7294921875" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="37.3388671875">
+                                                <Text layoutX="154.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" AnchorPane.bottomAnchor="215.7294921875" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="37.3388671875">
                                                    <font>
                                                       <Font size="21.0" />
                                                    </font>
@@ -2071,7 +1716,7 @@
                                        <items>
                                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                              <children>
-                                                <ScrollPane prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                <ScrollPane prefHeight="842.0" prefWidth="920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                                    <content>
                                                       <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT">
                                                          <children>
@@ -2079,21 +1724,48 @@
                                                                <children>
                                                                   <Label alignment="CENTER" text="Spheres of Magic" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                                                                      <font>
-                                                                        <Font name="System Bold" size="36.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                      <GridPane.margin>
                                                                         <Insets />
                                                                      </GridPane.margin>
                                                                   </Label>
-                                                                  <Label text="Time" GridPane.rowIndex="1" />
-                                                                  <Label text="Spirit" GridPane.rowIndex="2" />
-                                                                  <Label text="Prime" GridPane.rowIndex="3" />
-                                                                  <Label text="Mind" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <Label text="Matter" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                                                  <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                                                                  <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                                                  <Label text="Time" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font size="25.0" />
+                                                                     </font></Label>
+                                                                  <Label text="Spirit" GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font size="25.0" />
+                                                                     </font></Label>
+                                                                  <Label text="Prime" GridPane.rowIndex="3">
+                                                                     <font>
+                                                                        <Font size="25.0" />
+                                                                     </font></Label>
+                                                                  <Label text="Mind" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font size="25.0" />
+                                                                     </font></Label>
+                                                                  <Label text="Matter" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font size="25.0" />
+                                                                     </font></Label>
+                                                                  <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                                     <font>
+                                                                        <Font size="25.0" />
+                                                                     </font></Label>
+                                                                  <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font size="25.0" />
+                                                                     </font></Label>
+                                                                  <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font size="25.0" />
+                                                                     </font></Label>
+                                                                  <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                                     <font>
+                                                                        <Font size="25.0" />
+                                                                     </font></Label>
                                                                   <Text fx:id="sphr_time_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
@@ -2186,6 +1858,7 @@
                                                                <rowConstraints>
                                                                   <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
                                                                   <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
                                                                </rowConstraints>
                                                                <children>
                                                                   <ProgressBar fx:id="advn_arete_bar" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
@@ -2195,7 +1868,7 @@
                                                                   </ProgressBar>
                                                                   <Label text="Arete" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
                                                                      <font>
-                                                                        <Font name="System Bold" size="33.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
                                                                   <Label fx:id="charStatElemLabel_T4_010" text="1/10" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
@@ -2203,12 +1876,22 @@
                                                                         <Insets top="20.0" />
                                                                      </GridPane.margin>
                                                                   </Label>
-                                                                  <Button fx:id="advn_arete_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                  <Button fx:id="advn_arete_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                                      <GridPane.margin>
                                                                         <Insets left="100.0" />
                                                                      </GridPane.margin>
                                                                   </Button>
-                                                                  <Button fx:id="advn_arete_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="advn_arete_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Character EXP: " GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font size="21.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font size="21.0" />
+                                                                     </font>
+                                                                  </Text>
                                                                </children>
                                                                <VBox.margin>
                                                                   <Insets top="10.0" />
@@ -2219,291 +1902,13 @@
                                                                   <Insets top="10.0" />
                                                                </VBox.margin>
                                                             </Separator>
-                                                            <Label text="Backgrounds">
-                                                               <font>
-                                                                  <Font name="System Bold" size="33.0" />
-                                                               </font>
-                                                               <VBox.margin>
-                                                                  <Insets top="10.0" />
-                                                               </VBox.margin>
-                                                            </Label>
-                                                            <GridPane prefHeight="457.0" prefWidth="916.0">
-                                                               <columnConstraints>
-                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                               </columnConstraints>
-                                                               <rowConstraints>
-                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                               </rowConstraints>
-                                                               <children>
-                                                                  <TextField fx:id="backGroundTF_00" editable="false" GridPane.halignment="CENTER" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="80.0" right="40.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </TextField>
-                                                                  <Label text="1st" GridPane.halignment="LEFT" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="20.0" top="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <TextField fx:id="backGroundTF_01" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="80.0" right="40.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </TextField>
-                                                                  <TextField fx:id="backGroundTF_02" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="80.0" right="40.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </TextField>
-                                                                  <TextField fx:id="backGroundTF_03" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="80.0" right="40.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </TextField>
-                                                                  <TextField fx:id="backGroundTF_04" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="80.0" right="40.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </TextField>
-                                                                  <TextField fx:id="backGroundTF_05" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="80.0" right="40.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </TextField>
-                                                                  <TextField fx:id="backGroundTF_06" editable="false" layoutX="90.0" layoutY="20.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="80.0" right="40.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </TextField>
-                                                                  <TextField fx:id="backGroundTF_07" editable="false" layoutX="90.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="80.0" right="40.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </TextField>
-                                                                  <Label layoutX="30.0" layoutY="25.0" text="2nd" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="20.0" top="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label layoutX="30.0" layoutY="25.0" text="3rd" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="20.0" top="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label layoutX="30.0" layoutY="25.0" text="4th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="20.0" top="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label layoutX="30.0" layoutY="25.0" text="5th" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="20.0" top="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label layoutX="30.0" layoutY="25.0" text="6th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="20.0" top="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label layoutX="30.0" layoutY="25.0" text="7th" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="20.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label layoutX="30.0" layoutY="25.0" text="8th" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets left="20.0" top="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <ProgressBar fx:id="backGroundElemBar_T4_00" prefHeight="36.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="backGroundElemBar_T4_001" layoutX="10.0" layoutY="50.0" prefHeight="36.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="backGroundElemBar_T4_002" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="backGroundElemBar_T4_003" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="backGroundElemBar_T4_004" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="backGroundElemBar_T4_005" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="backGroundElemBar_T4_006" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="backGroundElemBar_T4_007" layoutX="253.0" layoutY="84.0" prefWidth="233.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="15.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <Button fx:id="barIncreUp_T4_011" disable="true" mnemonicParsing="false" prefHeight="48.0" prefWidth="54.0" text="+" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="55.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreD_T4_011" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreUp_T4_012" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="55.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreD_T4_012" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreUp_T4_013" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="55.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreD_T4_013" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreUp_T4_014" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="55.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreD_T4_014" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreUp_T4_015" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="55.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreD_T4_015" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreUp_T4_016" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="55.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreD_T4_016" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreUp_T4_017" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="55.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreD_T4_017" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreUp_T4_018" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="55.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Button fx:id="barIncreD_T4_018" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" left="10.0" />
-                                                                     </GridPane.margin>
-                                                                  </Button>
-                                                                  <Label fx:id="charBackgroundLabel_T4_0" text="0/5" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label fx:id="charBackgroundLabel_T4_01" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label fx:id="charBackgroundLabel_T4_02" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label fx:id="charBackgroundLabel_T4_03" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label fx:id="charBackgroundLabel_T4_04" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label fx:id="charBackgroundLabel_T4_05" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label fx:id="charBackgroundLabel_T4_06" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                                  <Label fx:id="charBackgroundLabel_T4_07" layoutX="221.0" layoutY="85.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="5.0" />
-                                                                     </GridPane.margin>
-                                                                  </Label>
-                                                               </children>
-                                                            </GridPane>
                                                          </children>
                                                       </VBox>
                                                    </content>
                                                 </ScrollPane>
                                              </children>
                                           </AnchorPane>
-                                          <ScrollPane prefHeight="200.0" prefWidth="200.0">
-                                             <content>
-                                                <AnchorPane>
-                                                   <children>
-                                                      <Label layoutX="14.0" layoutY="175.0" text="Character Exp:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="215.0" />
-                                                      <Label fx:id="charExpDisplay_T4" layoutX="14.0" layoutY="235.0" text="00" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="235.0" />
-                                                      <Button fx:id="spendExpB_T4" layoutX="186.0" layoutY="245.0" mnemonicParsing="false" text="Spend Exp" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="186.0" />
-                                                      <Button fx:id="cancelSpendB_T4" cancelButton="true" disable="true" layoutX="358.0" layoutY="245.0" mnemonicParsing="false" text="Cancel" visible="false" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="186.0" />
-                                                      <TextArea fx:id="promptDisplayTA_T4" editable="false" prefHeight="200.0" prefWidth="922.0" wrapText="true" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="0.0">
-                                                         <padding>
-                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                                         </padding>
-                                                      </TextArea>
-                                                   </children>
-                                                </AnchorPane>
-                                             </content>
-                                          </ScrollPane>
+                                          <ScrollPane prefHeight="200.0" prefWidth="200.0" />
                                        </items>
                                     </SplitPane>
                                  </children>
@@ -2529,42 +1934,6 @@
                                              </content>
                                              <padding>
                                                 <Insets top="8.0" />
-                                             </padding>
-                                          </TitledPane>
-                                          <TitledPane animated="false" prefWidth="930.0" text="Awakening">
-                                             <content>
-                                                <ScrollPane fitToWidth="true">
-                                                   <content>
-                                                      <TextArea fx:id="awakeningText" prefWidth="930.0" wrapText="true" />
-                                                   </content>
-                                                </ScrollPane>
-                                             </content>
-                                             <padding>
-                                                <Insets top="25.0" />
-                                             </padding>
-                                          </TitledPane>
-                                          <TitledPane prefWidth="930.0" text="Magic Foci">
-                                             <content>
-                                                <ScrollPane fitToWidth="true">
-                                                   <content>
-                                                      <TextArea fx:id="fociText" prefHeight="160.0" prefWidth="884.0" wrapText="true" />
-                                                   </content>
-                                                </ScrollPane>
-                                             </content>
-                                             <padding>
-                                                <Insets top="25.0" />
-                                             </padding>
-                                          </TitledPane>
-                                          <TitledPane animated="false" layoutX="18.0" layoutY="69.0" prefWidth="930.0" text="Backgrounds">
-                                             <content>
-                                                <ScrollPane fitToWidth="true">
-                                                   <content>
-                                                      <TextArea fx:id="backgroundsText" prefWidth="930.0" wrapText="true" />
-                                                   </content>
-                                                </ScrollPane>
-                                             </content>
-                                             <padding>
-                                                <Insets top="25.0" />
                                              </padding>
                                           </TitledPane>
                                        </panes>
