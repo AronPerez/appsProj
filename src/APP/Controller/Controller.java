@@ -3,6 +3,7 @@ package APP.Controller;
 import APP.Model.Character;
 import javafx.event.*;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -16,6 +17,9 @@ public class Controller {
 
     @FXML
     public TextField ExpInField;
+
+    @FXML
+    public Button ExpApply;
 
     @FXML
     public ProgressBar advn_arete_bar,advn_arete1_bar;
@@ -55,7 +59,6 @@ public class Controller {
             sphr_life1_bar, sphr_corr1_bar,sphr_spirit1_bar,sphr_matter1_bar,sphr_ent1_bar;
 
     void updateProgress(int Value, String eType) {
-        int progInt = Value;
         var barVal = Value + "/5";
         switch(eType) {
             case "str":
@@ -271,7 +274,7 @@ public class Controller {
 
         }
     }
-
+    @FXML
     void handleApply(ActionEvent event) {
         int EXP = Integer.parseInt(ExpInField.getText());
         CharSheet.maxEXP = EXP;
@@ -359,24 +362,6 @@ public class Controller {
         if (tempDots == 123456) {
             System.out.print("\nDOTS UNCHANGED\n");
             return;
-        }
-
-        // changing data values
-        switch(eClass) {
-            case "attr":
-                tempDots = this.CharSheet.Attributes.ProcessDots(eType, eAction);
-                break;
-            case "sphr":
-                tempDots = this.CharSheet.Spheres.ProcessDots(eType, eAction);
-                break;
-            case "abil":
-                tempDots = this.CharSheet.Abilities.ProcessDots(eType, eAction);
-                break;
-            case "advn":
-                tempDots = this.CharSheet.Advantages.ProcessDots(eType, eAction);
-                break;
-            default:
-                System.out.print("\nEXP CHANGE DEFAULTED\n");
         }
         updateProgress(tempDots, eType);
     }
