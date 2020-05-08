@@ -705,105 +705,87 @@
                                                             <Insets />
                                                          </GridPane.margin>
                                                       </Label>
-                                                      <Label text="Time" GridPane.rowIndex="1" />
-                                                      <Label text="Spirit" GridPane.rowIndex="2" />
-                                                      <Label text="Prime" GridPane.rowIndex="3" />
-                                                      <Label text="Mind" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                      <Label text="Matter" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                      <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                      <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                                      <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                                                      <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                                      <ProgressBar fx:id="statElemBar_T1_s01" prefHeight="36.0" prefWidth="138.0" progress="0.01" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_s02" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_s04" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_s03" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_s07" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_s06" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_s05" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_s08" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="statElemBar_T1_s09" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <Label fx:id="charStatElemLabel_T1_s01" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charStatElemLabel_T1_s02" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charStatElemLabel_T1_s03" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charStatElemLabel_T1_s06" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charStatElemLabel_T1_s05" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charStatElemLabel_T1_s04" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charStatElemLabel_T1_s07" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charStatElemLabel_T1_s08" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
-                                                      <Label fx:id="charStatElemLabel_T1_s09" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </Label>
+                                                      <Label text="Time" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="System Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Spirit" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="System Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Prime" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Mind" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Matter" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font size="25.0" />
+                                                         </font></Label>
+                                                      <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="System Italic" size="25.0" />
+                                                         </font></Label>
+                                                      <Text fx:id="sphr_time1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="sphr_spirit1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="sphr_mind1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="sphr_prime1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="sphr_forces1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="sphr_life1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="sphr_matter1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="sphr_ent1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="sphr_corr1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
                                                    </children>
                                                    <columnConstraints>
                                                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="70.0" />
@@ -823,7 +805,7 @@
                                                 <Separator prefWidth="200.0" />
                                                 <GridPane prefHeight="146.0" prefWidth="916.0">
                                                    <children>
-                                                      <ProgressBar fx:id="statElemBar_T1_Arete" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                      <ProgressBar fx:id="advn_arete1_bar" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                                          <GridPane.margin>
                                                             <Insets top="20.0" />
                                                          </GridPane.margin>
@@ -832,11 +814,6 @@
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
-                                                      </Label>
-                                                      <Label fx:id="charStatElemLabel_T4_Arete" text="1/10" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                         <GridPane.margin>
-                                                            <Insets top="20.0" />
-                                                         </GridPane.margin>
                                                       </Label>
                                                    </children>
                                                    <columnConstraints>
@@ -1870,11 +1847,6 @@
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
-                                                                  </Label>
-                                                                  <Label fx:id="charStatElemLabel_T4_010" text="1/10" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
-                                                                     <GridPane.margin>
-                                                                        <Insets top="20.0" />
-                                                                     </GridPane.margin>
                                                                   </Label>
                                                                   <Button fx:id="advn_arete_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                                      <GridPane.margin>

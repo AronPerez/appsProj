@@ -3,6 +3,7 @@ package APP.Controller;
 import APP.Model.Character;
 import javafx.event.*;
 import javafx.fxml.FXML;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
@@ -15,6 +16,9 @@ public class Controller {
 
     @FXML
     public TextField ExpInField;
+
+    @FXML
+    public ProgressBar advn_arete_bar,advn_arete1_bar;
 
     @FXML
     public Text
@@ -43,9 +47,15 @@ public class Controller {
     @FXML
     public Text
             sphr_time_bar, sphr_mind_bar, sphr_prime_bar, sphr_forces_bar,
-            sphr_life_bar, sphr_corr_bar,sphr_spirit_bar,sphr_matter_bar;
+            sphr_life_bar, sphr_corr_bar,sphr_spirit_bar, sphr_matter_bar,sphr_ent_bar;
+
+    @FXML
+    public Text
+            sphr_time1_bar, sphr_mind1_bar, sphr_prime1_bar, sphr_forces1_bar,
+            sphr_life1_bar, sphr_corr1_bar,sphr_spirit1_bar,sphr_matter1_bar,sphr_ent1_bar;
 
     void updateProgress(int Value, String eType) {
+        int progInt = Value;
         var barVal = Value + "/5";
         switch(eType) {
             case "str":
@@ -218,28 +228,44 @@ public class Controller {
                 break;
             case "time":
                 sphr_time_bar.setText(barVal);
+                sphr_time1_bar.setText(barVal);
                 break;
             case "mind":
                 sphr_mind_bar.setText(barVal);
+                sphr_mind1_bar.setText(barVal);
                 break;
             case "prime":
                 sphr_prime_bar.setText(barVal);
+                sphr_prime1_bar.setText(barVal);
                 break;
             case "forces":
                 sphr_forces_bar.setText(barVal);
+                sphr_forces1_bar.setText(barVal);
                 break;
             case "life":
                 sphr_life_bar.setText(barVal);
+                sphr_life1_bar.setText(barVal);
                 break;
             case "corr":
                 sphr_corr_bar.setText(barVal);
+                sphr_corr1_bar.setText(barVal);
                 break;
             case "spirit":
                 sphr_spirit_bar.setText(barVal);
+                sphr_spirit1_bar.setText(barVal);
                 break;
             case "matter":
                 sphr_matter_bar.setText(barVal);
+                sphr_matter1_bar.setText(barVal);
                 break;
+            case "ent":
+                sphr_ent_bar.setText(barVal);
+                sphr_ent1_bar.setText(barVal);
+            case "arete":
+                double barBa = (double)Value/10;
+                System.out.println(barBa);
+                advn_arete_bar.setProgress(barBa);
+                advn_arete1_bar.setProgress(barBa);
             default:
                 System.out.print("\nPROG. BAR DEFAULTED\n");
 
@@ -263,15 +289,6 @@ public class Controller {
         // i.e. - up
         String eAction = ID[2];
 
-//        // changing character current XP
-//        if (eAction == "up" && CharSheet.currentEXP > 0) {
-//            CharSheet.currentEXP++;
-//        }
-//        else if (eAction == "up" && CharSheet.currentEXP < CharSheet.currentEXP) {
-//            CharSheet.currentEXP--;
-//        }
-
-        // changing data values
             switch(eClass) {
                 case "attr":
                     tempDots = this.CharSheet.Attributes.ProcessDots(eType, eAction);

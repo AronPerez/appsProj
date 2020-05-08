@@ -19,7 +19,7 @@ public class Advantages{
         System.out.println("PROCESSING "+ eType + " , " + eAction);
         switch(eType) {
             case "arete":
-                if (eAction.contains("up") && Arete < 5) {
+                if (eAction.contains("up") && Arete < 10) {
                     Arete++;
                 } else if (eAction.contains("down") && Arete > 0) {
                     Arete--;
