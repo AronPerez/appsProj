@@ -391,72 +391,61 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Alertnessprog1" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_alrt1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Artprog1" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="abil_art1_bar" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Athleticsprog1" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="abil_ath1_bar" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Brawlprog1" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="abil_awar1_bar" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Empathyprog1" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                                  <Text fx:id="abil_bra1_bar" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Intimidationprog1" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                  <Text fx:id="abil_emp1_bar" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Leadershiprog1" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                                  <Text fx:id="abil_expr1_bar" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Streetwiseprog1" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                                  <Text fx:id="abil_inti1_bar" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Awarenessprog1" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                                                  <Text fx:id="abil_lead1_bar" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Subterfugeprog1" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                                                  <Text fx:id="abil_stre1_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Expressionprog1" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                                                  <Text fx:id="abil_subt1_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <ProgressBar prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                                                  <ProgressBar prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
                                                                </children>
                                                                <columnConstraints>
                                                                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="723.0" minWidth="10.0" prefWidth="113.0" />
@@ -534,72 +523,61 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Alertnessprog11" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_craft1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Artprog11" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="abil_driv1_bar" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Athleticsprog11" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="abil_etiq1_bar" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Brawlprog11" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="abil_fire1_bar" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Empathyprog11" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                                  <Text fx:id="abil_mart1_bar" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Intimidationprog11" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                  <Text fx:id="abil_med1_bar" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Leadershiprog11" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                                  <Text fx:id="abil_mel1_bar" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Streetwiseprog11" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                                  <Text fx:id="abil_rese1_bar" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Awarenessprog11" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                                                  <Text fx:id="abil_stea1_bar" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Subterfugeprog11" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                                                  <Text fx:id="abil_surv1_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Expressionprog11" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                                                  <Text fx:id="abil_tech1_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <ProgressBar prefHeight="75.0" prefWidth="123.0" progress="0.0" GridPane.columnIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <ProgressBar prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                                                  <ProgressBar prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
                                                                </children>
                                                                <columnConstraints>
                                                                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="723.0" minWidth="10.0" prefWidth="113.0" />
@@ -677,72 +655,61 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Alertnessprog21" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_aca1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Artprog21" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="abil_comp1_bar" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Athleticsprog21" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="abil_cosm1_bar" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Brawlprog21" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="abil_enig1_bar" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Empathyprog21" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                                  <Text fx:id="abil_esot1_bar" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Intimidationprog21" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                  <Text fx:id="abil_inv1_bar" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Leadershiprog21" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                                  <Text fx:id="abil_law1_bar" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Streetwiseprog21" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                                  <Text fx:id="abil_medi1_bar" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Awarenessprog21" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                                                  <Text fx:id="abil_occ1_bar" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Subterfugeprog21" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                                                  <Text fx:id="abil_pol1_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Expressionprog21" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                                                  <Text fx:id="abil_sci1_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <ProgressBar prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                                                  <ProgressBar prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                                                  <ProgressBar prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
                                                                </children>
                                                                <columnConstraints>
                                                                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="723.0" minWidth="10.0" prefWidth="113.0" />
@@ -1324,61 +1291,52 @@
                                                       <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1" />
                                                       <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                                                       <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                                      <ProgressBar fx:id="attr_str_bar" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="attr_dex_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="attr_char_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="attr_stam_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="attr_perc_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="attr_app_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="attr_char_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="attr_int_bar" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <ProgressBar fx:id="attr_wit_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.2" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                         <GridPane.margin>
-                                                            <Insets bottom="20.0" />
-                                                         </GridPane.margin>
-                                                      </ProgressBar>
-                                                      <Label fx:id="str" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                      <Label fx:id="dex" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                                                      <Label fx:id="stam" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                      <Label fx:id="app" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                      <Label fx:id="man" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                                                      <Label fx:id="chara" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                      <Label fx:id="perc" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                      <Label fx:id="inti" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                                                      <Label fx:id="charStatElemLabel_T2_9" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                      <Button fx:id="attr_str_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Text fx:id="attr_str_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_dex_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_char_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_stam_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_perc_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_app_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_int_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_wits_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="attr_man_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Button fx:id="attr_str_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                       <Button fx:id="attr_dex_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                                                       <Button fx:id="attr_stam_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                                                       <Button fx:id="attr_char_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
@@ -1387,7 +1345,7 @@
                                                       <Button fx:id="attr_perc_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                       <Button fx:id="attr_int_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                                                       <Button fx:id="attr_wits_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_str_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_str_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                       <Button fx:id="attr_dex_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                                                       <Button fx:id="attr_stam_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                                                       <Button fx:id="attr_char_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
@@ -1719,7 +1677,7 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_craf_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_craft_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -1776,8 +1734,8 @@
                                                                   </Text>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
                                                                      <children>
-                                                                        <Button fx:id="abil_craf_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button fx:id="abil_craf_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_craft_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_craft_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
@@ -1953,7 +1911,7 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_med_bar" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                                  <Text fx:id="abil_medi_bar" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -2017,8 +1975,8 @@
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
                                                                      <children>
-                                                                        <Button fx:id="abil_med_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
-                                                                        <Button fx:id="abil_med_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
+                                                                        <Button fx:id="abil_medi_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
+                                                                        <Button fx:id="abil_medi_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
@@ -2136,62 +2094,53 @@
                                                                   <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1" />
                                                                   <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2" />
                                                                   <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                                                  <ProgressBar fx:id="sphr_time_bar" prefHeight="36.0" prefWidth="138.0" progress="0.01" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="20.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="sphr_sprint_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="20.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="sphr_mind_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="20.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="sphr_prime_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="20.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="sphr_forces_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="20.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="sphr_life_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="20.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="sphr_matter_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="20.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="sphr_ent_bar" layoutX="167.0" layoutY="242.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="20.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <ProgressBar fx:id="sphr_corr_bar" layoutX="167.0" layoutY="142.0" prefHeight="36.0" prefWidth="138.0" progress="0.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
-                                                                     <GridPane.margin>
-                                                                        <Insets bottom="20.0" />
-                                                                     </GridPane.margin>
-                                                                  </ProgressBar>
-                                                                  <Label fx:id="charStatElemLabel_T4_01" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                                  <Label fx:id="charStatElemLabel_T4_02" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                                                                  <Label fx:id="charStatElemLabel_T4_03" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                                  <Label fx:id="charStatElemLabel_T4_06" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                                  <Label fx:id="charStatElemLabel_T2_51" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                                                                  <Label fx:id="charStatElemLabel_T4_04" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                                  <Label fx:id="charStatElemLabel_T4_07" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                                                                  <Label fx:id="charStatElemLabel_T4_08" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
-                                                                  <Label fx:id="charStatElemLabel_T4_09" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
-                                                                  <Button fx:id="sphr_time_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="49.0" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_sprint_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Text fx:id="sphr_time_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text fx:id="sphr_spirit_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text fx:id="sphr_mind_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text fx:id="sphr_prime_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                     <font>
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text fx:id="sphr_forces_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text fx:id="sphr_life_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                                                     <font>
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text fx:id="sphr_matter_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text fx:id="sphr_ent_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text fx:id="sphr_corr_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                                                     <font>
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Button fx:id="sphr_time_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_spirit_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_prime_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_mind_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_matter_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
@@ -2199,13 +2148,13 @@
                                                                   <Button fx:id="sphr_forces_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_ent_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_corr_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_time_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="33.0" prefWidth="42.0" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_sprint_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_time_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_spirit_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_prime_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_mind_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_matter_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_life_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_forces_bar" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_forces_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_ent_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                                                                   <Button fx:id="sphr_corr_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
                                                                </children>
@@ -2631,7 +2580,7 @@
                            <content>
                               <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="600.0">
                                  <children>
-                                    <Button fx:id="ExpApply" layoutX="331.0" layoutY="88.0" mnemonicParsing="false" text="Apply" />
+                                    <Button fx:id="ExpApply" layoutX="331.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleButton" text="Apply" />
                                     <Label layoutX="14.0" layoutY="31.0" text="Character Exp to be applied:" />
                                     <TextField fx:id="ExpInField" layoutX="331.0" layoutY="23.0" prefWidth="200.0" />
                                     <Label fx:id="willDisplay_MiscTab" layoutX="14.0" layoutY="180.0" text="Character Will: 05" />
