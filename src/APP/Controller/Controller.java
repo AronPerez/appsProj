@@ -272,9 +272,23 @@ public class Controller {
         }
     }
 
+    void handleApply(ActionEvent event) {
+        int EXP = Integer.parseInt(ExpInField.getText());
+        CharSheet.maxEXP = EXP;
+        CharSheet.currentEXP = EXP;
+        System.out.println("EXP: " + CharSheet.currentEXP);
+    }
+
+    @FXML
+    void handleCancel(ActionEvent event){
+        System.exit(0);
+        return;
+    }
+
     @FXML
     void handleButton(ActionEvent event) throws IOException {
-        int tempDots = 0;
+        int tempDots = 123456;
+        String eClass = "", eType = "", eAction = "";
 
         // determining which button is pressed
         // i.e. - attr_str_up
@@ -283,28 +297,87 @@ public class Controller {
 
         // turning button info to variables
         // i.e. - attr
-        String eClass = ID[0];
+        eClass = ID[0];
         // i.e. - str
-        String eType = ID[1];
+        eType = ID[1];
         // i.e. - up
-        String eAction = ID[2];
+        eAction = ID[2];
 
-            switch(eClass) {
-                case "attr":
-                    tempDots = this.CharSheet.Attributes.ProcessDots(eType, eAction);
-                   break;
-                case "sphr":
-                    tempDots = this.CharSheet.Spheres.ProcessDots(eType, eAction);
-                    break;
-                case "abil":
-                    tempDots = this.CharSheet.Abilities.ProcessDots(eType, eAction);
-                    break;
-                case "advn":
-                    tempDots = this.CharSheet.Advantages.ProcessDots(eType, eAction);
-                    break;
-                default:
-                    System.out.print("\nEXP CHANGE DEFAULTED\n");
-            }
+        // checking if player has the XP to spend
+        switch (eAction) {
+            case "down":
+                if (CharSheet.currentEXP == CharSheet.maxEXP) {
+                    System.out.println("EXP AT MAX: \n" + CharSheet.currentEXP);
+                    return;
+                }
+                if (CharSheet.currentEXP < CharSheet.maxEXP) {
+                    CharSheet.currentEXP++;
+                    System.out.println("DOWN: " + CharSheet.currentEXP);
+                }
+                break;
+
+            case "up":
+                if (CharSheet.currentEXP == 0) {
+                    System.out.println("EXP AT 0: \n");
+                    return;
+                }
+                if (CharSheet.currentEXP > 0) {
+                    CharSheet.currentEXP = CharSheet.currentEXP-1;
+                    System.out.println("UP: " + CharSheet.currentEXP);
+                }
+                break;
+            default:
+                System.out.println("EXP CHANGE ERROR\n");
+                return;
+        }
+
+        // setting dots in data
+        switch (eClass) {
+            case "attr":
+                tempDots = this.CharSheet.Attributes.ProcessDots(eType, eAction);
+                break;
+
+            case "sphr":
+                tempDots = this.CharSheet.Spheres.ProcessDots(eType, eAction);
+                break;
+
+            case "abil":
+                tempDots = this.CharSheet.Abilities.ProcessDots(eType, eAction);
+                break;
+
+            case "advn":
+                tempDots = this.CharSheet.Advantages.ProcessDots(eType, eAction);
+                break;
+
+            default:
+                System.out.print("\nDOTS CHANGE DEFAULTED\n");
+                return;
+        }
+        if (tempDots != 123456) {
             updateProgress(tempDots, eType);
+        }
+        if (tempDots == 123456) {
+            System.out.print("\nDOTS UNCHANGED\n");
+            return;
+        }
+
+        // changing data values
+        switch(eClass) {
+            case "attr":
+                tempDots = this.CharSheet.Attributes.ProcessDots(eType, eAction);
+                break;
+            case "sphr":
+                tempDots = this.CharSheet.Spheres.ProcessDots(eType, eAction);
+                break;
+            case "abil":
+                tempDots = this.CharSheet.Abilities.ProcessDots(eType, eAction);
+                break;
+            case "advn":
+                tempDots = this.CharSheet.Advantages.ProcessDots(eType, eAction);
+                break;
+            default:
+                System.out.print("\nEXP CHANGE DEFAULTED\n");
+        }
+        updateProgress(tempDots, eType);
     }
 }
