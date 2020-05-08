@@ -5,8 +5,6 @@ package APP.Controller;
         import javafx.fxml.FXML;
         import javafx.scene.control.ProgressBar;
         import javafx.scene.control.TextField;
-        import APP.Main.*;
-        import java.awt.event.TextEvent;
         import java.io.IOException;
 
 public class Controller {
