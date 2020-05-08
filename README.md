@@ -34,10 +34,10 @@ Cloning:
 
 Command: git clone https://github.com/AronPerez/appsProj.git
 
-Compilation:
+Compilation [Eclipse]:
 
-1. Java 11
+1. Use Java 11
 
-2. Import jfxrt
+2. Import external jar in Project -> Properties -> jfxrt
 
-3. --module-path /path/to/java/sdk/lib --add-modules=javafx.controls,javafx.fxml
+3. VM arguments: --module-path /path/to/java/sdk/lib --add-modules=javafx.controls,javafx.fxml
