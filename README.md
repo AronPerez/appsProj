@@ -1,6 +1,6 @@
 # appsProj
 JavaFX
-This project was bootstrapped with 4 teammates tears, passions, laughs, and excitements!!
+This project was bootstrapped with 5 teammates tears, passions, laughs, and excitements!!
 
 
 Inspiration
@@ -27,3 +27,17 @@ We learned that Git can make or break a project, and it is highly important to b
 
 What's next for us?
 We want to hear feedback from our users!!
+
+Cloning:
+
+[Windows] Install Git bash on Windows filesystem. 
+
+Command: git clone https://github.com/AronPerez/appsProj.git
+
+Compilation:
+
+1. Java 11
+
+2. Import jfxrt
+
+3. --module-path /path/to/java/sdk/lib --add-modules=javafx.controls,javafx.fxml
