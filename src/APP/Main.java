@@ -18,16 +18,6 @@ public class Main extends Application {
             Scene scene = new Scene(root,500,500);
             primaryStage.setScene(scene);
             primaryStage.show();
-
-            final Stage dialog = new Stage();
-            dialog.initModality(Modality.APPLICATION_MODAL);
-            dialog.initOwner(primaryStage);
-            Parent boot = FXMLLoader.load(getClass().getResource("../View/MageSheetMaker_Exp_In_view.fxml"));
-            Scene dialogScene = new Scene(boot, 600, 163);
-            dialog.setScene(dialogScene);
-            dialog.show();
-
-
         } catch(Exception e) {
             e.printStackTrace();
         }

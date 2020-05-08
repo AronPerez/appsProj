@@ -6,7 +6,7 @@ public class Attributes{
                 Appearances,Perception,Intelligence,Wits;
 
         public Attributes() {
-
+            // Default by one
             Strength = 1;
             Dexterity = 1;
             Stamina = 1;
@@ -28,7 +28,7 @@ public class Attributes{
             System.out.println("ASDASDASD");
             switch(eType) {
                 case "str":
-                    if (eAction.contains("up") && Strength < 4) {
+                    if (eAction.contains("up") && Strength < 5) {
                         Strength++;
                     }
                    if(eAction.contains("down")&& Strength > 1) {
@@ -36,14 +36,14 @@ public class Attributes{
                     }
                     return Strength;
                 case "dex":
-                    if (eAction.contains("up") && Dexterity < 4) {
+                    if (eAction.contains("up") && Dexterity < 5) {
                         Dexterity++;
                     } else if (eAction.contains("down") && Dexterity > 1) {
                         Dexterity--;
                     }
                     return Dexterity;
                 case "stam":
-                    if (eAction.contains("up") && Stamina < 4) {
+                    if (eAction.contains("up") && Stamina < 5) {
                         Stamina++;
                     }
                     else if (eAction.contains("down") && Stamina > 1) {
@@ -51,7 +51,7 @@ public class Attributes{
                     }
                     return Stamina;
                 case "char":
-                    if (eAction.contains("up") && Charisma < 4) {
+                    if (eAction.contains("up") && Charisma < 5) {
                         Charisma++;
                     }
                     else if (eAction.contains("down") && Charisma > 1) {
@@ -59,7 +59,7 @@ public class Attributes{
                     }
                    return Charisma;
                 case "man":
-                    if (eAction.contains("up") && Manipulation < 4) {
+                    if (eAction.contains("up") && Manipulation < 5) {
                         Manipulation++;
                     }
                     else if (eAction.contains("down") && Manipulation > 1) {
@@ -67,7 +67,7 @@ public class Attributes{
                     }
                    return Manipulation;
                 case "app":
-                    if (eAction.contains("up") && Appearances < 4) {
+                    if (eAction.contains("up") && Appearances < 5) {
                         Appearances++;
                     }
                     else if (eAction.contains("down") && Appearances > 1) {
@@ -75,7 +75,7 @@ public class Attributes{
                     }
                    return Appearances;
                 case "perc":
-                    if (eAction.contains("up") && Perception < 4) {
+                    if (eAction.contains("up") && Perception < 5) {
                         Perception++;
                     }
                     else if (eAction.contains("down") && Perception > 1) {
@@ -83,7 +83,7 @@ public class Attributes{
                     }
                    return Perception;
                 case "int":
-                    if (eAction.contains("up") && Intelligence < 4) {
+                    if (eAction.contains("up") && Intelligence < 5) {
                         Intelligence++;
                     }
                     else if (eAction.contains("down") && Intelligence > 1) {
@@ -91,7 +91,7 @@ public class Attributes{
                     }
                    return Intelligence;
                 case "wits":
-                    if (eAction.contains("up") && Wits < 4) {
+                    if (eAction.contains("up") && Wits < 5) {
                         Wits++;
                     }
                     else if (eAction.contains("down") && Wits > 1) {
