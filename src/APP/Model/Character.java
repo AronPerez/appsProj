@@ -12,7 +12,7 @@ public class Character {
 
     public String Name, Player, Chronicle, Nature, Demeanor,
             Essence,Affiliation,Sect,Concept;
-    public int currentXP , maxXP;
+    public int currentEXP , maxEXP;
 
     public Character() {
         Spheres = new Spheres();
@@ -20,7 +20,6 @@ public class Character {
         Attributes = new Attributes();
         Abilities = new Abilities();
         Name = null;
-        currentXP = 6;
     }
 
     public String toString(){
