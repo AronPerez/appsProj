@@ -20,6 +20,7 @@ public class Character {
         Attributes = new Attributes();
         Abilities = new Abilities();
         Name = null;
+        currentXP = 6;
     }
 
     public String toString(){

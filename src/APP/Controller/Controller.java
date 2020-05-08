@@ -1,13 +1,13 @@
 package APP.Controller;
 
-import APP.Model.Character;
-import javafx.event.*;
-import javafx.fxml.FXML;
-import javafx.scene.control.ProgressBar;
-import javafx.scene.control.TextField;
-import APP.Main.*;
-import java.awt.event.TextEvent;
-import java.io.IOException;
+        import APP.Model.Character;
+        import javafx.event.*;
+        import javafx.fxml.FXML;
+        import javafx.scene.control.ProgressBar;
+        import javafx.scene.control.TextField;
+        import APP.Main.*;
+        import java.awt.event.TextEvent;
+        import java.io.IOException;
 
 public class Controller {
 
@@ -28,9 +28,31 @@ public class Controller {
         return;
     }
     @FXML
-    private ProgressBar attr_str_bar ,attr_dex_bar, attr_stam_bar, attr_char_bar, abil_sci_bar,
-            attr_app_bar, attr_perc_bar,attr_int_bar,attr_wit_bar, sphr_time_bar, sphr_mind_bar, sphr_prime_bar;
-            //sphr_forces_bar sphr_life_bar, sphr_corr_bar, sphr_ent_bar
+    private ProgressBar attr_str_bar;
+    @FXML
+    private ProgressBar attr_dex_bar;
+    @FXML
+    private ProgressBar attr_stam_bar;
+    @FXML
+    private ProgressBar abil_sci_bar;
+    @FXML
+    private ProgressBar attr_perc_bar;
+    @FXML
+    private ProgressBar attr_int_bar;
+    @FXML
+    private ProgressBar attr_wit_bar;
+    @FXML
+    private ProgressBar sphr_time_bar;
+    @FXML
+    private ProgressBar sphr_mind_bar;
+    @FXML
+    private ProgressBar sphr_prime_bar;
+    @FXML
+    private ProgressBar attr_char_bar;
+    @FXML
+    private ProgressBar attr_app_bar;
+    @FXML
+    private ProgressBar sphr_forces_bar, sphr_life_bar, sphr_corr_bar, sphr_ent_bar;
 //            abil_alrt_bar,abil_art_bar,abil_ath_bar,
 //            abil_awar_bar,abil_bra_bar, abil_emp_bar,abil_expr_bar,abil_inti_bar,abil_lead_bar,abil_stre_bar,
 //            abil_subt_bar, abil_craf_bar,abil_driv_bar,abil_etiq_bar,abil_fire_bar,abil_mart_bar,abil_med_bar,
@@ -208,7 +230,7 @@ public class Controller {
             switch(eClass) {
                 case "attr":
                     tempDots = this.CharSheet.Attributes.ProcessDots(eType, eAction);
-                   break;
+                    break;
                 case "sphr":
                     tempDots = this.CharSheet.Spheres.ProcessDots(eType, eAction);
                     break;

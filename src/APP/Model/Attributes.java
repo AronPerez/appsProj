@@ -6,7 +6,7 @@ public class Attributes{
                 Appearances,Perception,Intelligence,Wits;
 
         public Attributes() {
-
+            // Default by one
             Strength = 1;
             Dexterity = 1;
             Stamina = 1;

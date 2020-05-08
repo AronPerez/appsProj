@@ -31,39 +31,39 @@
 <AnchorPane prefHeight="1374.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Controller.Controller">
    <children>
       <SplitPane dividerPositions="0.06781376518218624" orientation="VERTICAL" prefHeight="990.0" prefWidth="924.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
                   <MenuBar layoutX="147.0" layoutY="5.0" prefHeight="61.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <menus>
-                      <Menu mnemonicParsing="false" text="File">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="New Character" />
+                     <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="New Character" />
                               <MenuItem mnemonicParsing="false" text="Save" />
                               <MenuItem mnemonicParsing="false" text="Load File" />
                               <MenuItem mnemonicParsing="false" text="Delete Character" />
                               <MenuItem mnemonicParsing="false" text="Add Character Exp" />
                               <MenuItem mnemonicParsing="false" text="Apply Willpower Damage" />
                               <MenuItem mnemonicParsing="false" text="Purchase Willpower" />
-                        </items>
-                      </Menu>
-                      <Menu mnemonicParsing="false" text="Help">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="About" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="About" />
                               <MenuItem mnemonicParsing="false" text="Index" />
-                        </items>
-                      </Menu>
-                    </menus>
+                           </items>
+                        </Menu>
+                     </menus>
                   </MenuBar>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
                   <TabPane prefHeight="990.0" prefWidth="730.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <tabs>
-                      <Tab text="Quick View">
-                        <content>
-                          <AnchorPane>
+                     <tabs>
+                        <Tab text="Quick View">
+                           <content>
+                              <AnchorPane>
                                  <children>
                                     <ScrollPane layoutY="15.0" prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
                                        <content>
@@ -82,16 +82,16 @@
                                                 </Label>
                                                 <Separator prefHeight="3.0" prefWidth="874.0" />
                                                 <GridPane prefHeight="332.0" prefWidth="874.0">
-                                                  <columnConstraints>
-                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   <columnConstraints>
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                  </columnConstraints>
-                                                  <rowConstraints>
-                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                  </rowConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
                                                    <children>
                                                       <Label text="Character Name:" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                                                          <GridPane.margin>
@@ -1106,16 +1106,16 @@
                                                 </GridPane>
                                                 <Separator prefWidth="200.0" />
                                                 <GridPane prefHeight="457.0" prefWidth="874.0">
-                                                  <columnConstraints>
-                                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="217.0" />
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="217.0" />
                                                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="359.0" />
-                                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="290.0" />
-                                                  </columnConstraints>
-                                                  <rowConstraints>
-                                                    <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
-                                                    <RowConstraints maxHeight="331.0" minHeight="10.0" prefHeight="329.0" vgrow="SOMETIMES" />
-                                                    <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
-                                                  </rowConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="338.0" minWidth="10.0" prefWidth="290.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints maxHeight="109.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="331.0" minHeight="10.0" prefHeight="329.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
                                                    <children>
                                                       <Label text="Willpower" GridPane.halignment="CENTER" GridPane.valignment="TOP">
                                                          <GridPane.margin>
@@ -1262,11 +1262,11 @@
                                     <Insets top="10.0" />
                                  </padding>
                               </AnchorPane>
-                        </content>
-                      </Tab>
-                      <Tab text="Attributes">
-                        <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           </content>
+                        </Tab>
+                        <Tab text="Attributes">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
                                     <ScrollPane fitToWidth="true" prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <content>
@@ -1276,20 +1276,20 @@
                                              </padding>
                                              <children>
                                                 <GridPane prefHeight="505.0" prefWidth="904.0">
-                                                  <columnConstraints>
-                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   <columnConstraints>
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                  </columnConstraints>
-                                                  <rowConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
                                                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                  </rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
                                                    <children>
                                                       <Label text="Physical" GridPane.columnSpan="2">
                                                          <GridPane.margin>
@@ -1434,14 +1434,14 @@
                                     <Insets top="10.0" />
                                  </padding>
                               </AnchorPane>
-                        </content>
-                      </Tab>
+                           </content>
+                        </Tab>
                         <Tab text="Abilities">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
                                     <SplitPane dividerPositions="0.7604340567612687" layoutX="332.0" layoutY="400.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL" prefHeight="1200.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                      <items>
+                                       <items>
                                           <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
                                              <content>
                                                 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
@@ -1520,57 +1520,57 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Alertnessprog" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_alrt_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Artprog" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="abil_art_bar" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Athleticsprog" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="abil_ath_bar" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Brawlprog" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="abil_awar_bar" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Empathyprog" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                                  <Text fx:id="abil_bra_bar" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Intimidationprog" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                  <Text fx:id="abil_emp_bar" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Leadershiprog" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                                  <Text fx:id="abil_expr_bar" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Streetwiseprog" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                                  <Text fx:id="abil_inti_bar" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Awarenessprog" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                                                  <Text fx:id="abil_lead_bar" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Subterfugeprog" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                                                  <Text fx:id="abil_stre_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Expressionprog" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                                                  <Text fx:id="abil_subt_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -1581,17 +1581,6 @@
                                                                         <Button fx:id="abil_alrt_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
-                                                                  <ProgressBar fx:id="abil_alrt_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" />
-                                                                  <ProgressBar fx:id="abil_art_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <ProgressBar fx:id="abil_ath_bar" prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <ProgressBar fx:id="abil_awar_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <ProgressBar fx:id="abil_bra_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                                  <ProgressBar fx:id="abil_emp_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                                                  <ProgressBar fx:id="abil_expr_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                                                  <ProgressBar fx:id="abil_inti_bar" prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                                                  <ProgressBar fx:id="abil_lead_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                                                  <ProgressBar fx:id="abil_stre_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                                                  <ProgressBar fx:id="abil_subt_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                                                      <children>
                                                                         <Button fx:id="abil_art_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
@@ -1730,57 +1719,57 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Alertnessprog1" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_craf_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Artprog1" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="abil_driv_bar" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Athleticsprog1" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="abil_etiq_bar" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Brawlprog1" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="abil_fire_bar" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Empathyprog1" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                                  <Text fx:id="abil_mart_bar" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Intimidationprog1" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                  <Text fx:id="abil_med_bar" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Leadershiprog1" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                                  <Text fx:id="abil_mel_bar" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Streetwiseprog1" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                                  <Text fx:id="abil_rese_bar" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Awarenessprog1" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                                                  <Text fx:id="abil_stea_bar" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Subterfugeprog1" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                                                  <Text fx:id="abil_surv_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Expressionprog1" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                                                  <Text fx:id="abil_tech_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -1791,17 +1780,6 @@
                                                                         <Button fx:id="abil_craf_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
-                                                                  <ProgressBar fx:id="abil_craf_bar" prefHeight="75.0" prefWidth="123.0" progress="0.0" GridPane.columnIndex="2" />
-                                                                  <ProgressBar fx:id="abil_driv_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <ProgressBar fx:id="abil_etiq_bar" prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <ProgressBar fx:id="abil_fire_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <ProgressBar fx:id="abil_mart_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                                  <ProgressBar fx:id="abil_med_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                                                  <ProgressBar fx:id="abil_mel_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                                                  <ProgressBar fx:id="abil_rese_bar" prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                                                  <ProgressBar fx:id="abil_stea_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                                                  <ProgressBar fx:id="abil_surv_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                                                  <ProgressBar fx:id="abil_tech_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                                                      <children>
                                                                         <Button fx:id="abil_driv_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
@@ -1940,57 +1918,57 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Alertnessprog2" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_aca_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Artprog2" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="abil_comp_bar" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Athleticsprog2" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="abil_cosm_bar" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Brawlprog2" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="abil_enig_bar" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Empathyprog2" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                                  <Text fx:id="abil_esot_bar" layoutX="356.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Intimidationprog2" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                                  <Text fx:id="abil_inv_bar" layoutX="356.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Leadershiprog2" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                                  <Text fx:id="abil_law_bar" layoutX="356.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Streetwiseprog2" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                                                  <Text fx:id="abil_med_bar" layoutX="356.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="7">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Awarenessprog2" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                                                  <Text fx:id="abil_occ_bar" layoutX="356.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="8">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Subterfugeprog2" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                                                  <Text fx:id="abil_pol_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="9">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="Expressionprog2" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                                                  <Text fx:id="abil_sci_bar" layoutX="356.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="10">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -2001,17 +1979,6 @@
                                                                         <Button fx:id="abil_aca_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="-" />
                                                                      </children>
                                                                   </VBox>
-                                                                  <ProgressBar fx:id="abil_aca_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" />
-                                                                  <ProgressBar fx:id="abil_comp_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                                                                  <ProgressBar fx:id="abil_cosm_bar" prefHeight="75.0" prefWidth="267.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                                                                  <ProgressBar fx:id="abil_enig_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                                                                  <ProgressBar fx:id="abil_esot_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                                                                  <ProgressBar fx:id="abil_inv_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                                                                  <ProgressBar fx:id="abil_law_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                                                                  <ProgressBar fx:id="abil_med_bar" prefHeight="96.0" prefWidth="266.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                                                                  <ProgressBar fx:id="abil_occ_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                                                                  <ProgressBar fx:id="abil_pol_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                                                                  <ProgressBar fx:id="abil_sci_bar" prefHeight="94.0" prefWidth="253.0" progress="0.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
                                                                   <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                                                      <children>
                                                                         <Button fx:id="abil_comp_up" mnemonicParsing="false" onAction="#handleButton" prefHeight="40.0" prefWidth="52.0" text="+" />
@@ -2099,7 +2066,7 @@
                                                 </AnchorPane>
                                              </content>
                                           </ScrollPane>
-                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                              <children>
                                                 <Button layoutY="106.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="165.0" text="Spend EXP" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="158.0">
                                                    <font>
@@ -2132,19 +2099,19 @@
                                                 </ScrollPane>
                                              </children>
                                           </AnchorPane>
-                                      </items>
+                                       </items>
                                     </SplitPane>
                                  </children>
                               </AnchorPane>
-                          </content>
+                           </content>
                         </Tab>
                         <Tab text="Advantages">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
                                     <SplitPane dividerPositions="0.7696160267111853" orientation="VERTICAL" prefHeight="1200.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                      <items>
-                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <items>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                              <children>
                                                 <ScrollPane prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                                    <content>
@@ -2263,14 +2230,14 @@
                                                                </VBox.margin>
                                                             </Separator>
                                                             <GridPane prefHeight="146.0" prefWidth="916.0">
-                                                              <columnConstraints>
-                                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="522.0" minWidth="10.0" prefWidth="458.0" />
-                                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="461.0" minWidth="10.0" prefWidth="458.0" />
-                                                              </columnConstraints>
-                                                              <rowConstraints>
-                                                                <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
-                                                                <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
-                                                              </rowConstraints>
+                                                               <columnConstraints>
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="522.0" minWidth="10.0" prefWidth="458.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="461.0" minWidth="10.0" prefWidth="458.0" />
+                                                               </columnConstraints>
+                                                               <rowConstraints>
+                                                                  <RowConstraints maxHeight="77.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+                                                               </rowConstraints>
                                                                <children>
                                                                   <ProgressBar fx:id="advn_arete_bar" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                                                      <GridPane.margin>
@@ -2312,16 +2279,16 @@
                                                                </VBox.margin>
                                                             </Label>
                                                             <GridPane prefHeight="457.0" prefWidth="916.0">
-                                                              <columnConstraints>
-                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                                              </columnConstraints>
-                                                              <rowConstraints>
-                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                               <columnConstraints>
+                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                               </columnConstraints>
+                                                               <rowConstraints>
                                                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                                              </rowConstraints>
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                               </rowConstraints>
                                                                <children>
                                                                   <TextField fx:id="backGroundTF_00" editable="false" GridPane.halignment="CENTER" GridPane.valignment="TOP">
                                                                      <GridPane.margin>
@@ -2573,7 +2540,7 @@
                                           </AnchorPane>
                                           <ScrollPane prefHeight="200.0" prefWidth="200.0">
                                              <content>
-                                              <AnchorPane>
+                                                <AnchorPane>
                                                    <children>
                                                       <Label layoutX="14.0" layoutY="175.0" text="Character Exp:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="215.0" />
                                                       <Label fx:id="charExpDisplay_T4" layoutX="14.0" layoutY="235.0" text="00" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="235.0" />
@@ -2588,19 +2555,19 @@
                                                 </AnchorPane>
                                              </content>
                                           </ScrollPane>
-                                      </items>
+                                       </items>
                                     </SplitPane>
                                  </children>
                               </AnchorPane>
-                          </content>
+                           </content>
                         </Tab>
                         <Tab text="Character Bio and Misc.">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="930.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="930.0">
                                  <children>
                                     <Accordion prefHeight="851.0" prefWidth="930.0">
-                                      <panes>
-                                        <TitledPane animated="false" prefHeight="250.0" prefWidth="930.0" text="Character Bio">
+                                       <panes>
+                                          <TitledPane animated="false" prefHeight="250.0" prefWidth="930.0" text="Character Bio">
                                              <content>
                                                 <ScrollPane fitToWidth="true">
                                                    <content>
@@ -2615,7 +2582,7 @@
                                                 <Insets top="8.0" />
                                              </padding>
                                           </TitledPane>
-                                        <TitledPane animated="false" prefWidth="930.0" text="Awakening">
+                                          <TitledPane animated="false" prefWidth="930.0" text="Awakening">
                                              <content>
                                                 <ScrollPane fitToWidth="true">
                                                    <content>
@@ -2651,11 +2618,48 @@
                                                 <Insets top="25.0" />
                                              </padding>
                                           </TitledPane>
-                                      </panes>
+                                       </panes>
                                        <padding>
                                           <Insets bottom="8.0" left="8.0" right="8.0" />
                                        </padding>
                                     </Accordion>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Misc.">
+                           <content>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="600.0">
+                                 <children>
+                                    <Button fx:id="ExpApply" layoutX="331.0" layoutY="88.0" mnemonicParsing="false" text="Apply" />
+                                    <Label layoutX="14.0" layoutY="31.0" text="Character Exp to be applied:" />
+                                    <TextField fx:id="ExpInField" layoutX="331.0" layoutY="23.0" prefWidth="200.0" />
+                                    <Label fx:id="willDisplay_MiscTab" layoutX="14.0" layoutY="180.0" text="Character Will: 05" />
+                                    <Button layoutX="227.0" layoutY="172.0" mnemonicParsing="false" text="Apply Damage" />
+                                    <Button layoutX="227.0" layoutY="238.0" mnemonicParsing="false" text="Purchase Will" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Load/Delete/Save">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ScrollPane prefHeight="704.0" prefWidth="496.0">
+                                       <content>
+                                          <VBox fx:id="fileListing" prefHeight="685.0" prefWidth="492.0">
+                                             <padding>
+                                                <Insets right="10.0" />
+                                             </padding>
+                                          </VBox>
+                                       </content>
+                                    </ScrollPane>
+                                    <CheckBox layoutX="507.0" layoutY="25.0" mnemonicParsing="false" text="Load" />
+                                    <CheckBox layoutX="507.0" layoutY="73.0" mnemonicParsing="false" text="Delete" />
+                                    <Button layoutX="507.0" layoutY="130.0" mnemonicParsing="false" text="Load/Delete" />
+                                    <Label layoutX="507.0" layoutY="323.0" text="Enter file name and save:" />
+                                    <Button layoutX="511.0" layoutY="435.0" mnemonicParsing="false" text="Save" />
+                                    <TextField fx:id="fileNameIn" layoutX="507.0" layoutY="370.0" />
                                  </children>
                               </AnchorPane>
                           </content>
