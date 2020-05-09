@@ -403,9 +403,9 @@ public class Controller {
         CharSheet.Nature = Nature.getText();
         CharSheet.Demeanor =Demeanor.getText();
         CharSheet.Essence = Essence.getText();
-        CharSheet.Sect = Sect.getText();
-        CharSheet.Concept = Concept.getText();
-        CharSheet.Affiliation = Affiliation.getText();
+//        CharSheet.Sect = Sect.getText();
+//        CharSheet.Concept = Concept.getText();
+//        CharSheet.Affiliation = Affiliation.getText();
 
     }
 

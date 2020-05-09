@@ -139,7 +139,7 @@
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                          <effect>
-                                                            <SepiaTone />
+                                                            <SepiaTone level="0.48" />
                                                          </effect>
                                                       </TextField>
                                                       <TextField fx:id="Player" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
@@ -147,7 +147,7 @@
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                          <effect>
-                                                            <SepiaTone />
+                                                            <SepiaTone level="0.54" />
                                                          </effect>
                                                       </TextField>
                                                       <TextField fx:id="Chronicle" layoutX="10.0" layoutY="151.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
@@ -155,7 +155,7 @@
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                          <effect>
-                                                            <SepiaTone />
+                                                            <SepiaTone level="0.54" />
                                                          </effect>
                                                       </TextField>
                                                       <TextField fx:id="Nature" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
@@ -163,7 +163,7 @@
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                          <effect>
-                                                            <SepiaTone />
+                                                            <SepiaTone level="0.43" />
                                                          </effect>
                                                       </TextField>
                                                       <TextField fx:id="Demeanor" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
@@ -171,7 +171,7 @@
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
                                                          <effect>
-                                                            <SepiaTone />
+                                                            <SepiaTone level="0.54" />
                                                          </effect>
                                                       </TextField>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Experience" textAlignment="CENTER" translateX="25.0" translateY="15.0" wrappingWidth="119.13671875" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="TOP">
@@ -2013,6 +2013,11 @@
                                           <Font size="15.0" />
                                        </font>
                                     </Label>
+                                    <Button fx:id="clearExp" layoutX="331.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleClear" text="Clear EXP">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
                                  </children>
                               </AnchorPane>
                            </content>
