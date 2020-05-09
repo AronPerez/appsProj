@@ -2,6 +2,7 @@ package APP.Model;
 
 import APP.Controller.Controller;
 
+// contains Spheres info
 public class Spheres{
 
     public int Correspondence, Entropy, Forces, Life, Matter, Mind, Prime,

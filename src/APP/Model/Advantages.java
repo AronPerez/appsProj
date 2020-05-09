@@ -1,5 +1,6 @@
 package APP.Model;
 
+// contains Advantages values
 public class Advantages{
 
     public int Health, Willpower, Arete;

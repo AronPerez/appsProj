@@ -26,7 +26,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="1374.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Controller.Controller">
    <children>
       <SplitPane dividerPositions="0.06781376518218624" orientation="VERTICAL" prefHeight="990.0" prefWidth="924.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -928,7 +927,7 @@
                                                 <Insets bottom="8.0" left="8.0" right="8.0" />
                                              </padding>
                                              <children>
-                                                <GridPane prefHeight="505.0" prefWidth="904.0">
+                                                <GridPane prefHeight="500.0" prefWidth="891.0">
                                                    <columnConstraints>
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -1078,7 +1077,7 @@
                                                       <Button fx:id="attr_wits_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="25.0" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
                                                    </children>
                                                 </GridPane>
-                                                <TextArea fx:id="help_MathDisplay2" editable="false" focusTraversable="false" prefHeight="718.0" prefWidth="891.0" wrapText="true">
+                                                <TextArea fx:id="help_MathDisplay2" editable="false" focusTraversable="false" prefHeight="653.0" prefWidth="891.0" wrapText="true">
                                                    <VBox.margin>
                                                       <Insets top="10.0" />
                                                    </VBox.margin>
@@ -1124,7 +1123,7 @@
                                                             <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Text>
-                                                      <SplitPane dividerPositions="0.3333, 0.666666" layoutY="41.0" prefHeight="959.0" prefWidth="922.0" AnchorPane.topAnchor="41.0">
+                                                      <SplitPane dividerPositions="0.3333, 0.666666" layoutY="63.0" prefHeight="937.0" prefWidth="922.0" AnchorPane.topAnchor="63.0">
                                                          <items>
                                                             <GridPane prefHeight="820.0" prefWidth="304.0">
                                                                <children>
@@ -1765,9 +1764,9 @@
                                                    <content>
                                                       <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT">
                                                          <children>
-                                                            <GridPane prefHeight="543.0" prefWidth="825.0">
+                                                            <GridPane prefHeight="543.0" prefWidth="825.0" translateX="15.0">
                                                                <children>
-                                                                  <Label alignment="CENTER" text="Spheres of Magic" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                                  <Label alignment="CENTER" text="Spheres of Magic" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER">
                                                                      <font>
                                                                         <Font name="Bell MT" size="40.0" />
                                                                      </font>
@@ -1775,122 +1774,122 @@
                                                                         <Insets />
                                                                      </GridPane.margin>
                                                                   </Label>
-                                                                  <Label text="Time" GridPane.rowIndex="1">
+                                                                  <Label text="Time" translateX="25.0" GridPane.rowIndex="1">
                                                                      <font>
-                                                                        <Font name="Bell MT" size="20.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Label text="Spirit" GridPane.rowIndex="2">
+                                                                  <Label text="Spirit" translateX="25.0" GridPane.rowIndex="2">
                                                                      <font>
-                                                                        <Font name="Bell MT" size="20.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Label text="Prime" GridPane.rowIndex="3">
+                                                                  <Label text="Prime" translateX="25.0" GridPane.rowIndex="3">
                                                                      <font>
-                                                                        <Font name="Bell MT" size="20.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Label text="Mind" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                                  <Label text="Mind" translateX="25.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                                                      <font>
-                                                                        <Font name="Bell MT" size="20.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Label text="Matter" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                                  <Label text="Matter" translateX="25.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                                                      <font>
-                                                                        <Font name="Bell MT" size="20.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                                  <Label text="Life" translateX="25.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                                                      <font>
-                                                                        <Font name="Bell MT" size="20.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                                  <Label text="Forces" translateX="25.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
                                                                      <font>
-                                                                        <Font name="Bell MT" size="20.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                                  <Label text="Entropy" translateX="25.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
                                                                      <font>
-                                                                        <Font name="Bell MT" size="20.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                                  <Label text="Corespondence" translateX="25.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
                                                                      <font>
-                                                                        <Font name="Bell MT" size="20.0" />
+                                                                        <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Text fx:id="sphr_time_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="sphr_time_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="sphr_spirit_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="sphr_spirit_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="sphr_mind_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                                  <Text fx:id="sphr_mind_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="sphr_prime_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="sphr_prime_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="sphr_forces_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                                                  <Text fx:id="sphr_forces_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="sphr_life_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                                                  <Text fx:id="sphr_life_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="sphr_matter_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                                  <Text fx:id="sphr_matter_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="sphr_ent_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                                                  <Text fx:id="sphr_ent_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="sphr_corr_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                                                  <Text fx:id="sphr_corr_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Button fx:id="sphr_time_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_spirit_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_prime_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_mind_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_matter_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_life_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_forces_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_ent_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_corr_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_time_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_spirit_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_prime_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_mind_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_matter_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_life_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_forces_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_ent_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                                  <Button fx:id="sphr_corr_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                                  <Button fx:id="sphr_time_up" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_spirit_down" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="30.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_prime_down" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="30.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_mind_up" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_matter_up" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_life_up" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_forces_up" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_ent_up" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_corr_up" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_time_down" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="30.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_spirit_up" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_prime_up" maxWidth="25.0" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_mind_down" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="30.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_matter_down" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="30.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_life_down" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="30.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_forces_down" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="30.0" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_ent_down" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="30.0" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                                  <Button fx:id="sphr_corr_down" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="30.0" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
                                                                </children>
                                                                <columnConstraints>
-                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="70.0" />
-                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="181.0" />
-                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="10.0" prefWidth="94.0" />
-                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="168.0" />
-                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="172.0" />
-                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="219.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="141.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="156.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="157.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="161.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="143.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="158.0" />
                                                                </columnConstraints>
                                                                <rowConstraints>
                                                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -1904,7 +1903,7 @@
                                                                   <Insets top="10.0" />
                                                                </VBox.margin>
                                                             </Separator>
-                                                            <GridPane prefHeight="146.0" prefWidth="916.0">
+                                                            <GridPane prefHeight="146.0" prefWidth="916.0" translateX="10.0">
                                                                <columnConstraints>
                                                                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="522.0" minWidth="10.0" prefWidth="458.0" />
                                                                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="461.0" minWidth="10.0" prefWidth="458.0" />
@@ -1999,12 +1998,12 @@
                                        </font>
                                     </Label>
                                     <TextField fx:id="ExpInField" layoutX="331.0" layoutY="23.0" prefWidth="200.0" />
-                                    <Button fx:id="load_character" layoutX="330.0" layoutY="248.0" mnemonicParsing="false" onAction="#loadCharacter" text="Load Character">
+                                    <Button fx:id="load_character" disable="true" layoutX="330.0" layoutY="248.0" mnemonicParsing="false" onAction="#loadCharacter" text="Load Character">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="save_chaarcter" layoutX="331.0" layoutY="174.0" mnemonicParsing="false" onAction="#saveCharacter" text="Save Character">
+                                    <Button fx:id="save_chaarcter" disable="true" layoutX="331.0" layoutY="174.0" mnemonicParsing="false" onAction="#saveCharacter" text="Save Character">
                                        <font>
                                           <Font size="14.0" />
                                        </font>

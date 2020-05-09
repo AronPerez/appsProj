@@ -21,7 +21,7 @@ public class Controller {
             Essence, Affiliation, Sect, Concept;
 
     @FXML
-    public Button ExpApply;
+    public Button applyEXP, cancelEXP;
 
     @FXML
     public ProgressBar advn_arete_bar, advn_arete1_bar;
@@ -60,6 +60,7 @@ public class Controller {
             sphr_time1_bar, sphr_mind1_bar, sphr_prime1_bar, sphr_forces1_bar,
             sphr_life1_bar, sphr_corr1_bar, sphr_spirit1_bar, sphr_matter1_bar, sphr_ent1_bar, ExperienceBar;
 
+    // updates progress values
     void updateProgress(int Value, String eType) {
         var barVal = Value + "/5";
         switch (eType) {
@@ -293,6 +294,7 @@ public class Controller {
         return;
     }
 
+    // changes experience in the data
     @FXML
     public static void changeEXP(String eAction, int Attr) {
         // checking if safe to spend EXP
@@ -337,7 +339,7 @@ public class Controller {
 
     }
 
-
+    // handles the exp buttons
     @FXML
     void handleButton(ActionEvent event) throws IOException {
         String eClass, eType, eAction;
@@ -392,6 +394,7 @@ public class Controller {
     }
 
 
+    // handles the text fields in quick view
     @FXML
     void handleQuickViewB(ActionEvent event) {
         CharSheet.Name = Name.getText();
@@ -410,12 +413,18 @@ public class Controller {
     @FXML
     void loadCharacter()  {
 //        String currentDirectory = System.getProperty("user.dir");
-
     }
 
     // saves character info to save file
     @FXML
     void saveCharacter() {
 
+    }
+
+    @FXML
+    void handleClear() {
+        ExperienceBar.setText("0");
+        CharSheet.maxEXP = 0;
+        CharSheet.currentEXP = 0;
     }
 }

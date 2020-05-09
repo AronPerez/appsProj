@@ -2,6 +2,7 @@ package APP.Model;
 
 import APP.Controller.Controller;
 
+// contains Attributes values
 public class Attributes{
 
         public int Strength, Dexterity, Stamina,Charisma,Manipulation,

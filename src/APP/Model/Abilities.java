@@ -2,6 +2,7 @@ package APP.Model;
 
 import APP.Controller.Controller;
 
+// contains Abilities values
 public class Abilities{
 
     public int Alertness, Art, Athletics, Awareness, Brawl, Empathy, Expression, Intimidation,

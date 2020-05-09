@@ -4,6 +4,7 @@ import javafx.event.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
+// contains all character information
 public class Character {
     public Attributes Attributes;
     public Spheres Spheres;
