@@ -7,60 +7,62 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-
 import java.io.IOException;
+
 
 public class Controller {
 
 
-    public Character CharSheet = new Character();
+    private static Character CharSheet = new Character();
+    public static int tempDots;
 
     @FXML
-    public TextField ExpInField;
+    public TextField ExpInField, Name, Player, Chronicle, Nature, Demeanor,
+            Essence, Affiliation, Sect, Concept;
 
     @FXML
     public Button ExpApply;
 
     @FXML
-    public ProgressBar advn_arete_bar,advn_arete1_bar;
+    public ProgressBar advn_arete_bar, advn_arete1_bar;
 
     @FXML
     public Text
-            attr_app_bar,attr_dex_bar,attr_stam_bar, attr_char_bar,attr_perc_bar,
-            attr_str_bar,attr_int_bar,attr_wits_bar,attr_man_bar;
+            attr_app_bar, attr_dex_bar, attr_stam_bar, attr_char_bar, attr_perc_bar,
+            attr_str_bar, attr_int_bar, attr_wits_bar, attr_man_bar;
     @FXML
     public Text
-            attr_app1_bar,attr_dex1_bar,attr_stam1_bar, attr_char1_bar,attr_perc1_bar,
-            attr_str1_bar,attr_int1_bar,attr_wits1_bar,attr_man1_bar;
+            attr_app1_bar, attr_dex1_bar, attr_stam1_bar, attr_char1_bar, attr_perc1_bar,
+            attr_str1_bar, attr_int1_bar, attr_wits1_bar, attr_man1_bar;
 
     @FXML
     public Text
-            abil_alrt_bar,abil_art_bar,abil_ath_bar, abil_sci_bar,
-            abil_awar_bar,abil_bra_bar, abil_emp_bar,abil_expr_bar,abil_inti_bar,abil_lead_bar,abil_stre_bar,
-            abil_subt_bar, abil_craft_bar,abil_driv_bar,abil_etiq_bar,abil_fire_bar,abil_mart_bar,
-            abil_med_bar, abil_mel_bar, abil_rese_bar,abil_stea_bar,abil_surv_bar,abil_tech_bar,abil_aca_bar,abil_comp_bar,
-            abil_cosm_bar, abil_enig_bar,abil_esot_bar,abil_inv_bar,abil_law_bar,abil_occ_bar,abil_pol_bar,abil_medi_bar;
+            abil_alrt_bar, abil_art_bar, abil_ath_bar, abil_sci_bar,
+            abil_awar_bar, abil_bra_bar, abil_emp_bar, abil_expr_bar, abil_inti_bar, abil_lead_bar, abil_stre_bar,
+            abil_subt_bar, abil_craft_bar, abil_driv_bar, abil_etiq_bar, abil_fire_bar, abil_mart_bar,
+            abil_med_bar, abil_mel_bar, abil_rese_bar, abil_stea_bar, abil_surv_bar, abil_tech_bar, abil_aca_bar, abil_comp_bar,
+            abil_cosm_bar, abil_enig_bar, abil_esot_bar, abil_inv_bar, abil_law_bar, abil_occ_bar, abil_pol_bar, abil_medi_bar;
     @FXML
     public Text
-            abil_alrt1_bar,abil_art1_bar,abil_ath1_bar, abil_sci1_bar,
-            abil_awar1_bar,abil_bra1_bar, abil_emp1_bar,abil_expr1_bar,abil_inti1_bar,abil_lead1_bar,abil_stre1_bar,
-            abil_subt1_bar, abil_craft1_bar,abil_driv1_bar,abil_etiq1_bar,abil_fire1_bar,abil_mart1_bar,
-            abil_med1_bar, abil_mel1_bar, abil_rese1_bar,abil_stea1_bar,abil_surv1_bar,abil_tech1_bar,abil_aca1_bar,abil_comp1_bar,
-            abil_cosm1_bar, abil_enig1_bar,abil_esot1_bar,abil_inv1_bar,abil_law1_bar,abil_occ1_bar,abil_pol1_bar,abil_medi1_bar;
+            abil_alrt1_bar, abil_art1_bar, abil_ath1_bar, abil_sci1_bar,
+            abil_awar1_bar, abil_bra1_bar, abil_emp1_bar, abil_expr1_bar, abil_inti1_bar, abil_lead1_bar, abil_stre1_bar,
+            abil_subt1_bar, abil_craft1_bar, abil_driv1_bar, abil_etiq1_bar, abil_fire1_bar, abil_mart1_bar,
+            abil_med1_bar, abil_mel1_bar, abil_rese1_bar, abil_stea1_bar, abil_surv1_bar, abil_tech1_bar, abil_aca1_bar, abil_comp1_bar,
+            abil_cosm1_bar, abil_enig1_bar, abil_esot1_bar, abil_inv1_bar, abil_law1_bar, abil_occ1_bar, abil_pol1_bar, abil_medi1_bar;
 
     @FXML
     public Text
             sphr_time_bar, sphr_mind_bar, sphr_prime_bar, sphr_forces_bar,
-            sphr_life_bar, sphr_corr_bar,sphr_spirit_bar, sphr_matter_bar,sphr_ent_bar;
+            sphr_life_bar, sphr_corr_bar, sphr_spirit_bar, sphr_matter_bar, sphr_ent_bar;
 
     @FXML
     public Text
             sphr_time1_bar, sphr_mind1_bar, sphr_prime1_bar, sphr_forces1_bar,
-            sphr_life1_bar, sphr_corr1_bar,sphr_spirit1_bar,sphr_matter1_bar,sphr_ent1_bar;
+            sphr_life1_bar, sphr_corr1_bar, sphr_spirit1_bar, sphr_matter1_bar, sphr_ent1_bar, ExperienceBar;
 
     void updateProgress(int Value, String eType) {
         var barVal = Value + "/5";
-        switch(eType) {
+        switch (eType) {
             case "str":
                 attr_str_bar.setText(barVal);
                 attr_str1_bar.setText(barVal);
@@ -265,38 +267,85 @@ public class Controller {
                 sphr_ent_bar.setText(barVal);
                 sphr_ent1_bar.setText(barVal);
             case "arete":
-                double barBa = (double)Value/10;
+                double barBa = (double) Value / 10;
                 System.out.println(barBa);
                 advn_arete_bar.setProgress(barBa);
                 advn_arete1_bar.setProgress(barBa);
+
             default:
                 System.out.print("\nPROG. BAR DEFAULTED\n");
 
         }
     }
+
     @FXML
     void handleApply(ActionEvent event) {
         int EXP = Integer.parseInt(ExpInField.getText());
+        ExperienceBar.setText(ExpInField.getText());
         CharSheet.maxEXP = EXP;
         CharSheet.currentEXP = EXP;
         System.out.println("EXP: " + CharSheet.currentEXP);
     }
 
     @FXML
-    void handleCancel(ActionEvent event){
+    void handleCancel(ActionEvent event) {
         System.exit(0);
         return;
     }
 
     @FXML
+    public static void changeEXP(String eAction, int Attr) {
+        // checking if safe to spend EXP
+        if ((CharSheet.currentEXP != 0)) {
+            if (Attr == 1) {
+                tempDots = 0;
+                System.out.println("ATTRIBUTE AT 1 (min)");
+                return;
+            }
+            switch (eAction) {
+                case "down":
+                    if ((CharSheet.currentEXP == CharSheet.maxEXP)) {
+                        System.out.println("EXP AT MAX, or attribute is at 1\n" + CharSheet.currentEXP);
+                        return;
+                    }
+                    if (CharSheet.currentEXP < CharSheet.maxEXP) {
+                        CharSheet.currentEXP++;
+                        System.out.println("DOWN: " + CharSheet.currentEXP);
+                    }
+                    break;
+
+                case "up":
+                    if (CharSheet.currentEXP == 0) {
+                        System.out.println("EXP AT 0 (min)");
+                        return;
+                    }
+                    if (CharSheet.currentEXP > 0) {
+                        CharSheet.currentEXP = CharSheet.currentEXP - 1;
+                        System.out.println("UP: " + CharSheet.currentEXP);
+                    }
+                    break;
+
+                default:
+                    System.out.println("EXP CHANGE ERROR\n");
+                    return;
+            }
+
+        } else {
+            System.out.println("GO TO MISC AND ADD EXP");
+            return;
+        }
+
+    }
+
+
+    @FXML
     void handleButton(ActionEvent event) throws IOException {
-        int tempDots = 123456;
-        String eClass = "", eType = "", eAction = "";
+        String eClass, eType, eAction;
 
         // determining which button is pressed
         // i.e. - attr_str_up
         var buttonInfo = event.getSource().toString().replaceAll(",", "");
-        var ID = buttonInfo.substring(buttonInfo.indexOf("id=")+3).split(" ")[0].split("_");
+        var ID = buttonInfo.substring(buttonInfo.indexOf("id=") + 3).split(" ")[0].split("_");
 
         // turning button info to variables
         // i.e. - attr
@@ -306,37 +355,9 @@ public class Controller {
         // i.e. - up
         eAction = ID[2];
 
-        // checking if player has the XP to spend
-        switch (eAction) {
-            case "down":
-                if (CharSheet.currentEXP == CharSheet.maxEXP) {
-                    System.out.println("EXP AT MAX: \n" + CharSheet.currentEXP);
-                    return;
-                }
-                if (CharSheet.currentEXP < CharSheet.maxEXP) {
-                    CharSheet.currentEXP++;
-                    System.out.println("DOWN: " + CharSheet.currentEXP);
-                }
-                break;
-
-            case "up":
-                if (CharSheet.currentEXP == 0) {
-                    System.out.println("EXP AT 0: \n");
-                    return;
-                }
-                if (CharSheet.currentEXP > 0) {
-                    CharSheet.currentEXP = CharSheet.currentEXP-1;
-                    System.out.println("UP: " + CharSheet.currentEXP);
-                }
-                break;
-            default:
-                System.out.println("EXP CHANGE ERROR\n");
-                return;
-        }
-
-        // setting dots in data
         switch (eClass) {
             case "attr":
+
                 tempDots = this.CharSheet.Attributes.ProcessDots(eType, eAction);
                 break;
 
@@ -356,13 +377,45 @@ public class Controller {
                 System.out.print("\nDOTS CHANGE DEFAULTED\n");
                 return;
         }
-        if (tempDots != 123456) {
-            updateProgress(tempDots, eType);
-        }
-        if (tempDots == 123456) {
+
+
+        if (tempDots == 0 | tempDots == -1) {
             System.out.print("\nDOTS UNCHANGED\n");
             return;
+        } else {
+            updateProgress(tempDots, eType);
+            ExperienceBar.setText(CharSheet.currentEXP + "");
         }
-        updateProgress(tempDots, eType);
+
+        // setting dots in data
+
+    }
+
+
+    @FXML
+    void handleQuickViewB(ActionEvent event) {
+        CharSheet.Name = Name.getText();
+        CharSheet.Player = Player.getText();
+        CharSheet.Chronicle = Chronicle.getText();
+        CharSheet.Nature = Nature.getText();
+        CharSheet.Demeanor =Demeanor.getText();
+        CharSheet.Essence = Essence.getText();
+        CharSheet.Sect = Sect.getText();
+        CharSheet.Concept = Concept.getText();
+        CharSheet.Affiliation = Affiliation.getText();
+
+    }
+
+    // loads character save file from save dir
+    @FXML
+    void loadCharacter()  {
+//        String currentDirectory = System.getProperty("user.dir");
+
+    }
+
+    // saves character info to save file
+    @FXML
+    void saveCharacter() {
+
     }
 }

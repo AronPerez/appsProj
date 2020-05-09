@@ -19,7 +19,6 @@ public class Character {
         Advantages = new Advantages();
         Attributes = new Attributes();
         Abilities = new Abilities();
-        Name = null;
     }
 
     public String toString(){

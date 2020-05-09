@@ -23,6 +23,8 @@ public class Advantages{
                     Arete++;
                 } else if (eAction.contains("down") && Arete > 0) {
                     Arete--;
+                }else {
+                    return 0;
                 }
                return Arete;
             case "health":
@@ -30,6 +32,8 @@ public class Advantages{
                     Health++;
                 } else if (eAction.contains("down") && Health > 0) {
                     Health--;
+                }else {
+                    return 0;
                 }
                return Health;
             case "will":
@@ -37,6 +41,8 @@ public class Advantages{
                     Willpower++;
                 } else if (eAction.contains("down") && Willpower > 0) {
                     Willpower--;
+                }else {
+                    return 0;
                 }
                return Willpower;
             default:

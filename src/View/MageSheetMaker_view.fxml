@@ -3,7 +3,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -17,6 +16,8 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.SepiaTone?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -24,6 +25,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+
 
 <AnchorPane prefHeight="1374.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="APP.Controller.Controller">
    <children>
@@ -56,7 +58,7 @@
             </AnchorPane>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <TabPane prefHeight="990.0" prefWidth="730.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <TabPane layoutX="6.0" prefHeight="990.0" prefWidth="730.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="0.0">
                      <tabs>
                         <Tab text="Quick View">
                            <content>
@@ -69,13 +71,16 @@
                                                 <Insets bottom="10.0" left="10.0" right="10.0" />
                                              </padding>
                                              <children>
-                                                <Label alignment="CENTER" prefHeight="99.0" prefWidth="874.0" text="Mage The Ascension 20th Aniversary Edition">
+                                                <Label alignment="CENTER" prefHeight="99.0" prefWidth="897.0" text="Mage The Ascension 20th Aniversary Edition">
                                                    <VBox.margin>
                                                       <Insets />
                                                    </VBox.margin>
                                                    <font>
-                                                      <Font name="Lucida Calligraphy Italic" size="33.0" />
+                                                      <Font name="Bell MT" size="40.0" />
                                                    </font>
+                                                   <effect>
+                                                      <Bloom threshold="1.0" />
+                                                   </effect>
                                                 </Label>
                                                 <Separator prefHeight="3.0" prefWidth="874.0" />
                                                 <GridPane prefHeight="332.0" prefWidth="874.0">
@@ -90,56 +95,101 @@
                                                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                    </rowConstraints>
                                                    <children>
-                                                      <Label text="Character Name:" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                      <Label text="Character Name:" translateY="5.0" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                                                          <GridPane.margin>
                                                             <Insets left="10.0" top="5.0" />
                                                          </GridPane.margin>
+                                                         <font>
+                                                            <Font name="Bell MT" size="20.0" />
+                                                         </font>
                                                       </Label>
-                                                      <Label text="Player Name:" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                      <Label text="Player Name:" translateY="5.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                                          <GridPane.margin>
                                                             <Insets left="10.0" top="5.0" />
                                                          </GridPane.margin>
+                                                         <font>
+                                                            <Font name="Bell MT" size="20.0" />
+                                                         </font>
                                                       </Label>
-                                                      <Label text="Chronicle:" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                                      <Label text="Chronicle:" translateY="5.0" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
                                                          <GridPane.margin>
                                                             <Insets left="10.0" top="5.0" />
                                                          </GridPane.margin>
+                                                         <font>
+                                                            <Font name="Bell MT" size="20.0" />
+                                                         </font>
                                                       </Label>
-                                                      <Label text="Nature:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                      <Label text="Nature:" translateY="5.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                                                          <GridPane.margin>
                                                             <Insets left="10.0" top="5.0" />
                                                          </GridPane.margin>
+                                                         <font>
+                                                            <Font name="Bell MT" size="20.0" />
+                                                         </font>
                                                       </Label>
-                                                      <Label text="Demeanor:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                      <Label text="Demeanor:" translateY="5.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                                          <GridPane.margin>
                                                             <Insets left="10.0" top="5.0" />
                                                          </GridPane.margin>
+                                                         <font>
+                                                            <Font name="Bell MT" size="20.0" />
+                                                         </font>
                                                       </Label>
                                                       <TextField fx:id="Name" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
+                                                         <effect>
+                                                            <SepiaTone />
+                                                         </effect>
                                                       </TextField>
                                                       <TextField fx:id="Player" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
+                                                         <effect>
+                                                            <SepiaTone />
+                                                         </effect>
                                                       </TextField>
                                                       <TextField fx:id="Chronicle" layoutX="10.0" layoutY="151.0" prefHeight="51.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
+                                                         <effect>
+                                                            <SepiaTone />
+                                                         </effect>
                                                       </TextField>
                                                       <TextField fx:id="Nature" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
+                                                         <effect>
+                                                            <SepiaTone />
+                                                         </effect>
                                                       </TextField>
                                                       <TextField fx:id="Demeanor" layoutX="15.0" layoutY="70.0" prefHeight="51.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                          <GridPane.margin>
                                                             <Insets left="5.0" right="5.0" />
                                                          </GridPane.margin>
+                                                         <effect>
+                                                            <SepiaTone />
+                                                         </effect>
                                                       </TextField>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Experience" textAlignment="CENTER" translateX="25.0" translateY="15.0" wrappingWidth="119.13671875" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                                         <font>
+                                                            <Font name="Bell MT" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fx:id="ExperienceBar" strokeType="OUTSIDE" strokeWidth="0.0" text="0" translateX="50.0" translateY="10.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                         <font>
+                                                            <Font name="Brush Script MT Italic" size="25.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Button fx:id="aply_quick_view" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleQuickViewB" prefHeight="31.0" prefWidth="78.0" text="Apply" translateX="25.0" translateY="-45.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                         <font>
+                                                            <Font name="Arial" size="17.0" />
+                                                         </font>
+                                                      </Button>
                                                    </children>
                                                 </GridPane>
                                                 <Separator prefWidth="200.0">
@@ -151,64 +201,82 @@
                                                    <children>
                                                       <Label text="Physical" GridPane.columnSpan="2">
                                                          <font>
-                                                            <Font name="System Italic" size="25.0" />
+                                                            <Font name="Bell MT Bold" size="30.0" />
                                                          </font>
                                                          <GridPane.margin>
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
+                                                         <effect>
+                                                            <Bloom />
+                                                         </effect>
                                                       </Label>
                                                       <Label alignment="CENTER" text="Social" GridPane.columnIndex="2" GridPane.columnSpan="2">
                                                          <font>
-                                                            <Font name="System Italic" size="25.0" />
+                                                            <Font name="Bell MT Bold" size="30.0" />
                                                          </font>
                                                          <GridPane.margin>
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
+                                                         <effect>
+                                                            <Bloom />
+                                                         </effect>
                                                       </Label>
                                                       <Label alignment="CENTER" prefHeight="68.0" prefWidth="104.0" text="Mental" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.columnSpan="2">
                                                          <font>
-                                                            <Font name="System Italic" size="25.0" />
+                                                            <Font name="Bell MT Bold" size="30.0" />
                                                          </font>
                                                          <GridPane.margin>
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
+                                                         <effect>
+                                                            <Bloom />
+                                                         </effect>
                                                       </Label>
-                                                      <Label text="Strength" GridPane.rowIndex="1">
+                                                      <Label text="Strength" translateX="25.0" GridPane.halignment="LEFT" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Dexterity" GridPane.rowIndex="2">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Dexterity" translateX="25.0" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Stamina" GridPane.rowIndex="3">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Stamina" translateX="25.0" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Charisma" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Charisma" translateX="25.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Manipulation" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Manipulation" translateX="25.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Appearance" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Appearance" translateX="25.0" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Perception" translateX="25.0" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Intelligence" translateX="25.0" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Witts" translateX="25.0" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Text fx:id="attr_str1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
@@ -279,39 +347,39 @@
                                                    <children>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Talents" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="5.0">
                                                          <font>
-                                                            <Font name="System Italic" size="25.0" />
+                                                            <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Text>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Knowledges" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="5.0">
                                                          <font>
-                                                            <Font name="System Italic" size="25.0" />
+                                                            <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Text>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Skills" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="5.0">
                                                          <font>
-                                                            <Font name="System Italic" size="25.0" />
+                                                            <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Text>
                                                       <SplitPane dividerPositions="0.33369565217391306, 0.6652173913043479" layoutY="41.0" prefHeight="959.0" prefWidth="922.0" AnchorPane.topAnchor="41.0">
                                                          <items>
                                                             <GridPane prefHeight="820.0" prefWidth="304.0">
                                                                <children>
-                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alertness">
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alertness" GridPane.halignment="CENTER">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Art" GridPane.rowIndex="1">
+                                                                  <Text layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Art" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text layoutX="10.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Athletics" GridPane.rowIndex="2">
+                                                                  <Text layoutX="10.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Athletics" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text layoutX="10.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Awareness" GridPane.rowIndex="3">
+                                                                  <Text layoutX="10.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Awareness" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -351,22 +419,22 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_alrt1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_alrt1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_art1_bar" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="abil_art1_bar" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_ath1_bar" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="abil_ath1_bar" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_awar1_bar" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="abil_awar1_bar" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -428,22 +496,22 @@
                                                             </GridPane>
                                                             <GridPane layoutX="10.0" layoutY="10.0" prefHeight="793.0" prefWidth="300.0">
                                                                <children>
-                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Crafts">
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Crafts" GridPane.halignment="CENTER">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drive" GridPane.rowIndex="1">
+                                                                  <Text layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drive" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text layoutX="10.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etiquette" GridPane.rowIndex="2">
+                                                                  <Text layoutX="10.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etiquette" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text layoutX="10.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Firearms" GridPane.rowIndex="3">
+                                                                  <Text layoutX="10.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Firearms" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -483,22 +551,22 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_craft1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_craft1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_driv1_bar" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="abil_driv1_bar" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_etiq1_bar" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="abil_etiq1_bar" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_fire1_bar" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="abil_fire1_bar" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -560,22 +628,22 @@
                                                             </GridPane>
                                                             <GridPane layoutX="10.0" layoutY="10.0" prefHeight="854.0" prefWidth="922.0">
                                                                <children>
-                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Academics">
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Academics" GridPane.halignment="CENTER">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer" GridPane.rowIndex="1">
+                                                                  <Text layoutX="10.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text layoutX="10.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cosmology" GridPane.rowIndex="2">
+                                                                  <Text layoutX="10.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cosmology" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text layoutX="10.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enigmas" GridPane.rowIndex="3">
+                                                                  <Text layoutX="10.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enigmas" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -615,22 +683,22 @@
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_aca1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1">
+                                                                  <Text fx:id="abil_aca1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_comp1_bar" layoutX="356.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                                  <Text fx:id="abil_comp1_bar" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_cosm1_bar" layoutX="356.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                                  <Text fx:id="abil_cosm1_bar" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
                                                                   </Text>
-                                                                  <Text fx:id="abil_enig1_bar" layoutX="356.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                                  <Text fx:id="abil_enig1_bar" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" translateX="70.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
                                                                      </font>
@@ -708,39 +776,48 @@
                                                       <Label text="Time" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="System Italic" size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Label text="Spirit" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font name="System Italic" size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Label text="Prime" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Label text="Mind" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Label text="Matter" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font name="System Italic" size="25.0" />
-                                                         </font></Label>
+                                                         </font>
+                                                      </Label>
                                                       <Text fx:id="sphr_time1_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
@@ -831,7 +908,8 @@
                                        </content>
                                        <padding>
                                           <Insets top="10.0" />
-                                       </padding></ScrollPane>
+                                       </padding>
+                                    </ScrollPane>
                                  </children>
                                  <padding>
                                     <Insets top="10.0" />
@@ -841,11 +919,11 @@
                         </Tab>
                         <Tab text="Attributes">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="753.0" prefWidth="922.0">
                                  <children>
-                                    <ScrollPane fitToWidth="true" prefHeight="842.0" prefWidth="922.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <ScrollPane fitToWidth="true" layoutY="40.0" prefHeight="1204.0" prefWidth="922.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
                                        <content>
-                                          <VBox>
+                                          <VBox prefHeight="1204.0" prefWidth="907.0">
                                              <padding>
                                                 <Insets bottom="8.0" left="8.0" right="8.0" />
                                              </padding>
@@ -871,7 +949,7 @@
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
                                                          <font>
-                                                            <Font name="System Italic" size="25.0" />
+                                                            <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Label>
                                                       <Label alignment="CENTER" text="Social" GridPane.columnIndex="2" GridPane.columnSpan="2">
@@ -879,7 +957,7 @@
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
                                                          <font>
-                                                            <Font name="System Italic" size="25.0" />
+                                                            <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Label>
                                                       <Label alignment="CENTER" prefHeight="68.0" prefWidth="104.0" text="Mental" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.columnSpan="2">
@@ -887,111 +965,120 @@
                                                             <Insets left="100.0" />
                                                          </GridPane.margin>
                                                          <font>
-                                                            <Font name="System Italic" size="25.0" />
+                                                            <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Label>
-                                                      <Label text="Strength" GridPane.rowIndex="1">
+                                                      <Label text="Strength" translateX="15.0" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Dexterity" GridPane.rowIndex="2">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Dexterity" translateX="15.0" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Stamina" GridPane.rowIndex="3">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Stamina" translateX="15.0" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Charisma" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Charisma" translateX="15.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Manipulation" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Manipulation" translateX="15.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Appearance" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Appearance" translateX="15.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Perception" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Perception" translateX="15.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Intelligence" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Intelligence" translateX="15.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Label text="Witts" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                         </font>
+                                                      </Label>
+                                                      <Label text="Witts" translateX="15.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
-                                                         </font></Label>
-                                                      <Text fx:id="attr_str_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         </font>
+                                                      </Label>
+                                                      <Text fx:id="attr_str_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <Text fx:id="attr_dex_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                      <Text fx:id="attr_dex_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <Text fx:id="attr_char_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                      <Text fx:id="attr_char_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <Text fx:id="attr_stam_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                      <Text fx:id="attr_stam_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <Text fx:id="attr_perc_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                                      <Text fx:id="attr_perc_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <Text fx:id="attr_app_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                                      <Text fx:id="attr_app_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <Text fx:id="attr_int_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                                      <Text fx:id="attr_int_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <Text fx:id="attr_wits_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                                      <Text fx:id="attr_wits_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <Text fx:id="attr_man_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                      <Text fx:id="attr_man_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="1/5" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                                                          <font>
                                                             <Font name="Brush Script MT Italic" size="25.0" />
                                                          </font>
                                                       </Text>
-                                                      <Button fx:id="attr_str_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_dex_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_stam_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_char_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_man_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_app_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_perc_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_int_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_wits_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_str_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_dex_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_stam_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_char_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_man_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_app_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_perc_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_int_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
-                                                      <Button fx:id="attr_wits_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+                                                      <Button fx:id="attr_str_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_dex_down" mnemonicParsing="false" onAction="#handleButton" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_stam_down" mnemonicParsing="false" onAction="#handleButton" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_char_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_man_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_app_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_perc_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_int_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_wits_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_str_down" mnemonicParsing="false" onAction="#handleButton" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_dex_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_stam_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateX="40.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_char_down" mnemonicParsing="false" onAction="#handleButton" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_man_down" mnemonicParsing="false" onAction="#handleButton" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_app_down" mnemonicParsing="false" onAction="#handleButton" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_perc_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="25.0" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_int_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="25.0" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                                      <Button fx:id="attr_wits_down" mnemonicParsing="false" onAction="#handleButton" prefHeight="25.0" prefWidth="25.0" text="-" translateX="22.0" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
                                                    </children>
                                                 </GridPane>
-                                                <TextArea fx:id="help_MathDisplay2" editable="false" focusTraversable="false" prefHeight="154.0" prefWidth="904.0" wrapText="true">
+                                                <TextArea fx:id="help_MathDisplay2" editable="false" focusTraversable="false" prefHeight="718.0" prefWidth="891.0" wrapText="true">
                                                    <VBox.margin>
                                                       <Insets top="10.0" />
                                                    </VBox.margin>
@@ -1001,19 +1088,10 @@
                                                       <Insets top="15.0" />
                                                    </VBox.margin>
                                                 </Button>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Character EXP: ">
-                                                   <font>
-                                                      <Font size="21.0" />
-                                                   </font>
-                                                </Text>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00">
-                                                   <font>
-                                                      <Font size="21.0" />
-                                                   </font>
-                                                </Text>
                                              </children>
                                           </VBox>
-                                       </content></ScrollPane>
+                                       </content>
+                                    </ScrollPane>
                                  </children>
                                  <padding>
                                     <Insets top="10.0" />
@@ -1033,17 +1111,17 @@
                                                    <children>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Talents" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="5.0">
                                                          <font>
-                                                            <Font size="25.0" />
+                                                            <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Text>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Knowledges" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="5.0">
                                                          <font>
-                                                            <Font size="25.0" />
+                                                            <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Text>
                                                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Skills" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="5.0">
                                                          <font>
-                                                            <Font size="25.0" />
+                                                            <Font name="Bell MT" size="30.0" />
                                                          </font>
                                                       </Text>
                                                       <SplitPane dividerPositions="0.3333, 0.666666" layoutY="41.0" prefHeight="959.0" prefWidth="922.0" AnchorPane.topAnchor="41.0">
@@ -1653,16 +1731,6 @@
                                           </ScrollPane>
                                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                              <children>
-                                                <Text layoutX="13.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Character EXP: " AnchorPane.bottomAnchor="215.7294921875" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="37.3388671875">
-                                                   <font>
-                                                      <Font size="21.0" />
-                                                   </font>
-                                                </Text>
-                                                <Text layoutX="154.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" AnchorPane.bottomAnchor="215.7294921875" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="37.3388671875">
-                                                   <font>
-                                                      <Font size="21.0" />
-                                                   </font>
-                                                </Text>
                                                 <Button disable="true" layoutY="158.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="165.0" text="Cancel" visible="false" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="208.0">
                                                    <font>
                                                       <Font size="15.0" />
@@ -1693,15 +1761,15 @@
                                        <items>
                                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                              <children>
-                                                <ScrollPane prefHeight="842.0" prefWidth="920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                <ScrollPane layoutX="-14.0" prefHeight="842.0" prefWidth="920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
                                                    <content>
                                                       <VBox alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT">
                                                          <children>
-                                                            <GridPane prefHeight="505.0" prefWidth="904.0">
+                                                            <GridPane prefHeight="543.0" prefWidth="825.0">
                                                                <children>
                                                                   <Label alignment="CENTER" text="Spheres of Magic" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                                                                      <font>
-                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                        <Font name="Bell MT" size="40.0" />
                                                                      </font>
                                                                      <GridPane.margin>
                                                                         <Insets />
@@ -1709,40 +1777,49 @@
                                                                   </Label>
                                                                   <Label text="Time" GridPane.rowIndex="1">
                                                                      <font>
-                                                                        <Font size="25.0" />
-                                                                     </font></Label>
+                                                                        <Font name="Bell MT" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
                                                                   <Label text="Spirit" GridPane.rowIndex="2">
                                                                      <font>
-                                                                        <Font size="25.0" />
-                                                                     </font></Label>
+                                                                        <Font name="Bell MT" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
                                                                   <Label text="Prime" GridPane.rowIndex="3">
                                                                      <font>
-                                                                        <Font size="25.0" />
-                                                                     </font></Label>
+                                                                        <Font name="Bell MT" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
                                                                   <Label text="Mind" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                                                      <font>
-                                                                        <Font size="25.0" />
-                                                                     </font></Label>
+                                                                        <Font name="Bell MT" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
                                                                   <Label text="Matter" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                                                      <font>
-                                                                        <Font size="25.0" />
-                                                                     </font></Label>
+                                                                        <Font name="Bell MT" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
                                                                   <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                                                      <font>
-                                                                        <Font size="25.0" />
-                                                                     </font></Label>
+                                                                        <Font name="Bell MT" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
                                                                   <Label text="Forces" GridPane.columnIndex="4" GridPane.rowIndex="1">
                                                                      <font>
-                                                                        <Font size="25.0" />
-                                                                     </font></Label>
+                                                                        <Font name="Bell MT" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
                                                                   <Label text="Entropy" GridPane.columnIndex="4" GridPane.rowIndex="2">
                                                                      <font>
-                                                                        <Font size="25.0" />
-                                                                     </font></Label>
+                                                                        <Font name="Bell MT" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
                                                                   <Label text="Corespondence" GridPane.columnIndex="4" GridPane.rowIndex="3">
                                                                      <font>
-                                                                        <Font size="25.0" />
-                                                                     </font></Label>
+                                                                        <Font name="Bell MT" size="20.0" />
+                                                                     </font>
+                                                                  </Label>
                                                                   <Text fx:id="sphr_time_bar" strokeType="OUTSIDE" strokeWidth="0.0" text="0/5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                                                      <font>
                                                                         <Font name="Brush Script MT Italic" size="25.0" />
@@ -1838,32 +1915,22 @@
                                                                   <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
                                                                </rowConstraints>
                                                                <children>
-                                                                  <ProgressBar fx:id="advn_arete_bar" prefHeight="36.0" prefWidth="613.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                                                  <ProgressBar fx:id="advn_arete_bar" prefHeight="36.0" prefWidth="606.0" progress="0.1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                                                      <GridPane.margin>
                                                                         <Insets top="20.0" />
                                                                      </GridPane.margin>
                                                                   </ProgressBar>
-                                                                  <Label text="Arete" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                                                  <Label text="Arete" translateY="27.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
                                                                      <font>
-                                                                        <Font name="Brush Script MT Italic" size="25.0" />
+                                                                        <Font name="Brush Script MT Italic" size="35.0" />
                                                                      </font>
                                                                   </Label>
-                                                                  <Button fx:id="advn_arete_up" mnemonicParsing="false" onAction="#handleButton" text="+" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                                                  <Button fx:id="advn_arete_up" mnemonicParsing="false" onAction="#handleButton" text="+" translateY="30.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                                                                      <GridPane.margin>
                                                                         <Insets left="100.0" />
                                                                      </GridPane.margin>
                                                                   </Button>
-                                                                  <Button fx:id="advn_arete_down" mnemonicParsing="false" onAction="#handleButton" text="-" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
-                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Character EXP: " GridPane.rowIndex="2">
-                                                                     <font>
-                                                                        <Font size="21.0" />
-                                                                     </font>
-                                                                  </Text>
-                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="00" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                                                                     <font>
-                                                                        <Font size="21.0" />
-                                                                     </font>
-                                                                  </Text>
+                                                                  <Button fx:id="advn_arete_down" mnemonicParsing="false" onAction="#handleButton" text="-" translateX="-45.0" translateY="30.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                                                                </children>
                                                                <VBox.margin>
                                                                   <Insets top="10.0" />
@@ -1917,42 +1984,39 @@
                               </AnchorPane>
                            </content>
                         </Tab>
-                        <Tab text="Misc.">
+                        <Tab text="Character Settings">
                            <content>
                               <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="600.0">
                                  <children>
-                                    <Button fx:id="ExpApply" layoutX="331.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleApply" text="Apply" />
-                                    <Label layoutX="14.0" layoutY="31.0" text="Character Exp to be applied:" />
+                                    <Button fx:id="ExpApply" layoutX="331.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleApply" text="Apply EXP">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="110.0" layoutY="27.0" text="Character Exp to be applied:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
                                     <TextField fx:id="ExpInField" layoutX="331.0" layoutY="23.0" prefWidth="200.0" />
-                                    <Label fx:id="willDisplay_MiscTab" layoutX="14.0" layoutY="180.0" text="Character Will: 05" />
-                                    <Button layoutX="227.0" layoutY="172.0" mnemonicParsing="false" text="Apply Damage" />
-                                    <Button layoutX="227.0" layoutY="238.0" mnemonicParsing="false" text="Purchase Will" />
+                                    <Button fx:id="load_character" layoutX="330.0" layoutY="248.0" mnemonicParsing="false" onAction="#loadCharacter" text="Load Character">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="save_chaarcter" layoutX="331.0" layoutY="174.0" mnemonicParsing="false" onAction="#saveCharacter" text="Save Character">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="110.0" layoutY="179.0" text="Save to file:">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
                                  </children>
                               </AnchorPane>
                            </content>
-                        </Tab>
-                        <Tab text="Load/Delete/Save">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                 <children>
-                                    <ScrollPane prefHeight="704.0" prefWidth="496.0">
-                                       <content>
-                                          <VBox fx:id="fileListing" prefHeight="685.0" prefWidth="492.0">
-                                             <padding>
-                                                <Insets right="10.0" />
-                                             </padding>
-                                          </VBox>
-                                       </content>
-                                    </ScrollPane>
-                                    <CheckBox layoutX="507.0" layoutY="25.0" mnemonicParsing="false" text="Load" />
-                                    <CheckBox layoutX="507.0" layoutY="73.0" mnemonicParsing="false" text="Delete" />
-                                    <Button layoutX="507.0" layoutY="130.0" mnemonicParsing="false" text="Load/Delete" />
-                                    <Label layoutX="507.0" layoutY="323.0" text="Enter file name and save:" />
-                                    <Button layoutX="511.0" layoutY="435.0" mnemonicParsing="false" text="Save" />
-                                    <TextField fx:id="fileNameIn" layoutX="507.0" layoutY="370.0" />
-                                 </children>
-                              </AnchorPane>
-                          </content>
                         </Tab>
                     </tabs>
                   </TabPane>
